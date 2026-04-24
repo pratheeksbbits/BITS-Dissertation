@@ -1,0 +1,931 @@
+[
+    {
+        "tag": "a",
+        "text": "About",
+        "attributes": {
+            "class": [
+                "MV3Tnb"
+            ],
+            "href": "https://about.google/?fg=1&utm_source=google-IN&utm_medium=referral&utm_campaign=hp-header",
+            "ping": "/url?sa=t&rct=j&source=webhp&url=https://about.google/%3Ffg%3D1%26utm_source%3Dgoogle-IN%26utm_medium%3Dreferral%26utm_campaign%3Dhp-header&ved=0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQkNQCCAI&opi=89978449"
+        },
+        "selectors": {
+            "text": "text=\"About\"",
+            "class": ".MV3Tnb"
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Store",
+        "attributes": {
+            "class": [
+                "MV3Tnb"
+            ],
+            "href": "https://store.google.com/IN?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-IN",
+            "ping": "/url?sa=t&rct=j&source=webhp&url=https://store.google.com/IN%3Futm_source%3Dhp_header%26utm_medium%3Dgoogle_ooo%26utm_campaign%3DGS100042%26hl%3Den-IN&ved=0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQpMwCCAM&opi=89978449"
+        },
+        "selectors": {
+            "text": "text=\"Store\"",
+            "class": ".MV3Tnb"
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Gmail",
+        "attributes": {
+            "class": [
+                "gb_4"
+            ],
+            "aria-label": "Gmail ",
+            "data-pid": "23",
+            "href": "https://mail.google.com/mail/&ogbl",
+            "target": "_top"
+        },
+        "selectors": {
+            "aria-label": "[aria-label=\"Gmail \"]",
+            "text": "text=\"Gmail\"",
+            "class": ".gb_4"
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Images",
+        "attributes": {
+            "class": [
+                "gb_4"
+            ],
+            "aria-label": "Search for Images ",
+            "data-pid": "2",
+            "href": "https://www.google.com/imghp?hl=en&ogbl",
+            "target": "_top"
+        },
+        "selectors": {
+            "aria-label": "[aria-label=\"Search for Images \"]",
+            "text": "text=\"Images\"",
+            "class": ".gb_4"
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "class": [
+                "gb_C"
+            ],
+            "aria-label": "Google apps",
+            "href": "https://www.google.co.in/intl/en/about/products",
+            "aria-expanded": "false",
+            "role": "button",
+            "tabindex": "0"
+        },
+        "selectors": {
+            "aria-label": "[aria-label=\"Google apps\"]",
+            "class": ".gb_C"
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Sign in",
+        "attributes": {
+            "class": [
+                "gb_A"
+            ],
+            "aria-label": "Sign in",
+            "href": "https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=futura_exp_og_so_72776762_e",
+            "target": "_top"
+        },
+        "selectors": {
+            "aria-label": "[aria-label=\"Sign in\"]",
+            "text": "text=\"Sign in\"",
+            "class": ".gb_A"
+        }
+    },
+    {
+        "tag": "button",
+        "text": "",
+        "attributes": {
+            "class": [
+                "pz5bj"
+            ],
+            "id": "spchx",
+            "aria-label": "close"
+        },
+        "selectors": {
+            "id": "#spchx",
+            "aria-label": "[aria-label=\"close\"]",
+            "class": ".pz5bj"
+        }
+    },
+    {
+        "tag": "button",
+        "text": "",
+        "attributes": {
+            "jsname": "ko0Zye",
+            "class": [
+                "UbbAWe"
+            ],
+            "aria-label": "Upload files or images",
+            "aria-haspopup": "menu",
+            "tabindex": "0",
+            "type": "button",
+            "jsaction": "AO4mJ;blur:dOOLne;keydown:YR8sId;mouseenter:QgVLnf",
+            "data-ved": "0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQ0J0RCAU"
+        },
+        "selectors": {
+            "aria-label": "[aria-label=\"Upload files or images\"]",
+            "class": ".UbbAWe"
+        }
+    },
+    {
+        "tag": "button",
+        "text": "Upload image",
+        "attributes": {
+            "class": [
+                "izN7If"
+            ],
+            "jsname": "EBXFob",
+            "jsaction": "q13TGf",
+            "role": "menuitem",
+            "tabindex": "0",
+            "type": "button",
+            "data-ved": "0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQ1p0RCAc"
+        },
+        "selectors": {
+            "text": "text=\"Upload image\"",
+            "class": ".izN7If"
+        }
+    },
+    {
+        "tag": "button",
+        "text": "Upload file",
+        "attributes": {
+            "class": [
+                "izN7If"
+            ],
+            "jsname": "h0TD3",
+            "jsaction": "q13TGf",
+            "role": "menuitem",
+            "tabindex": "0",
+            "type": "button",
+            "data-ved": "0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQ1J0RCAg"
+        },
+        "selectors": {
+            "text": "text=\"Upload file\"",
+            "class": ".izN7If"
+        }
+    },
+    {
+        "tag": "input",
+        "text": "",
+        "attributes": {
+            "jsname": "wcaWdc",
+            "accept": "image/*",
+            "hidden": "",
+            "type": "file",
+            "jsaction": "change:fj0v0b;rHjPpc"
+        },
+        "selectors": {}
+    },
+    {
+        "tag": "input",
+        "text": "",
+        "attributes": {
+            "jsname": "huvwA",
+            "accept": "application/pdf,image/*",
+            "hidden": "",
+            "type": "file",
+            "jsaction": "change:fj0v0b;rHjPpc"
+        },
+        "selectors": {}
+    },
+    {
+        "tag": "button",
+        "text": "",
+        "attributes": {
+            "jscontroller": "mw06ae",
+            "jsname": "Ufb5Yc",
+            "class": [
+                "XOUhue"
+            ],
+            "aria-label": "Remove file attachment",
+            "hidden": "",
+            "tabindex": "0",
+            "type": "button",
+            "jsaction": "jNhznf:NgonQc;TsIFpc:aGAD7e;lMGxTd;focus:Z2y3Eb;blur:h5qwYb;mouseenter:Z2y3Eb;mouseleave:h5qwYb",
+            "data-hveid": "9",
+            "data-ved": "0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQvpoSCAk"
+        },
+        "selectors": {
+            "aria-label": "[aria-label=\"Remove file attachment\"]",
+            "class": ".XOUhue"
+        }
+    },
+    {
+        "tag": "textarea",
+        "text": "",
+        "attributes": {
+            "jsname": "yZiJbe",
+            "class": [
+                "gLFyf"
+            ],
+            "aria-controls": "Alh6id",
+            "aria-owns": "Alh6id",
+            "autofocus": "",
+            "title": "Search",
+            "value": "",
+            "aria-label": "Search",
+            "placeholder": "",
+            "aria-autocomplete": "both",
+            "aria-expanded": "false",
+            "aria-haspopup": "false",
+            "autocapitalize": "off",
+            "autocomplete": "off",
+            "autocorrect": "off",
+            "id": "APjFqb",
+            "maxlength": "2048",
+            "name": "q",
+            "role": "combobox",
+            "rows": "1",
+            "spellcheck": "false",
+            "data-ved": "0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQ39UDCAs"
+        },
+        "selectors": {
+            "id": "#APjFqb",
+            "name": "[name=\"q\"]",
+            "aria-label": "[aria-label=\"Search\"]",
+            "class": ".gLFyf"
+        }
+    },
+    {
+        "tag": "div",
+        "text": "",
+        "attributes": {
+            "class": [
+                "vOY7J"
+            ],
+            "jsname": "pkjasb",
+            "aria-label": "Clear",
+            "role": "button",
+            "tabindex": "0",
+            "jsaction": "AVsnlb;rcuQ6b:npT2md",
+            "data-ved": "0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQ05YFCAw"
+        },
+        "selectors": {
+            "aria-label": "[aria-label=\"Clear\"]",
+            "class": ".vOY7J"
+        }
+    },
+    {
+        "tag": "div",
+        "text": "",
+        "attributes": {
+            "jscontroller": "unV4T",
+            "jsname": "F7uqIe",
+            "class": [
+                "XDyW0e"
+            ],
+            "data-hp": "1",
+            "aria-label": "Search by voice",
+            "role": "button",
+            "tabindex": "0",
+            "jsaction": "h5M12e;rcuQ6b:npT2md;KHxBOb:EANhx;hATt5e:AkD3se;CQJmec:efDZmf",
+            "data-ved": "0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQvs8DCA0"
+        },
+        "selectors": {
+            "aria-label": "[aria-label=\"Search by voice\"]",
+            "class": ".XDyW0e"
+        }
+    },
+    {
+        "tag": "div",
+        "text": "",
+        "attributes": {
+            "jscontroller": "lpsUAf",
+            "jsname": "R5mgy",
+            "class": [
+                "nDcEnd"
+            ],
+            "data-is-images-mode": "false",
+            "aria-label": "Search by image",
+            "role": "button",
+            "tabindex": "0",
+            "jsaction": "rcuQ6b:npT2md;h5M12e;AMruCe:Zpug7c",
+            "data-ved": "0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQhqEICA4"
+        },
+        "selectors": {
+            "aria-label": "[aria-label=\"Search by image\"]",
+            "class": ".nDcEnd"
+        }
+    },
+    {
+        "tag": "button",
+        "text": "AI Mode",
+        "attributes": {
+            "jsname": "B6rgad",
+            "tabindex": "0",
+            "jscontroller": "jNZDL",
+            "jscallback": "sxvUDc:cnjECf:dIu9Pe;rOPotc:cnjECf:oWAROc",
+            "class": [
+                "plR5qb",
+                "Y5MKCd"
+            ],
+            "role": "link",
+            "jsaction": "click:bujKIf;mouseenter:vG60uf;mouseleave:NS5Xl;C7YCKd:wezfDd;",
+            "type": "button",
+            "data-ved": "0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQteYPCA8"
+        },
+        "selectors": {
+            "text": "text=\"AI Mode\"",
+            "class": ".plR5qb.Y5MKCd"
+        }
+    },
+    {
+        "tag": "span",
+        "text": "",
+        "attributes": {
+            "class": [
+                "Job8vb",
+                "z1asCe",
+                "wuXmqc"
+            ],
+            "aria-label": "Close Choose what you\u2019re giving feedback on",
+            "role": "button",
+            "tabindex": "0",
+            "jsaction": "kEOk4d",
+            "style": "height:20px;line-height:20px;width:20px",
+            "data-ved": "0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQmIkGCBQ"
+        },
+        "selectors": {
+            "aria-label": "[aria-label=\"Close Choose what you\u2019re giving feedback on\"]",
+            "class": ".Job8vb.z1asCe.wuXmqc"
+        }
+    },
+    {
+        "tag": "div",
+        "text": "See more",
+        "attributes": {
+            "class": [
+                "Sz7Lee",
+                "MagqMc",
+                "U48fD"
+            ],
+            "style": "display:none",
+            "aria-label": "See more",
+            "role": "button",
+            "tabindex": "0"
+        },
+        "selectors": {
+            "aria-label": "[aria-label=\"See more\"]",
+            "text": "text=\"See more\"",
+            "class": ".Sz7Lee.MagqMc.U48fD"
+        }
+    },
+    {
+        "tag": "div",
+        "text": "Delete",
+        "attributes": {
+            "class": [
+                "AQZ9Vd"
+            ],
+            "aria-atomic": "true",
+            "role": "button"
+        },
+        "selectors": {
+            "text": "text=\"Delete\"",
+            "class": ".AQZ9Vd"
+        }
+    },
+    {
+        "tag": "div",
+        "text": "",
+        "attributes": {
+            "class": [
+                "Tnv2td"
+            ],
+            "style": "display:none",
+            "aria-label": "Word pronunciation",
+            "aria-atomic": "true",
+            "role": "button"
+        },
+        "selectors": {
+            "aria-label": "[aria-label=\"Word pronunciation\"]",
+            "class": ".Tnv2td"
+        }
+    },
+    {
+        "tag": "div",
+        "text": "Delete",
+        "attributes": {
+            "class": [
+                "AQZ9Vd"
+            ],
+            "aria-atomic": "true",
+            "role": "button"
+        },
+        "selectors": {
+            "text": "text=\"Delete\"",
+            "class": ".AQZ9Vd"
+        }
+    },
+    {
+        "tag": "div",
+        "text": "",
+        "attributes": {
+            "class": [
+                "Tnv2td"
+            ],
+            "style": "display:none",
+            "aria-label": "Word pronunciation",
+            "aria-atomic": "true",
+            "role": "button"
+        },
+        "selectors": {
+            "aria-label": "[aria-label=\"Word pronunciation\"]",
+            "class": ".Tnv2td"
+        }
+    },
+    {
+        "tag": "input",
+        "text": "",
+        "attributes": {
+            "class": [
+                "gNO89b"
+            ],
+            "value": "Google Search",
+            "aria-label": "Google Search",
+            "name": "btnK",
+            "role": "button",
+            "tabindex": "0",
+            "type": "submit",
+            "data-ved": "0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQ4dUDCBY"
+        },
+        "selectors": {
+            "name": "[name=\"btnK\"]",
+            "aria-label": "[aria-label=\"Google Search\"]",
+            "class": ".gNO89b"
+        }
+    },
+    {
+        "tag": "input",
+        "text": "",
+        "attributes": {
+            "jscontroller": "s980lf",
+            "class": [
+                "RNmpXc"
+            ],
+            "value": "I'm Feeling Lucky",
+            "aria-label": "I'm Feeling Lucky",
+            "name": "btnI",
+            "type": "submit",
+            "jsaction": "rcuQ6b:npT2md;QIWlh",
+            "data-ved": "0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQ19QECBc"
+        },
+        "selectors": {
+            "name": "[name=\"btnI\"]",
+            "aria-label": "[aria-label=\"I'm Feeling Lucky\"]",
+            "class": ".RNmpXc"
+        }
+    },
+    {
+        "tag": "div",
+        "text": "Report inappropriate predictions",
+        "attributes": {
+            "class": [
+                "WzNHm",
+                "mWcf0e"
+            ],
+            "jscontroller": "gSZvdb",
+            "data-dccl": "false",
+            "role": "button",
+            "tabindex": "0",
+            "jsdata": "vST7rb;_;2WvqadTdF4SWwcsPwPrpkQc2",
+            "jsaction": "i5KCU;kVBCVd:yM1YJe",
+            "data-ved": "0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQ6scECBg"
+        },
+        "selectors": {
+            "text": "text=\"Report inappropriate predictions\"",
+            "class": ".WzNHm.mWcf0e"
+        }
+    },
+    {
+        "tag": "input",
+        "text": "",
+        "attributes": {
+            "class": [
+                "gNO89b"
+            ],
+            "value": "Google Search",
+            "aria-label": "Google Search",
+            "name": "btnK",
+            "role": "button",
+            "tabindex": "0",
+            "type": "submit",
+            "data-ved": "0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQ4dUDCBk"
+        },
+        "selectors": {
+            "name": "[name=\"btnK\"]",
+            "aria-label": "[aria-label=\"Google Search\"]",
+            "class": ".gNO89b"
+        }
+    },
+    {
+        "tag": "input",
+        "text": "",
+        "attributes": {
+            "jscontroller": "s980lf",
+            "class": [
+                "RNmpXc"
+            ],
+            "value": "I'm Feeling Lucky",
+            "aria-label": "I'm Feeling Lucky",
+            "name": "btnI",
+            "type": "submit",
+            "jsaction": "rcuQ6b:npT2md;QIWlh",
+            "data-ved": "0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQ19QECBo"
+        },
+        "selectors": {
+            "name": "[name=\"btnI\"]",
+            "aria-label": "[aria-label=\"I'm Feeling Lucky\"]",
+            "class": ".RNmpXc"
+        }
+    },
+    {
+        "tag": "input",
+        "text": "",
+        "attributes": {
+            "name": "sca_esv",
+            "value": "8eb5eb78efc6b1d8",
+            "type": "hidden"
+        },
+        "selectors": {
+            "name": "[name=\"sca_esv\"]"
+        }
+    },
+    {
+        "tag": "input",
+        "text": "",
+        "attributes": {
+            "name": "source",
+            "type": "hidden",
+            "value": "hp"
+        },
+        "selectors": {
+            "name": "[name=\"source\"]"
+        }
+    },
+    {
+        "tag": "input",
+        "text": "",
+        "attributes": {
+            "value": "2WvqadTdF4SWwcsPwPrpkQc",
+            "name": "ei",
+            "type": "hidden"
+        },
+        "selectors": {
+            "name": "[name=\"ei\"]"
+        }
+    },
+    {
+        "tag": "input",
+        "text": "",
+        "attributes": {
+            "value": "AFdpzrgAAAAAaep56QElrI8ZXDLruj__QEfSrXrz6tXz",
+            "name": "iflsig",
+            "type": "hidden"
+        },
+        "selectors": {
+            "name": "[name=\"iflsig\"]"
+        }
+    },
+    {
+        "tag": "a",
+        "text": "See the latest announcements from Google Cloud Next '26",
+        "attributes": {
+            "jscontroller": "Jlf2lc",
+            "class": [
+                "m5Qfy"
+            ],
+            "jsdata": "fXexJ;_;2Wvqaf-8KNeiseMPpp6h0Qc2",
+            "rel": [
+                "nofollow"
+            ],
+            "role": "link",
+            "tabindex": "0",
+            "jsaction": "UEmoBd",
+            "data-ved": "2ahUKEwi_jajh04SUAxVXUWwGHSZPKHoQ8IcBegQIAhAB"
+        },
+        "selectors": {
+            "text": "text=\"See the latest announcements from Google Cloud Next '26\"",
+            "class": ".m5Qfy"
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u0939\u093f\u0928\u094d\u0926\u0940",
+        "attributes": {
+            "href": "https://www.google.com/setprefs?sig=0_A0-2DNIKzEbRPYSS1zu7kBmyHMw%3D&hl=hi&source=homepage&sa=X&ved=0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQ2ZgBCCA"
+        },
+        "selectors": {
+            "text": "text=\"\u0939\u093f\u0928\u094d\u0926\u0940\""
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u09ac\u09be\u0982\u09b2\u09be",
+        "attributes": {
+            "href": "https://www.google.com/setprefs?sig=0_A0-2DNIKzEbRPYSS1zu7kBmyHMw%3D&hl=bn&source=homepage&sa=X&ved=0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQ2ZgBCCE"
+        },
+        "selectors": {
+            "text": "text=\"\u09ac\u09be\u0982\u09b2\u09be\""
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41",
+        "attributes": {
+            "href": "https://www.google.com/setprefs?sig=0_A0-2DNIKzEbRPYSS1zu7kBmyHMw%3D&hl=te&source=homepage&sa=X&ved=0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQ2ZgBCCI"
+        },
+        "selectors": {
+            "text": "text=\"\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41\""
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u092e\u0930\u093e\u0920\u0940",
+        "attributes": {
+            "href": "https://www.google.com/setprefs?sig=0_A0-2DNIKzEbRPYSS1zu7kBmyHMw%3D&hl=mr&source=homepage&sa=X&ved=0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQ2ZgBCCM"
+        },
+        "selectors": {
+            "text": "text=\"\u092e\u0930\u093e\u0920\u0940\""
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u0ba4\u0bae\u0bbf\u0bb4\u0bcd",
+        "attributes": {
+            "href": "https://www.google.com/setprefs?sig=0_A0-2DNIKzEbRPYSS1zu7kBmyHMw%3D&hl=ta&source=homepage&sa=X&ved=0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQ2ZgBCCQ"
+        },
+        "selectors": {
+            "text": "text=\"\u0ba4\u0bae\u0bbf\u0bb4\u0bcd\""
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u0a97\u0ac1\u0a9c\u0ab0\u0abe\u0aa4\u0ac0",
+        "attributes": {
+            "href": "https://www.google.com/setprefs?sig=0_A0-2DNIKzEbRPYSS1zu7kBmyHMw%3D&hl=gu&source=homepage&sa=X&ved=0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQ2ZgBCCU"
+        },
+        "selectors": {
+            "text": "text=\"\u0a97\u0ac1\u0a9c\u0ab0\u0abe\u0aa4\u0ac0\""
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u0c95\u0ca8\u0ccd\u0ca8\u0ca1",
+        "attributes": {
+            "href": "https://www.google.com/setprefs?sig=0_A0-2DNIKzEbRPYSS1zu7kBmyHMw%3D&hl=kn&source=homepage&sa=X&ved=0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQ2ZgBCCY"
+        },
+        "selectors": {
+            "text": "text=\"\u0c95\u0ca8\u0ccd\u0ca8\u0ca1\""
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u0d2e\u0d32\u0d2f\u0d3e\u0d33\u0d02",
+        "attributes": {
+            "href": "https://www.google.com/setprefs?sig=0_A0-2DNIKzEbRPYSS1zu7kBmyHMw%3D&hl=ml&source=homepage&sa=X&ved=0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQ2ZgBCCc"
+        },
+        "selectors": {
+            "text": "text=\"\u0d2e\u0d32\u0d2f\u0d3e\u0d33\u0d02\""
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40",
+        "attributes": {
+            "href": "https://www.google.com/setprefs?sig=0_A0-2DNIKzEbRPYSS1zu7kBmyHMw%3D&hl=pa&source=homepage&sa=X&ved=0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQ2ZgBCCg"
+        },
+        "selectors": {
+            "text": "text=\"\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40\""
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Advertising",
+        "attributes": {
+            "class": [
+                "pHiOh"
+            ],
+            "href": "https://www.google.com/intl/en_in/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1",
+            "ping": "/url?sa=t&rct=j&source=webhp&url=https://www.google.com/intl/en_in/ads/%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&ved=0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQkdQCCCk&opi=89978449"
+        },
+        "selectors": {
+            "text": "text=\"Advertising\"",
+            "class": ".pHiOh"
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Business",
+        "attributes": {
+            "class": [
+                "pHiOh"
+            ],
+            "href": "https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1",
+            "ping": "/url?sa=t&rct=j&source=webhp&url=https://www.google.com/services/%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&ved=0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQktQCCCo&opi=89978449"
+        },
+        "selectors": {
+            "text": "text=\"Business\"",
+            "class": ".pHiOh"
+        }
+    },
+    {
+        "tag": "a",
+        "text": "How Search works",
+        "attributes": {
+            "class": [
+                "pHiOh"
+            ],
+            "href": "https://google.com/search/howsearchworks/?fg=1"
+        },
+        "selectors": {
+            "text": "text=\"How Search works\"",
+            "class": ".pHiOh"
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Privacy",
+        "attributes": {
+            "class": [
+                "pHiOh"
+            ],
+            "href": "https://policies.google.com/privacy?hl=en-IN&fg=1",
+            "ping": "/url?sa=t&rct=j&source=webhp&url=https://policies.google.com/privacy%3Fhl%3Den-IN%26fg%3D1&ved=0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQ8awCCCs&opi=89978449"
+        },
+        "selectors": {
+            "text": "text=\"Privacy\"",
+            "class": ".pHiOh"
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Terms",
+        "attributes": {
+            "class": [
+                "pHiOh"
+            ],
+            "href": "https://policies.google.com/terms?hl=en-IN&fg=1",
+            "ping": "/url?sa=t&rct=j&source=webhp&url=https://policies.google.com/terms%3Fhl%3Den-IN%26fg%3D1&ved=0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQ8qwCCCw&opi=89978449"
+        },
+        "selectors": {
+            "text": "text=\"Terms\"",
+            "class": ".pHiOh"
+        }
+    },
+    {
+        "tag": "div",
+        "text": "Settings",
+        "attributes": {
+            "jsname": "oYxtQd",
+            "class": [
+                "CcNe6e"
+            ],
+            "aria-expanded": "false",
+            "aria-haspopup": "true",
+            "role": "button",
+            "tabindex": "0",
+            "jsaction": "WFrRFb;keydown:uYT2Vb"
+        },
+        "selectors": {
+            "text": "text=\"Settings\"",
+            "class": ".CcNe6e"
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Search settings",
+        "attributes": {
+            "href": "https://www.google.com/preferences?hl=en-IN&fg=1",
+            "role": "menuitem",
+            "tabindex": "-1",
+            "ping": "/url?sa=t&rct=j&source=webhp&url=https://www.google.com/preferences%3Fhl%3Den-IN%26fg%3D1&ved=0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQs4gOCC8&opi=89978449"
+        },
+        "selectors": {
+            "text": "text=\"Search settings\""
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Advanced search",
+        "attributes": {
+            "href": "/advanced_search?hl=en-IN&fg=1",
+            "role": "menuitem",
+            "tabindex": "-1",
+            "ping": "/url?sa=t&rct=j&source=webhp&url=/advanced_search%3Fhl%3Den-IN%26fg%3D1&ved=0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQ3ogOCDA&opi=89978449"
+        },
+        "selectors": {
+            "text": "text=\"Advanced search\""
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Your data in Search",
+        "attributes": {
+            "href": "/history/privacyadvisor/search/unauth?utm_source=googlemenu&fg=1&cctld=com",
+            "role": "menuitem",
+            "tabindex": "-1",
+            "ping": "/url?sa=t&rct=j&source=webhp&url=/history/privacyadvisor/search/unauth%3Futm_source%3Dgooglemenu%26fg%3D1%26cctld%3Dcom&ved=0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQgoYOCDE&opi=89978449"
+        },
+        "selectors": {
+            "text": "text=\"Your data in Search\""
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Search history",
+        "attributes": {
+            "href": "/history/optout?hl=en-IN&fg=1",
+            "role": "menuitem",
+            "tabindex": "-1",
+            "ping": "/url?sa=t&rct=j&source=webhp&url=/history/optout%3Fhl%3Den-IN%26fg%3D1&ved=0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQ4YgOCDI&opi=89978449"
+        },
+        "selectors": {
+            "text": "text=\"Search history\""
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Search help",
+        "attributes": {
+            "href": "https://support.google.com/websearch/?p=ws_results_help&hl=en-IN&fg=1",
+            "role": "menuitem",
+            "tabindex": "-1",
+            "ping": "/url?sa=t&rct=j&source=webhp&url=https://support.google.com/websearch/%3Fp%3Dws_results_help%26hl%3Den-IN%26fg%3D1&ved=0ahUKEwiUrpfh04SUAxUES3ADHUB9OnIQ4IgOCDM&opi=89978449"
+        },
+        "selectors": {
+            "text": "text=\"Search help\""
+        }
+    },
+    {
+        "tag": "textarea",
+        "text": "",
+        "attributes": {
+            "class": [
+                "csi"
+            ],
+            "name": "csi",
+            "style": "display:none"
+        },
+        "selectors": {
+            "name": "[name=\"csi\"]",
+            "class": ".csi"
+        }
+    },
+    {
+        "tag": "div",
+        "text": "Do not use Chrome",
+        "attributes": {
+            "jscontroller": "Jlf2lc",
+            "class": [
+                "cvSVBe",
+                "btku5b",
+                "NQYJvc",
+                "FR7ZSc",
+                "sjVJQd"
+            ],
+            "jsdata": "fXexJ;_;2mvqafXNCKXvseMPvouBsQU3",
+            "jsaction": "UEmoBd",
+            "role": "button",
+            "tabindex": "0",
+            "data-ved": "2ahUKEwj1osXh04SUAxWld2wGHb5FIFYQ0akPegQIAhAE"
+        },
+        "selectors": {
+            "text": "text=\"Do not use Chrome\"",
+            "class": ".cvSVBe.btku5b.NQYJvc.FR7ZSc.sjVJQd"
+        }
+    },
+    {
+        "tag": "div",
+        "text": "Get Chrome",
+        "attributes": {
+            "jscontroller": "Jlf2lc",
+            "class": [
+                "cvSVBe",
+                "btku5b",
+                "NQYJvc",
+                "expUPd",
+                "sjVJQd"
+            ],
+            "jsdata": "fXexJ;_;2mvqafXNCKXvseMPvouBsQU4",
+            "jsaction": "UEmoBd",
+            "role": "button",
+            "tabindex": "0",
+            "data-ved": "2ahUKEwj1osXh04SUAxWld2wGHb5FIFYQ0KkPegQIAhAG"
+        },
+        "selectors": {
+            "text": "text=\"Get Chrome\"",
+            "class": ".cvSVBe.btku5b.NQYJvc.expUPd.sjVJQd"
+        }
+    }
+]

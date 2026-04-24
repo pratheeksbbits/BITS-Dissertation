@@ -1,0 +1,62 @@
+[
+  {
+    "selector": "#jsLangLabel",
+    "selector_type": "id",
+    "features": {
+      "match_count": 1,
+      "is_unique": 1,
+      "selector_length": 12,
+      "is_css": 0,
+      "is_xpath": 0,
+      "is_id": 1,
+      "is_name": 0,
+      "is_data-testid": 0,
+      "is_aria-label": 0,
+      "is_text": 0,
+      "is_class": 0,
+      "has_dynamic_pattern": 0,
+      "has_unstable_attr": 0,
+      "dom_depth": 9,
+      "sibling_count": 0,
+      "attribute_count": 3,
+      "is_probably_generated_class": 0,
+      "selector_token_count": 1,
+      "avg_token_length": 11.0,
+      "has_numeric_token": 0,
+      "text_length": 2,
+      "is_text_short": 1,
+      "is_xpath_absolute": 0
+    },
+    "label": 1
+  },
+  {
+    "selector": "/html/body/main/nav[2]/div[3]/div/h2[2]",
+    "selector_type": "xpath",
+    "features": {
+      "match_count": 1,
+      "is_unique": 1,
+      "selector_length": 39,
+      "is_css": 0,
+      "is_xpath": 1,
+      "is_id": 0,
+      "is_name": 0,
+      "is_data-testid": 0,
+      "is_aria-label": 0,
+      "is_text": 0,
+      "is_class": 0,
+      "has_dynamic_pattern": 1,
+      "has_unstable_attr": 0,
+      "dom_depth": 6,
+      "sibling_count": 1,
+      "attribute_count": 1,
+      "is_probably_generated_class": 0,
+      "selector_token_count": 1,
+      "avg_token_length": 39.0,
+      "has_numeric_token": 1,
+      "text_length": 0,
+      "is_text_short": 1,
+      "is_xpath_absolute": 1
+    },
+    "label": 0
+  }
+]

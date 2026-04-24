@@ -1,0 +1,7591 @@
+[
+    {
+        "tag": "span",
+        "text": "Wikipedia",
+        "attributes": {
+            "class": "central-textlogo__image sprite svg-Wikipedia_wordmark"
+        },
+        "selectors": {
+            "css": ".central-textlogo__image",
+            "xpath": "/html/body/main/div/h1/span",
+            "class": ".central-textlogo__image.sprite.svg-Wikipedia_wordmark",
+            "text": "text=\"Wikipedia\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "English\n7,166,000+ articles",
+        "attributes": {
+            "id": "js-link-box-en",
+            "href": "//en.wikipedia.org/",
+            "title": "English \u2014 Wikipedia \u2014 The Free Encyclopedia",
+            "class": "link-box",
+            "data-slogan": "The Free Encyclopedia"
+        },
+        "selectors": {
+            "css": "#js-link-box-en",
+            "xpath": "/html/body/main/nav/div/a",
+            "id": "#js-link-box-en",
+            "class": ".link-box",
+            "text": "text=\"English\n7,166,000+ articles\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "id": 10,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "articles",
+        "attributes": {},
+        "selectors": {
+            "css": "span",
+            "xpath": "/html/body/main/nav/div/a/small/span",
+            "text": "text=\"articles\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u65e5\u672c\u8a9e\n1,497,000+ \u8a18\u4e8b",
+        "attributes": {
+            "id": "js-link-box-ja",
+            "href": "//ja.wikipedia.org/",
+            "title": "Nihongo \u2014 \u30a6\u30a3\u30ad\u30da\u30c7\u30a3\u30a2 \u2014 \u30d5\u30ea\u30fc\u767e\u79d1\u4e8b\u5178",
+            "class": "link-box",
+            "data-slogan": "\u30d5\u30ea\u30fc\u767e\u79d1\u4e8b\u5178"
+        },
+        "selectors": {
+            "css": "#js-link-box-ja",
+            "xpath": "/html/body/main/nav/div[2]/a",
+            "id": "#js-link-box-ja",
+            "class": ".link-box",
+            "text": "text=\"\u65e5\u672c\u8a9e\n1,497,000+ \u8a18\u4e8b\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "id": 10,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "\u8a18\u4e8b",
+        "attributes": {},
+        "selectors": {
+            "css": "span",
+            "xpath": "/html/body/main/nav/div[2]/a/small/span",
+            "text": "text=\"\u8a18\u4e8b\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Deutsch\n3.111.000+ Artikel",
+        "attributes": {
+            "id": "js-link-box-de",
+            "href": "//de.wikipedia.org/",
+            "title": "Deutsch \u2014 Wikipedia \u2014 Die freie Enzyklop\u00e4die",
+            "class": "link-box",
+            "data-slogan": "Die freie Enzyklop\u00e4die"
+        },
+        "selectors": {
+            "css": "#js-link-box-de",
+            "xpath": "/html/body/main/nav/div[3]/a",
+            "id": "#js-link-box-de",
+            "class": ".link-box",
+            "text": "text=\"Deutsch\n3.111.000+ Artikel\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "id": 10,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "Artikel",
+        "attributes": {},
+        "selectors": {
+            "css": "span",
+            "xpath": "/html/body/main/nav/div[3]/a/small/span",
+            "text": "text=\"Artikel\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u0420\u0443\u0441\u0441\u043a\u0438\u0439\n2\u00a0094\u00a0000+ \u0441\u0442\u0430\u0442\u0435\u0439",
+        "attributes": {
+            "id": "js-link-box-ru",
+            "href": "//ru.wikipedia.org/",
+            "title": "Russkiy \u2014 \u0412\u0438\u043a\u0438\u043f\u0435\u0434\u0438\u044f \u2014 \u0421\u0432\u043e\u0431\u043e\u0434\u043d\u0430\u044f \u044d\u043d\u0446\u0438\u043a\u043b\u043e\u043f\u0435\u0434\u0438\u044f",
+            "class": "link-box",
+            "data-slogan": "\u0421\u0432\u043e\u0431\u043e\u0434\u043d\u0430\u044f \u044d\u043d\u0446\u0438\u043a\u043b\u043e\u043f\u0435\u0434\u0438\u044f"
+        },
+        "selectors": {
+            "css": "#js-link-box-ru",
+            "xpath": "/html/body/main/nav/div[4]/a",
+            "id": "#js-link-box-ru",
+            "class": ".link-box",
+            "text": "text=\"\u0420\u0443\u0441\u0441\u043a\u0438\u0439\n2\u00a0094\u00a0000+ \u0441\u0442\u0430\u0442\u0435\u0439\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "id": 10,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "\u0441\u0442\u0430\u0442\u0435\u0439",
+        "attributes": {},
+        "selectors": {
+            "css": "span",
+            "xpath": "/html/body/main/nav/div[4]/a/small/span",
+            "text": "text=\"\u0441\u0442\u0430\u0442\u0435\u0439\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Fran\u00e7ais\n2\u202f750\u202f000+ articles",
+        "attributes": {
+            "id": "js-link-box-fr",
+            "href": "//fr.wikipedia.org/",
+            "title": "Fran\u00e7ais \u2014 Wikip\u00e9dia \u2014 L\u2019encyclop\u00e9die libre",
+            "class": "link-box",
+            "data-slogan": "L\u2019encyclop\u00e9die libre"
+        },
+        "selectors": {
+            "css": "#js-link-box-fr",
+            "xpath": "/html/body/main/nav/div[5]/a",
+            "id": "#js-link-box-fr",
+            "class": ".link-box",
+            "text": "text=\"Fran\u00e7ais\n2\u202f750\u202f000+ articles\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "id": 10,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "articles",
+        "attributes": {},
+        "selectors": {
+            "css": "span",
+            "xpath": "/html/body/main/nav/div[5]/a/small/span",
+            "text": "text=\"articles\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Espa\u00f1ol\n2.106.000+ art\u00edculos",
+        "attributes": {
+            "id": "js-link-box-es",
+            "href": "//es.wikipedia.org/",
+            "title": "Espa\u00f1ol \u2014 Wikipedia \u2014 La enciclopedia libre",
+            "class": "link-box",
+            "data-slogan": "La enciclopedia libre"
+        },
+        "selectors": {
+            "css": "#js-link-box-es",
+            "xpath": "/html/body/main/nav/div[6]/a",
+            "id": "#js-link-box-es",
+            "class": ".link-box",
+            "text": "text=\"Espa\u00f1ol\n2.106.000+ art\u00edculos\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "id": 10,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "art\u00edculos",
+        "attributes": {},
+        "selectors": {
+            "css": "span",
+            "xpath": "/html/body/main/nav/div[6]/a/small/span",
+            "text": "text=\"art\u00edculos\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u4e2d\u6587\n1,530,000+ \u6761\u76ee / \u689d\u76ee",
+        "attributes": {
+            "id": "js-link-box-zh",
+            "href": "//zh.wikipedia.org/",
+            "title": "Zh\u014dngw\u00e9n \u2014 \u7ef4\u57fa\u767e\u79d1 / \u7dad\u57fa\u767e\u79d1 \u2014 \u81ea\u7531\u7684\u767e\u79d1\u5168\u4e66 / \u81ea\u7531\u7684\u767e\u79d1\u5168\u66f8",
+            "class": "link-box localize-variant",
+            "data-slogan": "\u81ea\u7531\u7684\u767e\u79d1\u5168\u4e66 / \u81ea\u7531\u7684\u767e\u79d1\u5168\u66f8"
+        },
+        "selectors": {
+            "css": "#js-link-box-zh",
+            "xpath": "/html/body/main/nav/div[7]/a",
+            "id": "#js-link-box-zh",
+            "class": ".link-box.localize-variant",
+            "text": "text=\"\u4e2d\u6587\n1,530,000+ \u6761\u76ee / \u689d\u76ee\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "id": 10,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "\u6761\u76ee / \u689d\u76ee",
+        "attributes": {},
+        "selectors": {
+            "css": "span",
+            "xpath": "/html/body/main/nav/div[7]/a/small/span",
+            "text": "text=\"\u6761\u76ee / \u689d\u76ee\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Italiano\n1.964.000+ voci",
+        "attributes": {
+            "id": "js-link-box-it",
+            "href": "//it.wikipedia.org/",
+            "title": "Italiano \u2014 Wikipedia \u2014 L'enciclopedia libera",
+            "class": "link-box",
+            "data-slogan": "L'enciclopedia libera"
+        },
+        "selectors": {
+            "css": "#js-link-box-it",
+            "xpath": "/html/body/main/nav/div[8]/a",
+            "id": "#js-link-box-it",
+            "class": ".link-box",
+            "text": "text=\"Italiano\n1.964.000+ voci\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "id": 10,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "voci",
+        "attributes": {},
+        "selectors": {
+            "css": "span",
+            "xpath": "/html/body/main/nav/div[8]/a/small/span",
+            "text": "text=\"voci\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Polski\n1\u00a0690\u00a0000+ hase\u0142",
+        "attributes": {
+            "id": "js-link-box-pl",
+            "href": "//pl.wikipedia.org/",
+            "title": "Polski \u2014 Wikipedia \u2014 Wolna encyklopedia",
+            "class": "link-box",
+            "data-slogan": "Wolna encyklopedia"
+        },
+        "selectors": {
+            "css": "#js-link-box-pl",
+            "xpath": "/html/body/main/nav/div[9]/a",
+            "id": "#js-link-box-pl",
+            "class": ".link-box",
+            "text": "text=\"Polski\n1\u00a0690\u00a0000+ hase\u0142\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "id": 10,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "hase\u0142",
+        "attributes": {},
+        "selectors": {
+            "css": "span",
+            "xpath": "/html/body/main/nav/div[9]/a/small/span",
+            "text": "text=\"hase\u0142\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Portugu\u00eas\n1.168.000+ artigos",
+        "attributes": {
+            "id": "js-link-box-pt",
+            "href": "//pt.wikipedia.org/",
+            "title": "Portugu\u00eas \u2014 Wikip\u00e9dia \u2014 A Enciclop\u00e9dia Livre",
+            "class": "link-box",
+            "data-slogan": "A Enciclop\u00e9dia Livre"
+        },
+        "selectors": {
+            "css": "#js-link-box-pt",
+            "xpath": "/html/body/main/nav/div[10]/a",
+            "id": "#js-link-box-pt",
+            "class": ".link-box",
+            "text": "text=\"Portugu\u00eas\n1.168.000+ artigos\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "id": 10,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "artigos",
+        "attributes": {},
+        "selectors": {
+            "css": "span",
+            "xpath": "/html/body/main/nav/div[10]/a/small/span",
+            "text": "text=\"artigos\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "input",
+        "text": "wikipedia",
+        "attributes": {
+            "type": "hidden",
+            "name": "family",
+            "value": "wikipedia"
+        },
+        "selectors": {
+            "css": "input",
+            "xpath": "/html/body/main/div[2]/form/fieldset/input",
+            "name": "[name=\"family\"]",
+            "text": "text=\"wikipedia\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "name": 9,
+            "text": 4
+        }
+    },
+    {
+        "tag": "label",
+        "text": "Search Wikipedia",
+        "attributes": {
+            "for": "searchInput",
+            "class": "screen-reader-text",
+            "data-jsl10n": "portal.search-input-label"
+        },
+        "selectors": {
+            "css": ".screen-reader-text",
+            "xpath": "/html/body/main/div[2]/form/fieldset/div/label",
+            "class": ".screen-reader-text",
+            "text": "text=\"Search Wikipedia\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "input",
+        "text": "",
+        "attributes": {
+            "id": "searchInput",
+            "name": "search",
+            "type": "search",
+            "size": "20",
+            "autofocus": "autofocus",
+            "accesskey": "F",
+            "dir": "auto",
+            "autocomplete": "off",
+            "style": "padding-right: 64px;"
+        },
+        "selectors": {
+            "css": "#searchInput",
+            "xpath": "/html/body/main/div[2]/form/fieldset/div/input",
+            "id": "#searchInput",
+            "name": "[name=\"search\"]"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "id": 10,
+            "name": 9
+        }
+    },
+    {
+        "tag": "label",
+        "text": "EN",
+        "attributes": {
+            "for": "searchLanguage",
+            "id": "jsLangLabel",
+            "class": "js-langpicker-label"
+        },
+        "selectors": {
+            "css": "#jsLangLabel",
+            "xpath": "/html/body/main/div[2]/form/fieldset/div/div/div/label",
+            "id": "#jsLangLabel",
+            "class": ".js-langpicker-label",
+            "text": "text=\"EN\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "id": 10,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "select",
+        "text": "Afrikaans\nShqip\n\u0627\u0644\u0639\u0631\u0628\u064a\u0629\nAsturianu\nAz\u0259rbaycanca\n\u0411\u044a\u043b",
+        "attributes": {
+            "id": "searchLanguage",
+            "name": "language"
+        },
+        "selectors": {
+            "css": "#searchLanguage",
+            "xpath": "/html/body/main/div[2]/form/fieldset/div/div/div/select",
+            "id": "#searchLanguage",
+            "name": "[name=\"language\"]",
+            "text": "text=\"Afrikaans\nShqip\n\u0627\u0644\u0639\u0631\u0628\u064a\u0629\nAsturianu\nAz\u0259rbaycanca\n\u0411\u044a\u043b\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "id": 10,
+            "name": 9,
+            "text": 4
+        }
+    },
+    {
+        "tag": "button",
+        "text": "Search",
+        "attributes": {
+            "class": "pure-button pure-button-primary-progressive",
+            "type": "submit"
+        },
+        "selectors": {
+            "css": ".pure-button",
+            "xpath": "/html/body/main/div[2]/form/fieldset/button",
+            "class": ".pure-button.pure-button-primary-progressive",
+            "text": "text=\"Search\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "input",
+        "text": "Go",
+        "attributes": {
+            "type": "hidden",
+            "value": "Go",
+            "name": "go"
+        },
+        "selectors": {
+            "css": "input",
+            "xpath": "/html/body/main/div[2]/form/fieldset/input[2]",
+            "name": "[name=\"go\"]",
+            "text": "text=\"Go\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "name": 9,
+            "text": 4
+        }
+    },
+    {
+        "tag": "button",
+        "text": "Read Wikipedia in your language",
+        "attributes": {
+            "id": "js-lang-list-button",
+            "aria-expanded": "false",
+            "aria-controls": "js-lang-lists",
+            "class": "lang-list-button"
+        },
+        "selectors": {
+            "css": "#js-lang-list-button",
+            "xpath": "/html/body/main/nav[2]/div/button",
+            "id": "#js-lang-list-button",
+            "class": ".lang-list-button",
+            "text": "text=\"Read Wikipedia in your language\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "id": 10,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "Read Wikipedia in your language",
+        "attributes": {
+            "class": "lang-list-button-text jsl10n",
+            "data-jsl10n": "portal.language-button-text"
+        },
+        "selectors": {
+            "css": ".lang-list-button-text",
+            "xpath": "/html/body/main/nav[2]/div/button/span",
+            "class": ".lang-list-button-text.jsl10n",
+            "text": "text=\"Read Wikipedia in your language\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "",
+        "attributes": {
+            "class": "bookshelf"
+        },
+        "selectors": {
+            "css": ".bookshelf",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/h2/span",
+            "class": ".bookshelf"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1
+        }
+    },
+    {
+        "tag": "span",
+        "text": "",
+        "attributes": {
+            "class": "text"
+        },
+        "selectors": {
+            "css": ".text",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/h2/span/span",
+            "class": ".text"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1
+        }
+    },
+    {
+        "tag": "span",
+        "text": "",
+        "attributes": {
+            "class": "jsl10n",
+            "data-jsl10n": "entries"
+        },
+        "selectors": {
+            "css": ".jsl10n",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/h2/span/span/span",
+            "class": ".jsl10n"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ar.wikipedia.org/",
+            "lang": "ar",
+            "title": "Al-\u02bfArab\u012byah"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div/ul/li/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//de.wikipedia.org/",
+            "lang": "de"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div/ul/li[2]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//en.wikipedia.org/",
+            "lang": "en",
+            "title": "English"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div/ul/li[3]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//es.wikipedia.org/",
+            "lang": "es",
+            "title": "Espa\u00f1ol"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div/ul/li[4]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//fa.wikipedia.org/",
+            "lang": "fa",
+            "title": "F\u0101rsi"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div/ul/li[5]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//fr.wikipedia.org/",
+            "lang": "fr"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div/ul/li[6]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//it.wikipedia.org/",
+            "lang": "it"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div/ul/li[7]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//arz.wikipedia.org/",
+            "lang": "arz",
+            "title": "Ma\u1e63r\u012b"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div/ul/li[8]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//nl.wikipedia.org/",
+            "lang": "nl"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div/ul/li[9]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ja.wikipedia.org/",
+            "lang": "ja",
+            "title": "Nihongo"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div/ul/li[10]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//pl.wikipedia.org/",
+            "lang": "pl"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div/ul/li[11]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//pt.wikipedia.org/",
+            "lang": "pt"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div/ul/li[12]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ceb.wikipedia.org/",
+            "lang": "ceb"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div/ul/li[13]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//sv.wikipedia.org/",
+            "lang": "sv"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div/ul/li[14]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//uk.wikipedia.org/",
+            "lang": "uk",
+            "title": "Ukrayins\u2019ka"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div/ul/li[15]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//vi.wikipedia.org/",
+            "lang": "vi"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div/ul/li[16]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//war.wikipedia.org/",
+            "lang": "war"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div/ul/li[17]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//zh.wikipedia.org/",
+            "lang": "zh",
+            "title": "Zh\u014dngw\u00e9n"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div/ul/li[18]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ru.wikipedia.org/",
+            "lang": "ru",
+            "title": "Russkiy"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div/ul/li[19]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "span",
+        "text": "",
+        "attributes": {
+            "class": "bookshelf"
+        },
+        "selectors": {
+            "css": ".bookshelf",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/h2[2]/span",
+            "class": ".bookshelf"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1
+        }
+    },
+    {
+        "tag": "span",
+        "text": "",
+        "attributes": {
+            "class": "text"
+        },
+        "selectors": {
+            "css": ".text",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/h2[2]/span/span",
+            "class": ".text"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1
+        }
+    },
+    {
+        "tag": "span",
+        "text": "",
+        "attributes": {
+            "class": "jsl10n",
+            "data-jsl10n": "portal.entries"
+        },
+        "selectors": {
+            "css": ".jsl10n",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/h2[2]/span/span/span",
+            "class": ".jsl10n"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//af.wikipedia.org/",
+            "lang": "af"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//sq.wikipedia.org/",
+            "lang": "sq",
+            "title": "Anglisht"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[2]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ast.wikipedia.org/",
+            "lang": "ast"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[3]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//az.wikipedia.org/",
+            "lang": "az"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[4]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//bg.wikipedia.org/",
+            "lang": "bg",
+            "title": "B\u01celgarski"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[5]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//zh-min-nan.wikipedia.org/",
+            "lang": "nan",
+            "title": "B\u00e2n-l\u00e2m-g\u00fa"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[6]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//bn.wikipedia.org/",
+            "lang": "bn",
+            "title": "Bangla"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[7]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//be.wikipedia.org/",
+            "lang": "be",
+            "title": "Belaruskaya"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[8]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ca.wikipedia.org/",
+            "lang": "ca"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[9]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//cs.wikipedia.org/",
+            "lang": "cs"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[10]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//cy.wikipedia.org/",
+            "lang": "cy"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[11]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//da.wikipedia.org/",
+            "lang": "da"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[12]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//et.wikipedia.org/",
+            "lang": "et"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[13]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//el.wikipedia.org/",
+            "lang": "el",
+            "title": "Ell\u012bnik\u00e1"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[14]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//eo.wikipedia.org/",
+            "lang": "eo"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[15]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//eu.wikipedia.org/",
+            "lang": "eu"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[16]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//gl.wikipedia.org/",
+            "lang": "gl",
+            "title": "Galego"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[17]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ko.wikipedia.org/",
+            "lang": "ko",
+            "title": "Hangugeo"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[18]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//hy.wikipedia.org/",
+            "lang": "hy",
+            "title": "Hayeren"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[19]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//hi.wikipedia.org/",
+            "lang": "hi",
+            "title": "Hind\u012b"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[20]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//hr.wikipedia.org/",
+            "lang": "hr"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[21]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//id.wikipedia.org/",
+            "lang": "id",
+            "title": "Bahasa Inggris"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[22]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//he.wikipedia.org/",
+            "lang": "he",
+            "title": "Ivrit"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[23]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ka.wikipedia.org/",
+            "lang": "ka",
+            "title": "Kartuli"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[24]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//lld.wikipedia.org/",
+            "lang": "lld"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[25]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//la.wikipedia.org/",
+            "lang": "la"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[26]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//lv.wikipedia.org/",
+            "lang": "lv"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[27]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//lt.wikipedia.org/",
+            "lang": "lt"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[28]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//hu.wikipedia.org/",
+            "lang": "hu"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[29]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//mk.wikipedia.org/",
+            "lang": "mk",
+            "title": "Makedonski"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[30]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//mg.wikipedia.org/",
+            "lang": "mg"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[31]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//mr.wikipedia.org/",
+            "lang": "mr",
+            "title": "Marathi"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[32]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ms.wikipedia.org/",
+            "lang": "ms",
+            "title": "Bahasa Melayu"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[33]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//min.wikipedia.org/",
+            "lang": "min"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[34]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//my.wikipedia.org/",
+            "lang": "my",
+            "title": "Myanmarsar"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[35]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//no.wikipedia.org/",
+            "lang": "nb"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[36]/ul/li/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//nn.wikipedia.org/",
+            "lang": "nn"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[36]/ul/li[2]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ce.wikipedia.org/",
+            "lang": "ce",
+            "title": "Nox\u00e7iyn"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[37]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//uz.wikipedia.org/",
+            "lang": "uz"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[38]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//kk.wikipedia.org/",
+            "lang": "kk"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[39]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "span",
+        "text": "",
+        "attributes": {
+            "lang": "kk-Cyrl"
+        },
+        "selectors": {
+            "css": "span",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[39]/a/span"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "span",
+        "text": "",
+        "attributes": {
+            "lang": "kk-Latn"
+        },
+        "selectors": {
+            "css": "span",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[39]/a/span[2]"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ro.wikipedia.org/",
+            "lang": "ro"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[40]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//simple.wikipedia.org/",
+            "lang": "en"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[41]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//sk.wikipedia.org/",
+            "lang": "sk"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[42]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//sl.wikipedia.org/",
+            "lang": "sl",
+            "title": "Sloven\u0161\u010dina"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[43]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//sr.wikipedia.org/",
+            "lang": "sr"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[44]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//sh.wikipedia.org/",
+            "lang": "sh"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[45]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//fi.wikipedia.org/",
+            "lang": "fi"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[46]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//sw.wikipedia.org/",
+            "lang": "sw"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[47]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ta.wikipedia.org/",
+            "lang": "ta",
+            "title": "Tami\u1e3b"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[48]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//tt.wikipedia.org/",
+            "lang": "tt"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[49]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//te.wikipedia.org/",
+            "lang": "te",
+            "title": "Telugu"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[50]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//th.wikipedia.org/",
+            "lang": "th",
+            "title": "Phasa Thai"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[51]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//tg.wikipedia.org/",
+            "lang": "tg",
+            "title": "Tojik\u012b"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[52]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//azb.wikipedia.org/",
+            "lang": "azb",
+            "title": "T\u00fcrkce"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[53]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//tr.wikipedia.org/",
+            "lang": "tr",
+            "title": "T\u00fcrk\u00e7e"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[54]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ur.wikipedia.org/",
+            "lang": "ur",
+            "title": "Urdu"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[55]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//zh-yue.wikipedia.org/",
+            "lang": "yue"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[2]/ul/li[56]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "span",
+        "text": "",
+        "attributes": {
+            "class": "bookshelf"
+        },
+        "selectors": {
+            "css": ".bookshelf",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/h2[3]/span",
+            "class": ".bookshelf"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1
+        }
+    },
+    {
+        "tag": "span",
+        "text": "",
+        "attributes": {
+            "class": "text"
+        },
+        "selectors": {
+            "css": ".text",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/h2[3]/span/span",
+            "class": ".text"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1
+        }
+    },
+    {
+        "tag": "span",
+        "text": "",
+        "attributes": {
+            "class": "jsl10n",
+            "data-jsl10n": "portal.entries"
+        },
+        "selectors": {
+            "css": ".jsl10n",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/h2[3]/span/span/span",
+            "class": ".jsl10n"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ace.wikipedia.org/",
+            "lang": "ace"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//als.wikipedia.org/",
+            "lang": "gsw"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[2]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//am.wikipedia.org/",
+            "lang": "am",
+            "title": "\u0100mari\u00f1\u00f1\u0101"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[3]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//an.wikipedia.org/",
+            "lang": "an"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[4]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//hyw.wikipedia.org/",
+            "lang": "hyw",
+            "title": "Arevmdahayeren"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[5]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//gor.wikipedia.org/",
+            "lang": "gor"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[6]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ban.wikipedia.org/",
+            "lang": "ban",
+            "title": "Basa Bali"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[7]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//bjn.wikipedia.org/",
+            "lang": "bjn"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[8]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//map-bms.wikipedia.org/",
+            "lang": "map-x-bms"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[9]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ba.wikipedia.org/",
+            "lang": "ba",
+            "title": "Ba\u015fqortsa"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[10]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//be-tarask.wikipedia.org/",
+            "lang": "be-tarask",
+            "title": "Bielaruskaja (tara\u0161kievica)"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[11]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//bcl.wikipedia.org/",
+            "lang": "bcl"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[12]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//bpy.wikipedia.org/",
+            "lang": "bpy",
+            "title": "Bishnupriya Manipuri"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[13]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//bar.wikipedia.org/",
+            "lang": "bar"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[14]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//bs.wikipedia.org/",
+            "lang": "bs"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[15]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//br.wikipedia.org/",
+            "lang": "br"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[16]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//cv.wikipedia.org/",
+            "lang": "cv",
+            "title": "\u010c\u0103va\u0161la"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[17]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//dag.wikipedia.org/",
+            "lang": "dag"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[18]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ary.wikipedia.org/",
+            "lang": "ary",
+            "title": "Darija"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[19]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//nv.wikipedia.org/",
+            "lang": "nv"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[20]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//eml.wikipedia.org/",
+            "lang": "roa-x-eml"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[21]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//hif.wikipedia.org/",
+            "lang": "hif"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[22]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//fo.wikipedia.org/",
+            "lang": "fo"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[23]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//fy.wikipedia.org/",
+            "lang": "fy"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[24]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ff.wikipedia.org/",
+            "lang": "ff"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[25]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ga.wikipedia.org/",
+            "lang": "ga"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[26]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//gd.wikipedia.org/",
+            "lang": "gd"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[27]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//glk.wikipedia.org/",
+            "lang": "glk",
+            "title": "Gil\u0259ki"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[28]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//gu.wikipedia.org/",
+            "lang": "gu",
+            "title": "Gujarati"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[29]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//hak.wikipedia.org/",
+            "lang": "hak"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[30]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ha.wikipedia.org/",
+            "lang": "ha"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[31]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//hsb.wikipedia.org/",
+            "lang": "hsb"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[32]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//io.wikipedia.org/",
+            "lang": "io"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[33]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ig.wikipedia.org/",
+            "lang": "ig"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[34]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ilo.wikipedia.org/",
+            "lang": "ilo"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[35]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ia.wikipedia.org/",
+            "lang": "ia"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[36]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ie.wikipedia.org/",
+            "lang": "ie"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[37]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//os.wikipedia.org/",
+            "lang": "os",
+            "title": "Iron"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[38]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//is.wikipedia.org/",
+            "lang": "is"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[39]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//jv.wikipedia.org/",
+            "lang": "jv"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[40]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//kn.wikipedia.org/",
+            "lang": "kn",
+            "title": "Kannada"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[41]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//pam.wikipedia.org/",
+            "lang": "pam"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[42]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//km.wikipedia.org/",
+            "lang": "km",
+            "title": "Ph\u00e9asa Khm\u00e9r"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[43]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//avk.wikipedia.org/",
+            "lang": "avk"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[44]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ht.wikipedia.org/",
+            "lang": "ht"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[45]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ku.wikipedia.org/",
+            "lang": "ku"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[46]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "span",
+        "text": "",
+        "attributes": {
+            "lang": "ku-Latn"
+        },
+        "selectors": {
+            "css": "span",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[46]/a/span"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ckb.wikipedia.org/",
+            "lang": "ckb",
+            "title": "Kurd\u00eey Nawend\u00ee"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[47]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ky.wikipedia.org/",
+            "lang": "ky",
+            "title": "Kyrgyz\u010da"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[48]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//mrj.wikipedia.org/",
+            "lang": "mjr",
+            "title": "Kyryk Mary"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[49]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//lb.wikipedia.org/",
+            "lang": "lb"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[50]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//lij.wikipedia.org/",
+            "lang": "lij"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[51]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//li.wikipedia.org/",
+            "lang": "li"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[52]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//lmo.wikipedia.org/",
+            "lang": "lmo"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[53]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//mai.wikipedia.org/",
+            "lang": "mai",
+            "title": "Maithil\u012b"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[54]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ml.wikipedia.org/",
+            "lang": "ml",
+            "title": "Malayalam"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[55]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//xmf.wikipedia.org/",
+            "lang": "xmf",
+            "title": "Margaluri"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[56]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//mzn.wikipedia.org/",
+            "lang": "mzn",
+            "title": "M\u00e4zeruni"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[57]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//cdo.wikipedia.org/",
+            "lang": "cdo",
+            "title": "Ming-deng-ngu"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[58]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//mn.wikipedia.org/",
+            "lang": "mn",
+            "title": "Mongol"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[59]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//nap.wikipedia.org/",
+            "lang": "nap"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[60]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//new.wikipedia.org/",
+            "lang": "new",
+            "title": "Nepal Bhasa"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[61]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//frr.wikipedia.org/",
+            "lang": "frr"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[62]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//oc.wikipedia.org/",
+            "lang": "oc"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[63]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//mhr.wikipedia.org/",
+            "lang": "mhr",
+            "title": "Olyk Marij"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[64]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//or.wikipedia.org/",
+            "lang": "or",
+            "title": "O\u1e5bi\u0101"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[65]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//as.wikipedia.org/",
+            "lang": "as",
+            "title": "\u00d4x\u00f4miya"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[66]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//pa.wikipedia.org/",
+            "lang": "pa",
+            "title": "Pa\u00f1j\u0101b\u012b (Gurmukh\u012b)"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[67]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//pnb.wikipedia.org/",
+            "lang": "pnb",
+            "title": "Pa\u00f1j\u0101b\u012b (Sh\u0101hmukh\u012b)"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[68]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ps.wikipedia.org/",
+            "lang": "ps",
+            "title": "Pa\u0282to"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[69]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//pms.wikipedia.org/",
+            "lang": "pms"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[70]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//nds.wikipedia.org/",
+            "lang": "nds"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[71]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//kaa.wikipedia.org/",
+            "lang": "kaa"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[72]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//crh.wikipedia.org/",
+            "lang": "crh"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[73]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//qu.wikipedia.org/",
+            "lang": "qu"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[74]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//rue.wikipedia.org/",
+            "lang": "rue",
+            "title": "Rusin\u2019skyj"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[75]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//sa.wikipedia.org/",
+            "lang": "sa",
+            "title": "Sa\u1e43sk\u1e5btam"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[76]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//sat.wikipedia.org/",
+            "lang": "sat",
+            "title": "Santali"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[77]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//skr.wikipedia.org/",
+            "lang": "skr",
+            "title": "Saraiki"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[78]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//sah.wikipedia.org/",
+            "lang": "sah",
+            "title": "Saxa Tyla"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[79]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//sco.wikipedia.org/",
+            "lang": "sco"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[80]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//sn.wikipedia.org/",
+            "lang": "sn"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[81]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//scn.wikipedia.org/",
+            "lang": "scn"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[82]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//si.wikipedia.org/",
+            "lang": "si",
+            "title": "Si\u1e43hala"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[83]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//sd.wikipedia.org/",
+            "lang": "sd",
+            "title": "Sindh\u012b"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[84]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//szl.wikipedia.org/",
+            "lang": "szl"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[85]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//so.wikipedia.org/",
+            "lang": "so"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[86]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//su.wikipedia.org/",
+            "lang": "su"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[87]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//shi.wikipedia.org/",
+            "lang": "shi"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[88]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//tl.wikipedia.org/",
+            "lang": "tl"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[89]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//shn.wikipedia.org/",
+            "lang": "shn"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[90]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//zgh.wikipedia.org/",
+            "lang": "zgh",
+            "title": "Tamazight tanawayt"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[91]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//tly.wikipedia.org/",
+            "lang": "tly"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[92]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//tum.wikipedia.org/",
+            "lang": "tum"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[93]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//bug.wikipedia.org/",
+            "lang": "bug"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[94]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//vec.wikipedia.org/",
+            "lang": "vec"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[95]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//vo.wikipedia.org/",
+            "lang": "vo"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[96]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//wa.wikipedia.org/",
+            "lang": "wa"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[97]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//zh-classical.wikipedia.org/",
+            "lang": "lzh",
+            "title": "W\u00e9ny\u00e1n"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[98]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//wuu.wikipedia.org/",
+            "lang": "wuu",
+            "title": "W\u00fay\u01d4"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[99]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//yi.wikipedia.org/",
+            "lang": "yi",
+            "title": "Yidi\u0161"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[100]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//yo.wikipedia.org/",
+            "lang": "yo"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[101]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//diq.wikipedia.org/",
+            "lang": "diq"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[102]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//bat-smg.wikipedia.org/",
+            "lang": "sgs"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[103]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//zu.wikipedia.org/",
+            "lang": "zu"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[104]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ne.wikipedia.org/",
+            "lang": "ne",
+            "title": "Nep\u0101l\u012b"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[105]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//mni.wikipedia.org/",
+            "lang": "mni"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[3]/ul/li[106]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "span",
+        "text": "",
+        "attributes": {
+            "class": "bookshelf"
+        },
+        "selectors": {
+            "css": ".bookshelf",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/h2[4]/span",
+            "class": ".bookshelf"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1
+        }
+    },
+    {
+        "tag": "span",
+        "text": "",
+        "attributes": {
+            "class": "text"
+        },
+        "selectors": {
+            "css": ".text",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/h2[4]/span/span",
+            "class": ".text"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1
+        }
+    },
+    {
+        "tag": "span",
+        "text": "",
+        "attributes": {
+            "class": "jsl10n",
+            "data-jsl10n": "portal.entries"
+        },
+        "selectors": {
+            "css": ".jsl10n",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/h2[4]/span/span/span",
+            "class": ".jsl10n"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//lad.wikipedia.org/",
+            "lang": "lad"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "span",
+        "text": "",
+        "attributes": {
+            "lang": "lad-Latn"
+        },
+        "selectors": {
+            "css": "span",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li/a/span"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//kbd.wikipedia.org/",
+            "lang": "kbd",
+            "title": "Adighabze"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[2]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ang.wikipedia.org/",
+            "lang": "ang"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[3]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//smn.wikipedia.org/",
+            "lang": "smn",
+            "title": "Anar\u00e2\u0161kiel\u00e2"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[4]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//anp.wikipedia.org/",
+            "lang": "anp",
+            "title": "Angika"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[5]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ab.wikipedia.org/",
+            "lang": "ab",
+            "title": "A\u1e57sshwa"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[6]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//roa-rup.wikipedia.org/",
+            "lang": "rup"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[7]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//frp.wikipedia.org/",
+            "lang": "frp"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[8]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//atj.wikipedia.org/",
+            "lang": "atj"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[9]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//arc.wikipedia.org/",
+            "lang": "arc",
+            "title": "\u0100t\u00fbr\u0101y\u00e2"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[10]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//gn.wikipedia.org/",
+            "lang": "gn"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[11]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//av.wikipedia.org/",
+            "lang": "av",
+            "title": "Avar"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[12]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ay.wikipedia.org/",
+            "lang": "ay"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[13]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//bbc.wikipedia.org/",
+            "lang": "bbc"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[14]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//bew.wikipedia.org/",
+            "lang": "bew"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[15]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//bh.wikipedia.org/",
+            "lang": "bh",
+            "title": "Bh\u014djapur\u012b"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[16]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//bi.wikipedia.org/",
+            "lang": "bi"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[17]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//bo.wikipedia.org/",
+            "lang": "bo",
+            "title": "Bod Skad"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[18]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//bxr.wikipedia.org/",
+            "lang": "bxr",
+            "title": "Buryad"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[19]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//cbk-zam.wikipedia.org/",
+            "lang": "cbk-x-zam"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[20]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ny.wikipedia.org/",
+            "lang": "ny"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[21]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//co.wikipedia.org/",
+            "lang": "co"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[22]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//za.wikipedia.org/",
+            "lang": "za"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[23]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//dga.wikipedia.org/",
+            "lang": "dga"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[24]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//se.wikipedia.org/",
+            "lang": "se",
+            "title": "Davvis\u00e1megiella"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[25]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//pdc.wikipedia.org/",
+            "lang": "pdc"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[26]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//dv.wikipedia.org/",
+            "lang": "dv",
+            "title": "Divehi"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[27]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//dsb.wikipedia.org/",
+            "lang": "dsb"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[28]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//myv.wikipedia.org/",
+            "lang": "myv",
+            "title": "Erzjanj"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[29]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ext.wikipedia.org/",
+            "lang": "ext"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[30]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ee.wikipedia.org/",
+            "lang": "ee"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[31]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//gur.wikipedia.org/",
+            "lang": "gur"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[32]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//fon.wikipedia.org/",
+            "lang": "fon"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[33]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//fur.wikipedia.org/",
+            "lang": "fur"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[34]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//gv.wikipedia.org/",
+            "lang": "gv"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[35]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//gag.wikipedia.org/",
+            "lang": "gag"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[36]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//inh.wikipedia.org/",
+            "lang": "inh",
+            "title": "Ghalghai"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[37]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//gpe.wikipedia.org/",
+            "lang": "gpe"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[38]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ki.wikipedia.org/",
+            "lang": "ki"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[39]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//gan.wikipedia.org/",
+            "lang": "gan",
+            "title": "Gon ua",
+            "data-hans": "\u8d63\u8bed",
+            "data-hant": "\u8d1b\u8a9e",
+            "class": "jscnconv"
+        },
+        "selectors": {
+            "css": ".jscnconv",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[40]/a",
+            "class": ".jscnconv"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//guw.wikipedia.org/",
+            "lang": "guw"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[41]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//got.wikipedia.org/",
+            "lang": "got",
+            "title": "Gutisk"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[42]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//xal.wikipedia.org/",
+            "lang": "xal",
+            "title": "Hal\u02b9mg"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[43]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//haw.wikipedia.org/",
+            "lang": "haw"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[44]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//igl.wikipedia.org/",
+            "lang": "igl"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[45]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//rw.wikipedia.org/",
+            "lang": "rw"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[46]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//iba.wikipedia.org/",
+            "lang": "iba"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[47]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//kbp.wikipedia.org/",
+            "lang": "kbp"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[48]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//dtp.wikipedia.org/",
+            "lang": "dtp"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[49]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//knc.wikipedia.org/",
+            "lang": "knc"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[50]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//kai.wikipedia.org/",
+            "lang": "kai"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[51]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//csb.wikipedia.org/",
+            "lang": "csb"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[52]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//kw.wikipedia.org/",
+            "lang": "kw"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[53]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//kv.wikipedia.org/",
+            "lang": "kv",
+            "title": "Komi"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[54]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//koi.wikipedia.org/",
+            "lang": "koi",
+            "title": "Perem Komi"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[55]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//kg.wikipedia.org/",
+            "lang": "kg"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[56]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//gom.wikipedia.org/",
+            "lang": "gom"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[57]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ks.wikipedia.org/",
+            "lang": "ks",
+            "title": "Koshur"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[58]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//gcr.wikipedia.org/",
+            "lang": "gcr"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[59]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//kge.wikipedia.org/",
+            "lang": "kge"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[60]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//kus.wikipedia.org/",
+            "lang": "kus"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[61]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//lo.wikipedia.org/",
+            "lang": "lo",
+            "title": "Phaasaa Laao"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[62]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//lbe.wikipedia.org/",
+            "lang": "lbe",
+            "title": "Lakku"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[63]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ltg.wikipedia.org/",
+            "lang": "ltg"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[64]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//lez.wikipedia.org/",
+            "lang": "lez",
+            "title": "Lezgi"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[65]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//nia.wikipedia.org/",
+            "lang": "nia"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[66]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ln.wikipedia.org/",
+            "lang": "ln"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[67]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//lfn.wikipedia.org/",
+            "lang": "lfn"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[68]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//olo.wikipedia.org/",
+            "lang": "olo"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[69]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//jbo.wikipedia.org/",
+            "lang": "jbo"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[70]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//lg.wikipedia.org/",
+            "lang": "lg"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[71]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//mad.wikipedia.org/",
+            "lang": "mad"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[72]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//mt.wikipedia.org/",
+            "lang": "mt"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[73]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//btm.wikipedia.org/",
+            "lang": "btm"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[74]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//mi.wikipedia.org/",
+            "lang": "mi"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[75]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//fat.wikipedia.org/",
+            "lang": "fat"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[76]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//mwl.wikipedia.org/",
+            "lang": "mwl"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[77]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//mdf.wikipedia.org/",
+            "lang": "mdf",
+            "title": "Mok\u0161enj"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[78]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//mnw.wikipedia.org/",
+            "lang": "mnw"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[79]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//mos.wikipedia.org/",
+            "lang": "mos"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[80]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//nqo.wikipedia.org/",
+            "lang": "nqo",
+            "title": "N'Ko"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[81]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//fj.wikipedia.org/",
+            "lang": "fj"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[82]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//nah.wikipedia.org/",
+            "lang": "nah"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[83]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//pcm.wikipedia.org/",
+            "lang": "pcm"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[84]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//nds-nl.wikipedia.org/",
+            "lang": "nds-nl"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[85]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//nrm.wikipedia.org/",
+            "lang": "roa-x-nrm"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[86]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//nov.wikipedia.org/",
+            "lang": "nov"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[87]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//om.wikipedia.org/",
+            "lang": "om"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[88]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//blk.wikipedia.org/",
+            "lang": "blk"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[89]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//pag.wikipedia.org/",
+            "lang": "pag"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[90]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ami.wikipedia.org/",
+            "lang": "ami"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[91]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//pap.wikipedia.org/",
+            "lang": "pap"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[92]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//jam.wikipedia.org/",
+            "lang": "jam"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[93]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//pfl.wikipedia.org/",
+            "lang": "pfl"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[94]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//pcd.wikipedia.org/",
+            "lang": "pcd"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[95]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//krc.wikipedia.org/",
+            "lang": "krc",
+            "title": "Qara\u00e7ay\u2013Malqar"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[96]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ksh.wikipedia.org/",
+            "lang": "ksh"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[97]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//rm.wikipedia.org/",
+            "lang": "rm"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[98]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//rsk.wikipedia.org/",
+            "lang": "rsk",
+            "title": "Ruski"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[99]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//szy.wikipedia.org/",
+            "lang": "szy"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[100]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//sm.wikipedia.org/",
+            "lang": "sm"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[101]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//sc.wikipedia.org/",
+            "lang": "sc"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[102]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//trv.wikipedia.org/",
+            "lang": "trv"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[103]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//stq.wikipedia.org/",
+            "lang": "stq"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[104]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//st.wikipedia.org/",
+            "lang": "st"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[105]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//nso.wikipedia.org/",
+            "lang": "nso"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[106]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//tn.wikipedia.org/",
+            "lang": "tn"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[107]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//syl.wikipedia.org/",
+            "lang": "syl",
+            "title": "Sil\u00f4\u1e6di"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[108]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//cu.wikipedia.org/",
+            "lang": "cu",
+            "title": "Slov\u011bn\u012dsk\u016d"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[109]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//srn.wikipedia.org/",
+            "lang": "srn"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[110]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ss.wikipedia.org/",
+            "lang": "ss"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[111]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ty.wikipedia.org/",
+            "lang": "ty"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[112]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//kab.wikipedia.org/",
+            "lang": "kab",
+            "title": "Taqbaylit"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[113]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//roa-tara.wikipedia.org/",
+            "lang": "roa"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[114]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//tay.wikipedia.org/",
+            "lang": "tay"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[115]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//tet.wikipedia.org/",
+            "lang": "tet"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[116]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//tpi.wikipedia.org/",
+            "lang": "tpi"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[117]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//tok.wikipedia.org/",
+            "lang": "tok",
+            "title": "toki pona"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[118]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//to.wikipedia.org/",
+            "lang": "to"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[119]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//chy.wikipedia.org/",
+            "lang": "chy"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[120]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ts.wikipedia.org/",
+            "lang": "ts"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[121]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//tk.wikipedia.org/",
+            "lang": "tk"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[122]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//tw.wikipedia.org/",
+            "lang": "tw"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[123]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//kcg.wikipedia.org/",
+            "lang": "kcg"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[124]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//tyv.wikipedia.org/",
+            "lang": "tyv",
+            "title": "Tyva dyl"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[125]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//udm.wikipedia.org/",
+            "lang": "udm",
+            "title": "Udmurt"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[126]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ug.wikipedia.org/",
+            "lang": "ug"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[127]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//vep.wikipedia.org/",
+            "lang": "vep"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[128]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//fiu-vro.wikipedia.org/",
+            "lang": "vro"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[129]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//vls.wikipedia.org/",
+            "lang": "vls"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[130]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//wo.wikipedia.org/",
+            "lang": "wo"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[131]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//xh.wikipedia.org/",
+            "lang": "xh"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[132]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//zea.wikipedia.org/",
+            "lang": "zea"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[133]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//alt.wikipedia.org/",
+            "lang": "alt"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[134]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//awa.wikipedia.org/",
+            "lang": "awa"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[135]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//dty.wikipedia.org/",
+            "lang": "dty"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[136]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//tcy.wikipedia.org/",
+            "lang": "tcy"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[137]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//rki.wikipedia.org/",
+            "lang": "rki"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[4]/ul/li[138]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "span",
+        "text": "",
+        "attributes": {
+            "class": "bookshelf"
+        },
+        "selectors": {
+            "css": ".bookshelf",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/h2[5]/span",
+            "class": ".bookshelf"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1
+        }
+    },
+    {
+        "tag": "span",
+        "text": "",
+        "attributes": {
+            "class": "text"
+        },
+        "selectors": {
+            "css": ".text",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/h2[5]/span/span",
+            "class": ".text"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1
+        }
+    },
+    {
+        "tag": "span",
+        "text": "",
+        "attributes": {
+            "class": "jsl10n",
+            "data-jsl10n": "portal.entries"
+        },
+        "selectors": {
+            "css": ".jsl10n",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/h2[5]/span/span/span",
+            "class": ".jsl10n"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//bdr.wikipedia.org/",
+            "lang": "bdr"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[5]/ul/li/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//bm.wikipedia.org/",
+            "lang": "bm"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[5]/ul/li[2]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ch.wikipedia.org/",
+            "lang": "ch"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[5]/ul/li[3]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//dz.wikipedia.org/",
+            "lang": "dz",
+            "title": "Rdzong-Kha"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[5]/ul/li[4]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//iu.wikipedia.org/",
+            "lang": "iu"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[5]/ul/li[5]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ik.wikipedia.org/",
+            "lang": "ik"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[5]/ul/li[6]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//nr.wikipedia.org/",
+            "lang": "nr",
+            "title": "isiNdebele seSewula"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[5]/ul/li[7]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//kaj.wikipedia.org/",
+            "lang": "kaj"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[5]/ul/li[8]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ppl.wikipedia.org/",
+            "lang": "ppl"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[5]/ul/li[9]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//nup.wikipedia.org/",
+            "lang": "nup"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[5]/ul/li[10]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ann.wikipedia.org/",
+            "lang": "ann"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[5]/ul/li[11]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//pi.wikipedia.org/",
+            "lang": "pi",
+            "title": "P\u0101\u1e37i"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[5]/ul/li[12]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//pwn.wikipedia.org/",
+            "lang": "pwn"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[5]/ul/li[13]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//pnt.wikipedia.org/",
+            "lang": "pnt",
+            "title": "Pontiak\u00e1"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[5]/ul/li[14]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//rmy.wikipedia.org/",
+            "lang": "rmy"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[5]/ul/li[15]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//rn.wikipedia.org/",
+            "lang": "rn"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[5]/ul/li[16]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//sg.wikipedia.org/",
+            "lang": "sg"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[5]/ul/li[17]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//tdd.wikipedia.org/",
+            "lang": "tdd",
+            "title": "Tai ta\u026f xo\u014b"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[5]/ul/li[18]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ti.wikipedia.org/",
+            "lang": "ti",
+            "title": "T\u0259g\u0259r\u0259\u00f1a"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[5]/ul/li[19]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//din.wikipedia.org/",
+            "lang": "din"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[5]/ul/li[20]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//chr.wikipedia.org/",
+            "lang": "chr",
+            "title": "Tsalagi"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[5]/ul/li[21]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ve.wikipedia.org/",
+            "lang": "ve"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[5]/ul/li[22]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//guc.wikipedia.org/",
+            "lang": "guc"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[5]/ul/li[23]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "href": "//ady.wikipedia.org/",
+            "lang": "ady"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[5]/ul/li[24]/a"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "class": "jsl10n",
+            "href": "https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias",
+            "lang": "",
+            "data-jsl10n": "other-languages-label"
+        },
+        "selectors": {
+            "css": ".jsl10n",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/div[6]/a",
+            "class": ".jsl10n"
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1
+        }
+    },
+    {
+        "tag": "a",
+        "text": "You can support our work with a donation.",
+        "attributes": {
+            "href": "https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter",
+            "target": "_blank"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/footer/div/div/div[3]/a",
+            "text": "text=\"You can support our work with a donation.\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "You can support our work with a donation.",
+        "attributes": {
+            "class": "jsl10n",
+            "data-jsl10n": "footer-donate"
+        },
+        "selectors": {
+            "css": ".jsl10n",
+            "xpath": "/html/body/footer/div/div/div[3]/a/span",
+            "class": ".jsl10n",
+            "text": "text=\"You can support our work with a donation.\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Download Wikipedia for Android or iOS",
+        "attributes": {
+            "class": "jsl10n",
+            "data-jsl10n": "portal.app-links.url",
+            "href": "https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications"
+        },
+        "selectors": {
+            "css": ".jsl10n",
+            "xpath": "/html/body/footer/div[2]/div/div/strong/a",
+            "class": ".jsl10n",
+            "text": "text=\"Download Wikipedia for Android or iOS\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "p",
+        "text": "Save your favorite articles to read offline, sync ",
+        "attributes": {
+            "class": "jsl10n",
+            "data-jsl10n": "portal.app-links.description"
+        },
+        "selectors": {
+            "css": ".jsl10n",
+            "xpath": "/html/body/footer/div[2]/div/div/p",
+            "class": ".jsl10n",
+            "text": "text=\"Save your favorite articles to read offline, sync \""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Google Play Store",
+        "attributes": {
+            "target": "_blank",
+            "rel": "noreferrer",
+            "href": "https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/footer/div[2]/div/div/ul/li/a",
+            "text": "text=\"Google Play Store\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "Google Play Store",
+        "attributes": {
+            "class": "jsl10n sprite svg-badge_google_play_store",
+            "data-jsl10n": "portal.app-links.google-store"
+        },
+        "selectors": {
+            "css": ".jsl10n",
+            "xpath": "/html/body/footer/div[2]/div/div/ul/li/a/span",
+            "class": ".jsl10n.sprite.svg-badge_google_play_store",
+            "text": "text=\"Google Play Store\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Apple App Store",
+        "attributes": {
+            "target": "_blank",
+            "rel": "noreferrer",
+            "href": "https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/footer/div[2]/div/div/ul/li[2]/a",
+            "text": "text=\"Apple App Store\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "Apple App Store",
+        "attributes": {
+            "class": "jsl10n sprite svg-badge_ios_app_store",
+            "data-jsl10n": "portal.app-links.apple-store"
+        },
+        "selectors": {
+            "css": ".jsl10n",
+            "xpath": "/html/body/footer/div[2]/div/div/ul/li[2]/a/span",
+            "class": ".jsl10n.sprite.svg-badge_ios_app_store",
+            "text": "text=\"Apple App Store\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Commons\nFree media collection",
+        "attributes": {
+            "class": "other-project-link",
+            "href": "//commons.wikimedia.org/"
+        },
+        "selectors": {
+            "css": ".other-project-link",
+            "xpath": "/html/body/footer/nav/div/a",
+            "class": ".other-project-link",
+            "text": "text=\"Commons\nFree media collection\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "Commons",
+        "attributes": {
+            "class": "other-project-title jsl10n",
+            "data-jsl10n": "commons.name"
+        },
+        "selectors": {
+            "css": ".other-project-title",
+            "xpath": "/html/body/footer/nav/div/a/div[2]/span",
+            "class": ".other-project-title.jsl10n",
+            "text": "text=\"Commons\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "Free media collection",
+        "attributes": {
+            "class": "other-project-tagline jsl10n",
+            "data-jsl10n": "commons.slogan"
+        },
+        "selectors": {
+            "css": ".other-project-tagline",
+            "xpath": "/html/body/footer/nav/div/a/div[2]/span[2]",
+            "class": ".other-project-tagline.jsl10n",
+            "text": "text=\"Free media collection\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Wikivoyage\nFree travel guide",
+        "attributes": {
+            "class": "other-project-link",
+            "href": "//www.wikivoyage.org/"
+        },
+        "selectors": {
+            "css": ".other-project-link",
+            "xpath": "/html/body/footer/nav/div[2]/a",
+            "class": ".other-project-link",
+            "text": "text=\"Wikivoyage\nFree travel guide\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "Wikivoyage",
+        "attributes": {
+            "class": "other-project-title jsl10n",
+            "data-jsl10n": "wikivoyage.name"
+        },
+        "selectors": {
+            "css": ".other-project-title",
+            "xpath": "/html/body/footer/nav/div[2]/a/div[2]/span",
+            "class": ".other-project-title.jsl10n",
+            "text": "text=\"Wikivoyage\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "Free travel guide",
+        "attributes": {
+            "class": "other-project-tagline jsl10n",
+            "data-jsl10n": "wikivoyage.slogan"
+        },
+        "selectors": {
+            "css": ".other-project-tagline",
+            "xpath": "/html/body/footer/nav/div[2]/a/div[2]/span[2]",
+            "class": ".other-project-tagline.jsl10n",
+            "text": "text=\"Free travel guide\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Wiktionary\nFree dictionary",
+        "attributes": {
+            "class": "other-project-link",
+            "href": "//www.wiktionary.org/"
+        },
+        "selectors": {
+            "css": ".other-project-link",
+            "xpath": "/html/body/footer/nav/div[3]/a",
+            "class": ".other-project-link",
+            "text": "text=\"Wiktionary\nFree dictionary\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "Wiktionary",
+        "attributes": {
+            "class": "other-project-title jsl10n",
+            "data-jsl10n": "wiktionary.name"
+        },
+        "selectors": {
+            "css": ".other-project-title",
+            "xpath": "/html/body/footer/nav/div[3]/a/div[2]/span",
+            "class": ".other-project-title.jsl10n",
+            "text": "text=\"Wiktionary\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "Free dictionary",
+        "attributes": {
+            "class": "other-project-tagline jsl10n",
+            "data-jsl10n": "wiktionary.slogan"
+        },
+        "selectors": {
+            "css": ".other-project-tagline",
+            "xpath": "/html/body/footer/nav/div[3]/a/div[2]/span[2]",
+            "class": ".other-project-tagline.jsl10n",
+            "text": "text=\"Free dictionary\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Wikibooks\nFree textbooks",
+        "attributes": {
+            "class": "other-project-link",
+            "href": "//www.wikibooks.org/"
+        },
+        "selectors": {
+            "css": ".other-project-link",
+            "xpath": "/html/body/footer/nav/div[4]/a",
+            "class": ".other-project-link",
+            "text": "text=\"Wikibooks\nFree textbooks\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "Wikibooks",
+        "attributes": {
+            "class": "other-project-title jsl10n",
+            "data-jsl10n": "wikibooks.name"
+        },
+        "selectors": {
+            "css": ".other-project-title",
+            "xpath": "/html/body/footer/nav/div[4]/a/div[2]/span",
+            "class": ".other-project-title.jsl10n",
+            "text": "text=\"Wikibooks\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "Free textbooks",
+        "attributes": {
+            "class": "other-project-tagline jsl10n",
+            "data-jsl10n": "wikibooks.slogan"
+        },
+        "selectors": {
+            "css": ".other-project-tagline",
+            "xpath": "/html/body/footer/nav/div[4]/a/div[2]/span[2]",
+            "class": ".other-project-tagline.jsl10n",
+            "text": "text=\"Free textbooks\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Wikinews\nFree news source",
+        "attributes": {
+            "class": "other-project-link",
+            "href": "//www.wikinews.org/"
+        },
+        "selectors": {
+            "css": ".other-project-link",
+            "xpath": "/html/body/footer/nav/div[5]/a",
+            "class": ".other-project-link",
+            "text": "text=\"Wikinews\nFree news source\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "Wikinews",
+        "attributes": {
+            "class": "other-project-title jsl10n",
+            "data-jsl10n": "wikinews.name"
+        },
+        "selectors": {
+            "css": ".other-project-title",
+            "xpath": "/html/body/footer/nav/div[5]/a/div[2]/span",
+            "class": ".other-project-title.jsl10n",
+            "text": "text=\"Wikinews\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "Free news source",
+        "attributes": {
+            "class": "other-project-tagline jsl10n",
+            "data-jsl10n": "wikinews.slogan"
+        },
+        "selectors": {
+            "css": ".other-project-tagline",
+            "xpath": "/html/body/footer/nav/div[5]/a/div[2]/span[2]",
+            "class": ".other-project-tagline.jsl10n",
+            "text": "text=\"Free news source\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Wikidata\nFree knowledge base",
+        "attributes": {
+            "class": "other-project-link",
+            "href": "//www.wikidata.org/"
+        },
+        "selectors": {
+            "css": ".other-project-link",
+            "xpath": "/html/body/footer/nav/div[6]/a",
+            "class": ".other-project-link",
+            "text": "text=\"Wikidata\nFree knowledge base\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "Wikidata",
+        "attributes": {
+            "class": "other-project-title jsl10n",
+            "data-jsl10n": "wikidata.name"
+        },
+        "selectors": {
+            "css": ".other-project-title",
+            "xpath": "/html/body/footer/nav/div[6]/a/div[2]/span",
+            "class": ".other-project-title.jsl10n",
+            "text": "text=\"Wikidata\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "Free knowledge base",
+        "attributes": {
+            "class": "other-project-tagline jsl10n",
+            "data-jsl10n": "wikidata.slogan"
+        },
+        "selectors": {
+            "css": ".other-project-tagline",
+            "xpath": "/html/body/footer/nav/div[6]/a/div[2]/span[2]",
+            "class": ".other-project-tagline.jsl10n",
+            "text": "text=\"Free knowledge base\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Wikiversity\nFree learning resources",
+        "attributes": {
+            "class": "other-project-link",
+            "href": "//www.wikiversity.org/"
+        },
+        "selectors": {
+            "css": ".other-project-link",
+            "xpath": "/html/body/footer/nav/div[7]/a",
+            "class": ".other-project-link",
+            "text": "text=\"Wikiversity\nFree learning resources\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "Wikiversity",
+        "attributes": {
+            "class": "other-project-title jsl10n",
+            "data-jsl10n": "wikiversity.name"
+        },
+        "selectors": {
+            "css": ".other-project-title",
+            "xpath": "/html/body/footer/nav/div[7]/a/div[2]/span",
+            "class": ".other-project-title.jsl10n",
+            "text": "text=\"Wikiversity\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "Free learning resources",
+        "attributes": {
+            "class": "other-project-tagline jsl10n",
+            "data-jsl10n": "wikiversity.slogan"
+        },
+        "selectors": {
+            "css": ".other-project-tagline",
+            "xpath": "/html/body/footer/nav/div[7]/a/div[2]/span[2]",
+            "class": ".other-project-tagline.jsl10n",
+            "text": "text=\"Free learning resources\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Wikiquote\nFree quote compendium",
+        "attributes": {
+            "class": "other-project-link",
+            "href": "//www.wikiquote.org/"
+        },
+        "selectors": {
+            "css": ".other-project-link",
+            "xpath": "/html/body/footer/nav/div[8]/a",
+            "class": ".other-project-link",
+            "text": "text=\"Wikiquote\nFree quote compendium\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "Wikiquote",
+        "attributes": {
+            "class": "other-project-title jsl10n",
+            "data-jsl10n": "wikiquote.name"
+        },
+        "selectors": {
+            "css": ".other-project-title",
+            "xpath": "/html/body/footer/nav/div[8]/a/div[2]/span",
+            "class": ".other-project-title.jsl10n",
+            "text": "text=\"Wikiquote\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "Free quote compendium",
+        "attributes": {
+            "class": "other-project-tagline jsl10n",
+            "data-jsl10n": "wikiquote.slogan"
+        },
+        "selectors": {
+            "css": ".other-project-tagline",
+            "xpath": "/html/body/footer/nav/div[8]/a/div[2]/span[2]",
+            "class": ".other-project-tagline.jsl10n",
+            "text": "text=\"Free quote compendium\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "MediaWiki\nFree & open wiki software",
+        "attributes": {
+            "class": "other-project-link",
+            "href": "//www.mediawiki.org/"
+        },
+        "selectors": {
+            "css": ".other-project-link",
+            "xpath": "/html/body/footer/nav/div[9]/a",
+            "class": ".other-project-link",
+            "text": "text=\"MediaWiki\nFree & open wiki software\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "MediaWiki",
+        "attributes": {
+            "class": "other-project-title jsl10n",
+            "data-jsl10n": "mediawiki.name"
+        },
+        "selectors": {
+            "css": ".other-project-title",
+            "xpath": "/html/body/footer/nav/div[9]/a/div[2]/span",
+            "class": ".other-project-title.jsl10n",
+            "text": "text=\"MediaWiki\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "Free & open wiki software",
+        "attributes": {
+            "class": "other-project-tagline jsl10n",
+            "data-jsl10n": "mediawiki.slogan"
+        },
+        "selectors": {
+            "css": ".other-project-tagline",
+            "xpath": "/html/body/footer/nav/div[9]/a/div[2]/span[2]",
+            "class": ".other-project-tagline.jsl10n",
+            "text": "text=\"Free & open wiki software\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Wikisource\nFree content library",
+        "attributes": {
+            "class": "other-project-link",
+            "href": "//www.wikisource.org/"
+        },
+        "selectors": {
+            "css": ".other-project-link",
+            "xpath": "/html/body/footer/nav/div[10]/a",
+            "class": ".other-project-link",
+            "text": "text=\"Wikisource\nFree content library\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "Wikisource",
+        "attributes": {
+            "class": "other-project-title jsl10n",
+            "data-jsl10n": "wikisource.name"
+        },
+        "selectors": {
+            "css": ".other-project-title",
+            "xpath": "/html/body/footer/nav/div[10]/a/div[2]/span",
+            "class": ".other-project-title.jsl10n",
+            "text": "text=\"Wikisource\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "Free content library",
+        "attributes": {
+            "class": "other-project-tagline jsl10n",
+            "data-jsl10n": "wikisource.slogan"
+        },
+        "selectors": {
+            "css": ".other-project-tagline",
+            "xpath": "/html/body/footer/nav/div[10]/a/div[2]/span[2]",
+            "class": ".other-project-tagline.jsl10n",
+            "text": "text=\"Free content library\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Wikispecies\nFree species directory",
+        "attributes": {
+            "class": "other-project-link",
+            "href": "//species.wikimedia.org/"
+        },
+        "selectors": {
+            "css": ".other-project-link",
+            "xpath": "/html/body/footer/nav/div[11]/a",
+            "class": ".other-project-link",
+            "text": "text=\"Wikispecies\nFree species directory\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "Wikispecies",
+        "attributes": {
+            "class": "other-project-title jsl10n",
+            "data-jsl10n": "wikispecies.name"
+        },
+        "selectors": {
+            "css": ".other-project-title",
+            "xpath": "/html/body/footer/nav/div[11]/a/div[2]/span",
+            "class": ".other-project-title.jsl10n",
+            "text": "text=\"Wikispecies\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "Free species directory",
+        "attributes": {
+            "class": "other-project-tagline jsl10n",
+            "data-jsl10n": "wikispecies.slogan"
+        },
+        "selectors": {
+            "css": ".other-project-tagline",
+            "xpath": "/html/body/footer/nav/div[11]/a/div[2]/span[2]",
+            "class": ".other-project-tagline.jsl10n",
+            "text": "text=\"Free species directory\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Wikifunctions\nFree function library",
+        "attributes": {
+            "class": "other-project-link",
+            "href": "//www.wikifunctions.org/"
+        },
+        "selectors": {
+            "css": ".other-project-link",
+            "xpath": "/html/body/footer/nav/div[12]/a",
+            "class": ".other-project-link",
+            "text": "text=\"Wikifunctions\nFree function library\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "Wikifunctions",
+        "attributes": {
+            "class": "other-project-title jsl10n",
+            "data-jsl10n": "wikifunctions.name"
+        },
+        "selectors": {
+            "css": ".other-project-title",
+            "xpath": "/html/body/footer/nav/div[12]/a/div[2]/span",
+            "class": ".other-project-title.jsl10n",
+            "text": "text=\"Wikifunctions\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "Free function library",
+        "attributes": {
+            "class": "other-project-tagline jsl10n",
+            "data-jsl10n": "wikifunctions.slogan"
+        },
+        "selectors": {
+            "css": ".other-project-tagline",
+            "xpath": "/html/body/footer/nav/div[12]/a/div[2]/span[2]",
+            "class": ".other-project-tagline.jsl10n",
+            "text": "text=\"Free function library\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Meta-Wiki\nCommunity coordination & documentation",
+        "attributes": {
+            "class": "other-project-link",
+            "href": "//meta.wikimedia.org/"
+        },
+        "selectors": {
+            "css": ".other-project-link",
+            "xpath": "/html/body/footer/nav/div[13]/a",
+            "class": ".other-project-link",
+            "text": "text=\"Meta-Wiki\nCommunity coordination & documentation\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "Meta-Wiki",
+        "attributes": {
+            "class": "other-project-title jsl10n",
+            "data-jsl10n": "metawiki.name"
+        },
+        "selectors": {
+            "css": ".other-project-title",
+            "xpath": "/html/body/footer/nav/div[13]/a/div[2]/span",
+            "class": ".other-project-title.jsl10n",
+            "text": "text=\"Meta-Wiki\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "Community coordination & documentation",
+        "attributes": {
+            "class": "other-project-tagline jsl10n",
+            "data-jsl10n": "metawiki.slogan"
+        },
+        "selectors": {
+            "css": ".other-project-tagline",
+            "xpath": "/html/body/footer/nav/div[13]/a/div[2]/span[2]",
+            "class": ".other-project-tagline.jsl10n",
+            "text": "text=\"Community coordination & documentation\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "p",
+        "text": "This page is available under the Creative Commons ",
+        "attributes": {
+            "class": "site-license"
+        },
+        "selectors": {
+            "css": ".site-license",
+            "xpath": "/html/body/footer/p",
+            "class": ".site-license",
+            "text": "text=\"This page is available under the Creative Commons \""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Creative Commons Attribution-ShareAlike License",
+        "attributes": {
+            "href": "https://creativecommons.org/licenses/by-sa/4.0/"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/footer/p/small/a",
+            "text": "text=\"Creative Commons Attribution-ShareAlike License\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Terms of Use",
+        "attributes": {
+            "href": "https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/footer/p/small[2]/a",
+            "text": "text=\"Terms of Use\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Privacy Policy",
+        "attributes": {
+            "href": "https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/footer/p/small[3]/a",
+            "text": "text=\"Privacy Policy\""
+        },
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    }
+]

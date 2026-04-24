@@ -1,0 +1,1445 @@
+[
+    {
+        "tag": "a",
+        "text": "About",
+        "attributes": {
+            "class": "MV3Tnb",
+            "href": "https://about.google/?fg=1&utm_source=google-IN&utm_medium=referral&utm_campaign=hp-header",
+            "ping": "/url?sa=t&rct=j&source=webhp&url=https://about.google/%3Ffg%3D1%26utm_source%3Dgoogle-IN%26utm_medium%3Dreferral%26utm_campaign%3Dhp-header&ved=0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQkNQCCAI&opi=89978449"
+        },
+        "selectors": {
+            "css": ".MV3Tnb",
+            "xpath": "/html/body/div[2]/div[2]/a",
+            "class": ".MV3Tnb",
+            "text": "text=\"About\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Store",
+        "attributes": {
+            "class": "MV3Tnb",
+            "href": "https://store.google.com/IN?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-IN",
+            "ping": "/url?sa=t&rct=j&source=webhp&url=https://store.google.com/IN%3Futm_source%3Dhp_header%26utm_medium%3Dgoogle_ooo%26utm_campaign%3DGS100042%26hl%3Den-IN&ved=0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQpMwCCAM&opi=89978449"
+        },
+        "selectors": {
+            "css": ".MV3Tnb",
+            "xpath": "/html/body/div[2]/div[2]/a[2]",
+            "class": ".MV3Tnb",
+            "text": "text=\"Store\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Gmail",
+        "attributes": {
+            "class": "gb_4",
+            "aria-label": "Gmail ",
+            "data-pid": "23",
+            "href": "https://mail.google.com/mail/&ogbl",
+            "target": "_top"
+        },
+        "selectors": {
+            "css": ".gb_4",
+            "xpath": "/html/body/div[2]/div[2]/div/div/header/div/div/a",
+            "aria-label": "[aria-label=\"Gmail \"]",
+            "class": ".gb_4",
+            "text": "text=\"Gmail\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "aria-label": 8,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Images",
+        "attributes": {
+            "class": "gb_4",
+            "aria-label": "Search for Images ",
+            "data-pid": "2",
+            "href": "https://www.google.com/imghp?hl=en&ogbl",
+            "target": "_top"
+        },
+        "selectors": {
+            "css": ".gb_4",
+            "xpath": "/html/body/div[2]/div[2]/div/div/header/div/div[2]/a",
+            "aria-label": "[aria-label=\"Search for Images \"]",
+            "class": ".gb_4",
+            "text": "text=\"Images\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "aria-label": 8,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "class": "gb_C",
+            "aria-label": "Google apps",
+            "href": "https://www.google.co.in/intl/en/about/products",
+            "aria-expanded": "false",
+            "role": "button",
+            "tabindex": "0"
+        },
+        "selectors": {
+            "css": ".gb_C",
+            "xpath": "/html/body/div[2]/div[2]/div/div/header/div[2]/div/a",
+            "role_based": "getByRole('button', { name: 'Google apps' })",
+            "aria-label": "[aria-label=\"Google apps\"]",
+            "class": ".gb_C"
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "role_based": 5,
+            "aria-label": 8,
+            "class": 1
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Sign in",
+        "attributes": {
+            "class": "gb_A",
+            "aria-label": "Sign in",
+            "href": "https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=futura_exp_og_so_72776762_e",
+            "target": "_top"
+        },
+        "selectors": {
+            "css": ".gb_A",
+            "xpath": "/html/body/div[2]/div[2]/div/div/header/div[3]/a",
+            "aria-label": "[aria-label=\"Sign in\"]",
+            "class": ".gb_A",
+            "text": "text=\"Sign in\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "aria-label": 8,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "button",
+        "text": "",
+        "attributes": {
+            "class": "pz5bj",
+            "id": "spchx",
+            "aria-label": "close"
+        },
+        "selectors": {
+            "css": "#spchx",
+            "xpath": "/html/body/div[2]/div[4]/dialog/div/button",
+            "id": "#spchx",
+            "aria-label": "[aria-label=\"close\"]",
+            "class": ".pz5bj"
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "id": 10,
+            "aria-label": 8,
+            "class": 1
+        }
+    },
+    {
+        "tag": "button",
+        "text": "",
+        "attributes": {
+            "jsname": "ko0Zye",
+            "class": "UbbAWe",
+            "aria-label": "Upload files or images",
+            "aria-haspopup": "menu",
+            "tabindex": "0",
+            "type": "button",
+            "jsaction": "AO4mJ;blur:dOOLne;keydown:YR8sId;mouseenter:QgVLnf",
+            "data-ved": "0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQ0J0RCAU"
+        },
+        "selectors": {
+            "css": ".UbbAWe",
+            "xpath": "/html/body/div[2]/div[4]/form/div/div/div/div/div/button",
+            "aria-label": "[aria-label=\"Upload files or images\"]",
+            "class": ".UbbAWe"
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "aria-label": 8,
+            "class": 1
+        }
+    },
+    {
+        "tag": "button",
+        "text": "Upload image",
+        "attributes": {
+            "class": "izN7If",
+            "jsname": "EBXFob",
+            "jsaction": "q13TGf",
+            "role": "menuitem",
+            "tabindex": "0",
+            "type": "button",
+            "data-ved": "0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQ1p0RCAc"
+        },
+        "selectors": {
+            "css": ".izN7If",
+            "xpath": "/html/body/div[2]/div[4]/form/div/div/div/div/div/div/ul/li/button",
+            "role_based": "getByRole('menuitem', { name: 'Upload image' })",
+            "class": ".izN7If",
+            "text": "text=\"Upload image\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "role_based": 5,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "button",
+        "text": "Upload file",
+        "attributes": {
+            "class": "izN7If",
+            "jsname": "h0TD3",
+            "jsaction": "q13TGf",
+            "role": "menuitem",
+            "tabindex": "0",
+            "type": "button",
+            "data-ved": "0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQ1J0RCAg"
+        },
+        "selectors": {
+            "css": ".izN7If",
+            "xpath": "/html/body/div[2]/div[4]/form/div/div/div/div/div/div/ul/li[2]/button",
+            "role_based": "getByRole('menuitem', { name: 'Upload file' })",
+            "class": ".izN7If",
+            "text": "text=\"Upload file\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "role_based": 5,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "input",
+        "text": "",
+        "attributes": {
+            "jsname": "wcaWdc",
+            "accept": "image/*",
+            "hidden": "",
+            "type": "file",
+            "jsaction": "change:fj0v0b;rHjPpc"
+        },
+        "selectors": {
+            "css": "input",
+            "xpath": "/html/body/div[2]/div[4]/form/div/div/div/div/div/div/input"
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "input",
+        "text": "",
+        "attributes": {
+            "jsname": "huvwA",
+            "accept": "application/pdf,image/*",
+            "hidden": "",
+            "type": "file",
+            "jsaction": "change:fj0v0b;rHjPpc"
+        },
+        "selectors": {
+            "css": "input",
+            "xpath": "/html/body/div[2]/div[4]/form/div/div/div/div/div/div/input[2]"
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3
+        }
+    },
+    {
+        "tag": "button",
+        "text": ".O35uA{width:28px;height:28px}.tLrs7b{stroke-dasha",
+        "attributes": {
+            "jscontroller": "mw06ae",
+            "jsname": "Ufb5Yc",
+            "class": "XOUhue",
+            "aria-label": "Remove file attachment",
+            "hidden": "",
+            "tabindex": "0",
+            "type": "button",
+            "jsaction": "jNhznf:NgonQc;TsIFpc:aGAD7e;lMGxTd;focus:Z2y3Eb;blur:h5qwYb;mouseenter:Z2y3Eb;mouseleave:h5qwYb",
+            "data-hveid": "9",
+            "data-ved": "0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQvpoSCAk"
+        },
+        "selectors": {
+            "css": ".XOUhue",
+            "xpath": "/html/body/div[2]/div[4]/form/div/div/div/div/div[2]/button",
+            "aria-label": "[aria-label=\"Remove file attachment\"]",
+            "class": ".XOUhue",
+            "text": "text=\".O35uA{width:28px;height:28px}.tLrs7b{stroke-dasha\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "aria-label": 8,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "textarea",
+        "text": "",
+        "attributes": {
+            "jsname": "yZiJbe",
+            "class": "gLFyf",
+            "aria-controls": "Alh6id",
+            "aria-owns": "Alh6id",
+            "autofocus": "",
+            "title": "Search",
+            "value": "",
+            "aria-label": "Search",
+            "placeholder": "",
+            "aria-autocomplete": "both",
+            "aria-expanded": "false",
+            "aria-haspopup": "false",
+            "autocapitalize": "off",
+            "autocomplete": "off",
+            "autocorrect": "off",
+            "id": "APjFqb",
+            "maxlength": "2048",
+            "name": "q",
+            "role": "combobox",
+            "rows": "1",
+            "spellcheck": "false",
+            "data-ved": "0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQ39UDCAs"
+        },
+        "selectors": {
+            "css": "#APjFqb",
+            "xpath": "/html/body/div[2]/div[4]/form/div/div/div/div/div[3]/textarea",
+            "role_based": "getByRole('combobox', { name: 'Search' })",
+            "id": "#APjFqb",
+            "name": "[name=\"q\"]",
+            "aria-label": "[aria-label=\"Search\"]",
+            "placeholder": "[placeholder=\"\"]",
+            "class": ".gLFyf"
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "role_based": 5,
+            "id": 10,
+            "name": 9,
+            "aria-label": 8,
+            "placeholder": 6,
+            "class": 1
+        }
+    },
+    {
+        "tag": "div",
+        "text": "",
+        "attributes": {
+            "class": "vOY7J",
+            "jsname": "pkjasb",
+            "aria-label": "Clear",
+            "role": "button",
+            "tabindex": "0",
+            "jsaction": "AVsnlb;rcuQ6b:npT2md",
+            "data-ved": "0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQ05YFCAw"
+        },
+        "selectors": {
+            "css": ".vOY7J",
+            "xpath": "/html/body/div[2]/div[4]/form/div/div/div/div/div[4]/div/div",
+            "role_based": "getByRole('button', { name: 'Clear' })",
+            "aria-label": "[aria-label=\"Clear\"]",
+            "class": ".vOY7J"
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "role_based": 5,
+            "aria-label": 8,
+            "class": 1
+        }
+    },
+    {
+        "tag": "div",
+        "text": "",
+        "attributes": {
+            "jscontroller": "unV4T",
+            "jsname": "F7uqIe",
+            "class": "XDyW0e",
+            "data-hp": "1",
+            "aria-label": "Search by voice",
+            "role": "button",
+            "tabindex": "0",
+            "jsaction": "h5M12e;rcuQ6b:npT2md;KHxBOb:EANhx;hATt5e:AkD3se;CQJmec:efDZmf",
+            "data-ved": "0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQvs8DCA0"
+        },
+        "selectors": {
+            "css": ".XDyW0e",
+            "xpath": "/html/body/div[2]/div[4]/form/div/div/div/div/div[4]/div[2]/div",
+            "role_based": "getByRole('button', { name: 'Search by voice' })",
+            "aria-label": "[aria-label=\"Search by voice\"]",
+            "class": ".XDyW0e"
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "role_based": 5,
+            "aria-label": 8,
+            "class": 1
+        }
+    },
+    {
+        "tag": "div",
+        "text": "",
+        "attributes": {
+            "jscontroller": "lpsUAf",
+            "jsname": "R5mgy",
+            "class": "nDcEnd",
+            "data-is-images-mode": "false",
+            "aria-label": "Search by image",
+            "role": "button",
+            "tabindex": "0",
+            "jsaction": "rcuQ6b:npT2md;h5M12e;AMruCe:Zpug7c",
+            "data-ved": "0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQhqEICA4"
+        },
+        "selectors": {
+            "css": ".nDcEnd",
+            "xpath": "/html/body/div[2]/div[4]/form/div/div/div/div/div[4]/div[2]/div[2]",
+            "role_based": "getByRole('button', { name: 'Search by image' })",
+            "aria-label": "[aria-label=\"Search by image\"]",
+            "class": ".nDcEnd"
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "role_based": 5,
+            "aria-label": 8,
+            "class": 1
+        }
+    },
+    {
+        "tag": "button",
+        "text": "AI Mode",
+        "attributes": {
+            "jsname": "B6rgad",
+            "tabindex": "0",
+            "jscontroller": "jNZDL",
+            "jscallback": "sxvUDc:cnjECf:dIu9Pe;rOPotc:cnjECf:oWAROc",
+            "class": "plR5qb Y5MKCd",
+            "role": "link",
+            "jsaction": "click:bujKIf;mouseenter:vG60uf;mouseleave:NS5Xl;C7YCKd:wezfDd;",
+            "type": "button",
+            "data-ved": "0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQteYPCA8"
+        },
+        "selectors": {
+            "css": ".plR5qb",
+            "xpath": "/html/body/div[2]/div[4]/form/div/div/div/div/div[4]/button",
+            "role_based": "getByRole('link', { name: 'AI Mode' })",
+            "class": ".plR5qb.Y5MKCd",
+            "text": "text=\"AI Mode\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "role_based": 5,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "span",
+        "text": "",
+        "attributes": {
+            "class": "Job8vb z1asCe wuXmqc",
+            "aria-label": "Close Choose what you\u2019re giving feedback on",
+            "role": "button",
+            "tabindex": "0",
+            "jsaction": "kEOk4d",
+            "style": "height:20px;line-height:20px;width:20px",
+            "data-ved": "0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQmIkGCBQ"
+        },
+        "selectors": {
+            "css": ".Job8vb",
+            "xpath": "/html/body/div[2]/div[4]/form/div/div/div[2]/div[2]/div/span",
+            "role_based": "getByRole('button', { name: 'Close Choose what you\u2019re giving feedback on' })",
+            "aria-label": "[aria-label=\"Close Choose what you\u2019re giving feedback on\"]",
+            "class": ".Job8vb.z1asCe.wuXmqc"
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "role_based": 5,
+            "aria-label": 8,
+            "class": 1
+        }
+    },
+    {
+        "tag": "div",
+        "text": ".U48fD{-webkit-tap-highlight-color:transparent;cur",
+        "attributes": {
+            "class": "Sz7Lee MagqMc U48fD",
+            "style": "display:none",
+            "aria-label": "See more",
+            "role": "button",
+            "tabindex": "0"
+        },
+        "selectors": {
+            "css": ".Sz7Lee",
+            "xpath": "/html/body/div[2]/div[4]/form/div/div/div[2]/div[4]/li/div/div[2]/div[2]",
+            "role_based": "getByRole('button', { name: 'See more' })",
+            "aria-label": "[aria-label=\"See more\"]",
+            "class": ".Sz7Lee.MagqMc.U48fD",
+            "text": "text=\".U48fD{-webkit-tap-highlight-color:transparent;cur\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "role_based": 5,
+            "aria-label": 8,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "div",
+        "text": ".JCHpcb:hover,.LvqzR .JCHpcb{color:#8ab4f8;text-de",
+        "attributes": {
+            "class": "AQZ9Vd",
+            "aria-atomic": "true",
+            "role": "button"
+        },
+        "selectors": {
+            "css": ".AQZ9Vd",
+            "xpath": "/html/body/div[2]/div[4]/form/div/div/div[2]/div[4]/li/div/div[3]",
+            "role_based": "getByRole('button', { name: '.JCHpcb:hover,.LvqzR .JCHpcb{color:#8ab4f8;text-de' })",
+            "class": ".AQZ9Vd",
+            "text": "text=\".JCHpcb:hover,.LvqzR .JCHpcb{color:#8ab4f8;text-de\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "role_based": 5,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "div",
+        "text": "",
+        "attributes": {
+            "class": "Tnv2td",
+            "style": "display:none",
+            "aria-label": "Word pronunciation",
+            "aria-atomic": "true",
+            "role": "button"
+        },
+        "selectors": {
+            "css": ".Tnv2td",
+            "xpath": "/html/body/div[2]/div[4]/form/div/div/div[2]/div[4]/li[2]/div/div/div/div[2]",
+            "role_based": "getByRole('button', { name: 'Word pronunciation' })",
+            "aria-label": "[aria-label=\"Word pronunciation\"]",
+            "class": ".Tnv2td"
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "role_based": 5,
+            "aria-label": 8,
+            "class": 1
+        }
+    },
+    {
+        "tag": "div",
+        "text": "Delete",
+        "attributes": {
+            "class": "AQZ9Vd",
+            "aria-atomic": "true",
+            "role": "button"
+        },
+        "selectors": {
+            "css": ".AQZ9Vd",
+            "xpath": "/html/body/div[2]/div[4]/form/div/div/div[2]/div[4]/li[3]/div/div[3]",
+            "role_based": "getByRole('button', { name: 'Delete' })",
+            "class": ".AQZ9Vd",
+            "text": "text=\"Delete\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "role_based": 5,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "div",
+        "text": "",
+        "attributes": {
+            "class": "Tnv2td",
+            "style": "display:none",
+            "aria-label": "Word pronunciation",
+            "aria-atomic": "true",
+            "role": "button"
+        },
+        "selectors": {
+            "css": ".Tnv2td",
+            "xpath": "/html/body/div[2]/div[4]/form/div/div/div[2]/div[4]/div[5]/div/div[2]",
+            "role_based": "getByRole('button', { name: 'Word pronunciation' })",
+            "aria-label": "[aria-label=\"Word pronunciation\"]",
+            "class": ".Tnv2td"
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "role_based": 5,
+            "aria-label": 8,
+            "class": 1
+        }
+    },
+    {
+        "tag": "input",
+        "text": "Google Search",
+        "attributes": {
+            "class": "gNO89b",
+            "value": "Google Search",
+            "aria-label": "Google Search",
+            "name": "btnK",
+            "role": "button",
+            "tabindex": "0",
+            "type": "submit",
+            "data-ved": "0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQ4dUDCBY"
+        },
+        "selectors": {
+            "css": ".gNO89b",
+            "xpath": "/html/body/div[2]/div[4]/form/div/div/div[2]/div[4]/div[6]/center/input",
+            "role_based": "getByRole('button', { name: 'Google Search' })",
+            "name": "[name=\"btnK\"]",
+            "aria-label": "[aria-label=\"Google Search\"]",
+            "class": ".gNO89b",
+            "text": "text=\"Google Search\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "role_based": 5,
+            "name": 9,
+            "aria-label": 8,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "input",
+        "text": "I'm Feeling Lucky",
+        "attributes": {
+            "jscontroller": "s980lf",
+            "class": "RNmpXc",
+            "value": "I'm Feeling Lucky",
+            "aria-label": "I'm Feeling Lucky",
+            "name": "btnI",
+            "type": "submit",
+            "jsaction": "rcuQ6b:npT2md;QIWlh",
+            "data-ved": "0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQ19QECBc"
+        },
+        "selectors": {
+            "css": ".RNmpXc",
+            "xpath": "/html/body/div[2]/div[4]/form/div/div/div[2]/div[4]/div[6]/center/input[2]",
+            "name": "[name=\"btnI\"]",
+            "aria-label": "[aria-label=\"I'm Feeling Lucky\"]",
+            "class": ".RNmpXc",
+            "text": "text=\"I'm Feeling Lucky\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "name": 9,
+            "aria-label": 8,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "div",
+        "text": "Report inappropriate predictions",
+        "attributes": {
+            "class": "WzNHm mWcf0e",
+            "jscontroller": "gSZvdb",
+            "data-dccl": "false",
+            "role": "button",
+            "tabindex": "0",
+            "jsdata": "vST7rb;_;uZzqaeuQO5OvwcsP7cq4sQk2",
+            "jsaction": "i5KCU;kVBCVd:yM1YJe",
+            "data-ved": "0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQ6scECBg"
+        },
+        "selectors": {
+            "css": ".WzNHm",
+            "xpath": "/html/body/div[2]/div[4]/form/div/div/div[2]/div[5]/div",
+            "role_based": "getByRole('button', { name: 'Report inappropriate predictions' })",
+            "class": ".WzNHm.mWcf0e",
+            "text": "text=\"Report inappropriate predictions\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "role_based": 5,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "input",
+        "text": "Google Search",
+        "attributes": {
+            "class": "gNO89b",
+            "value": "Google Search",
+            "aria-label": "Google Search",
+            "name": "btnK",
+            "role": "button",
+            "tabindex": "0",
+            "type": "submit",
+            "data-ved": "0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQ4dUDCBk"
+        },
+        "selectors": {
+            "css": ".gNO89b",
+            "xpath": "/html/body/div[2]/div[4]/form/div/div/div[3]/center/input",
+            "role_based": "getByRole('button', { name: 'Google Search' })",
+            "name": "[name=\"btnK\"]",
+            "aria-label": "[aria-label=\"Google Search\"]",
+            "class": ".gNO89b",
+            "text": "text=\"Google Search\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "role_based": 5,
+            "name": 9,
+            "aria-label": 8,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "input",
+        "text": "I'm Feeling Lucky",
+        "attributes": {
+            "jscontroller": "s980lf",
+            "class": "RNmpXc",
+            "value": "I'm Feeling Lucky",
+            "aria-label": "I'm Feeling Lucky",
+            "name": "btnI",
+            "type": "submit",
+            "jsaction": "rcuQ6b:npT2md;QIWlh",
+            "data-ved": "0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQ19QECBo"
+        },
+        "selectors": {
+            "css": ".RNmpXc",
+            "xpath": "/html/body/div[2]/div[4]/form/div/div/div[3]/center/input[2]",
+            "name": "[name=\"btnI\"]",
+            "aria-label": "[aria-label=\"I'm Feeling Lucky\"]",
+            "class": ".RNmpXc",
+            "text": "text=\"I'm Feeling Lucky\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "name": 9,
+            "aria-label": 8,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "input",
+        "text": "1cd8785de84224e8",
+        "attributes": {
+            "name": "sca_esv",
+            "value": "1cd8785de84224e8",
+            "type": "hidden"
+        },
+        "selectors": {
+            "css": "input",
+            "xpath": "/html/body/div[2]/div[4]/form/div[2]/input",
+            "name": "[name=\"sca_esv\"]",
+            "text": "text=\"1cd8785de84224e8\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "name": 9,
+            "text": 4
+        }
+    },
+    {
+        "tag": "input",
+        "text": "hp",
+        "attributes": {
+            "name": "source",
+            "type": "hidden",
+            "value": "hp"
+        },
+        "selectors": {
+            "css": "input",
+            "xpath": "/html/body/div[2]/div[4]/form/div[2]/input[2]",
+            "name": "[name=\"source\"]",
+            "text": "text=\"hp\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "name": 9,
+            "text": 4
+        }
+    },
+    {
+        "tag": "input",
+        "text": "uZzqaeuQO5OvwcsP7cq4sQk",
+        "attributes": {
+            "value": "uZzqaeuQO5OvwcsP7cq4sQk",
+            "name": "ei",
+            "type": "hidden"
+        },
+        "selectors": {
+            "css": "input",
+            "xpath": "/html/body/div[2]/div[4]/form/div[2]/input[3]",
+            "name": "[name=\"ei\"]",
+            "text": "text=\"uZzqaeuQO5OvwcsP7cq4sQk\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "name": 9,
+            "text": 4
+        }
+    },
+    {
+        "tag": "input",
+        "text": "AFdpzrgAAAAAaeqqybFszPzYYalCBw87H1yVXT3ONLca",
+        "attributes": {
+            "value": "AFdpzrgAAAAAaeqqybFszPzYYalCBw87H1yVXT3ONLca",
+            "name": "iflsig",
+            "type": "hidden"
+        },
+        "selectors": {
+            "css": "input",
+            "xpath": "/html/body/div[2]/div[4]/form/div[2]/input[4]",
+            "name": "[name=\"iflsig\"]",
+            "text": "text=\"AFdpzrgAAAAAaeqqybFszPzYYalCBw87H1yVXT3ONLca\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "name": 9,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "See the latest announcements from Google Cloud Nex",
+        "attributes": {
+            "jscontroller": "Jlf2lc",
+            "class": "m5Qfy",
+            "jsdata": "fXexJ;_;upzqabapDpCaseMPw7iA0Qk2",
+            "rel": "nofollow",
+            "role": "link",
+            "tabindex": "0",
+            "jsaction": "UEmoBd",
+            "data-ved": "2ahUKEwi27uKvgoWUAxUQTWwGHUMcIJoQ8IcBegQIAhAB"
+        },
+        "selectors": {
+            "css": ".m5Qfy",
+            "xpath": "/html/body/div[2]/div[5]/div/div/div/div/div[4]/div/promo-middle-slot/div/a",
+            "role_based": "getByRole('link', { name: 'See the latest announcements from Google Cloud Nex' })",
+            "class": ".m5Qfy",
+            "text": "text=\"See the latest announcements from Google Cloud Nex\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "role_based": 5,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u0939\u093f\u0928\u094d\u0926\u0940",
+        "attributes": {
+            "href": "https://www.google.com/setprefs?sig=0_stjmsuZ5F8Th240fqunuAyceeLM%3D&hl=hi&source=homepage&sa=X&ved=0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQ2ZgBCCA"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/div[2]/div[5]/div[3]/div/a",
+            "text": "text=\"\u0939\u093f\u0928\u094d\u0926\u0940\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u09ac\u09be\u0982\u09b2\u09be",
+        "attributes": {
+            "href": "https://www.google.com/setprefs?sig=0_stjmsuZ5F8Th240fqunuAyceeLM%3D&hl=bn&source=homepage&sa=X&ved=0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQ2ZgBCCE"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/div[2]/div[5]/div[3]/div/a[2]",
+            "text": "text=\"\u09ac\u09be\u0982\u09b2\u09be\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41",
+        "attributes": {
+            "href": "https://www.google.com/setprefs?sig=0_stjmsuZ5F8Th240fqunuAyceeLM%3D&hl=te&source=homepage&sa=X&ved=0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQ2ZgBCCI"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/div[2]/div[5]/div[3]/div/a[3]",
+            "text": "text=\"\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u092e\u0930\u093e\u0920\u0940",
+        "attributes": {
+            "href": "https://www.google.com/setprefs?sig=0_stjmsuZ5F8Th240fqunuAyceeLM%3D&hl=mr&source=homepage&sa=X&ved=0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQ2ZgBCCM"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/div[2]/div[5]/div[3]/div/a[4]",
+            "text": "text=\"\u092e\u0930\u093e\u0920\u0940\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u0ba4\u0bae\u0bbf\u0bb4\u0bcd",
+        "attributes": {
+            "href": "https://www.google.com/setprefs?sig=0_stjmsuZ5F8Th240fqunuAyceeLM%3D&hl=ta&source=homepage&sa=X&ved=0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQ2ZgBCCQ"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/div[2]/div[5]/div[3]/div/a[5]",
+            "text": "text=\"\u0ba4\u0bae\u0bbf\u0bb4\u0bcd\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u0a97\u0ac1\u0a9c\u0ab0\u0abe\u0aa4\u0ac0",
+        "attributes": {
+            "href": "https://www.google.com/setprefs?sig=0_stjmsuZ5F8Th240fqunuAyceeLM%3D&hl=gu&source=homepage&sa=X&ved=0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQ2ZgBCCU"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/div[2]/div[5]/div[3]/div/a[6]",
+            "text": "text=\"\u0a97\u0ac1\u0a9c\u0ab0\u0abe\u0aa4\u0ac0\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u0c95\u0ca8\u0ccd\u0ca8\u0ca1",
+        "attributes": {
+            "href": "https://www.google.com/setprefs?sig=0_stjmsuZ5F8Th240fqunuAyceeLM%3D&hl=kn&source=homepage&sa=X&ved=0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQ2ZgBCCY"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/div[2]/div[5]/div[3]/div/a[7]",
+            "text": "text=\"\u0c95\u0ca8\u0ccd\u0ca8\u0ca1\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u0d2e\u0d32\u0d2f\u0d3e\u0d33\u0d02",
+        "attributes": {
+            "href": "https://www.google.com/setprefs?sig=0_stjmsuZ5F8Th240fqunuAyceeLM%3D&hl=ml&source=homepage&sa=X&ved=0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQ2ZgBCCc"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/div[2]/div[5]/div[3]/div/a[8]",
+            "text": "text=\"\u0d2e\u0d32\u0d2f\u0d3e\u0d33\u0d02\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40",
+        "attributes": {
+            "href": "https://www.google.com/setprefs?sig=0_stjmsuZ5F8Th240fqunuAyceeLM%3D&hl=pa&source=homepage&sa=X&ved=0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQ2ZgBCCg"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/div[2]/div[5]/div[3]/div/a[9]",
+            "text": "text=\"\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Advertising",
+        "attributes": {
+            "class": "pHiOh",
+            "href": "https://www.google.com/intl/en_in/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1",
+            "ping": "/url?sa=t&rct=j&source=webhp&url=https://www.google.com/intl/en_in/ads/%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&ved=0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQkdQCCCk&opi=89978449"
+        },
+        "selectors": {
+            "css": ".pHiOh",
+            "xpath": "/html/body/div[2]/div[7]/div/div[2]/div/a",
+            "class": ".pHiOh",
+            "text": "text=\"Advertising\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Business",
+        "attributes": {
+            "class": "pHiOh",
+            "href": "https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1",
+            "ping": "/url?sa=t&rct=j&source=webhp&url=https://www.google.com/services/%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&ved=0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQktQCCCo&opi=89978449"
+        },
+        "selectors": {
+            "css": ".pHiOh",
+            "xpath": "/html/body/div[2]/div[7]/div/div[2]/div/a[2]",
+            "class": ".pHiOh",
+            "text": "text=\"Business\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "How Search works",
+        "attributes": {
+            "class": "pHiOh",
+            "href": "https://google.com/search/howsearchworks/?fg=1"
+        },
+        "selectors": {
+            "css": ".pHiOh",
+            "xpath": "/html/body/div[2]/div[7]/div/div[2]/div/a[3]",
+            "class": ".pHiOh",
+            "text": "text=\"How Search works\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Privacy",
+        "attributes": {
+            "class": "pHiOh",
+            "href": "https://policies.google.com/privacy?hl=en-IN&fg=1",
+            "ping": "/url?sa=t&rct=j&source=webhp&url=https://policies.google.com/privacy%3Fhl%3Den-IN%26fg%3D1&ved=0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQ8awCCCs&opi=89978449"
+        },
+        "selectors": {
+            "css": ".pHiOh",
+            "xpath": "/html/body/div[2]/div[7]/div/div[2]/div[2]/a",
+            "class": ".pHiOh",
+            "text": "text=\"Privacy\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Terms",
+        "attributes": {
+            "class": "pHiOh",
+            "href": "https://policies.google.com/terms?hl=en-IN&fg=1",
+            "ping": "/url?sa=t&rct=j&source=webhp&url=https://policies.google.com/terms%3Fhl%3Den-IN%26fg%3D1&ved=0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQ8qwCCCw&opi=89978449"
+        },
+        "selectors": {
+            "css": ".pHiOh",
+            "xpath": "/html/body/div[2]/div[7]/div/div[2]/div[2]/a[2]",
+            "class": ".pHiOh",
+            "text": "text=\"Terms\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "div",
+        "text": "Settings",
+        "attributes": {
+            "jsname": "oYxtQd",
+            "class": "CcNe6e",
+            "aria-expanded": "false",
+            "aria-haspopup": "true",
+            "role": "button",
+            "tabindex": "0",
+            "jsaction": "WFrRFb;keydown:uYT2Vb"
+        },
+        "selectors": {
+            "css": ".CcNe6e",
+            "xpath": "/html/body/div[2]/div[7]/div/div[2]/div[2]/span/span/g-popup/div",
+            "role_based": "getByRole('button', { name: 'Settings' })",
+            "class": ".CcNe6e",
+            "text": "text=\"Settings\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "role_based": 5,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Search settings",
+        "attributes": {
+            "href": "https://www.google.com/preferences?hl=en-IN&fg=1",
+            "role": "menuitem",
+            "tabindex": "-1",
+            "ping": "/url?sa=t&rct=j&source=webhp&url=https://www.google.com/preferences%3Fhl%3Den-IN%26fg%3D1&ved=0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQs4gOCC8&opi=89978449"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/div[2]/div[7]/div/div[2]/div[2]/span/span/g-popup/div[2]/g-menu/g-menu-item/div/a",
+            "role_based": "getByRole('menuitem', { name: 'Search settings' })",
+            "text": "text=\"Search settings\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "role_based": 5,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Advanced search",
+        "attributes": {
+            "href": "/advanced_search?hl=en-IN&fg=1",
+            "role": "menuitem",
+            "tabindex": "-1",
+            "ping": "/url?sa=t&rct=j&source=webhp&url=/advanced_search%3Fhl%3Den-IN%26fg%3D1&ved=0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQ3ogOCDA&opi=89978449"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/div[2]/div[7]/div/div[2]/div[2]/span/span/g-popup/div[2]/g-menu/g-menu-item[2]/div/a",
+            "role_based": "getByRole('menuitem', { name: 'Advanced search' })",
+            "text": "text=\"Advanced search\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "role_based": 5,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Your data in Search",
+        "attributes": {
+            "href": "/history/privacyadvisor/search/unauth?utm_source=googlemenu&fg=1&cctld=com",
+            "role": "menuitem",
+            "tabindex": "-1",
+            "ping": "/url?sa=t&rct=j&source=webhp&url=/history/privacyadvisor/search/unauth%3Futm_source%3Dgooglemenu%26fg%3D1%26cctld%3Dcom&ved=0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQgoYOCDE&opi=89978449"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/div[2]/div[7]/div/div[2]/div[2]/span/span/g-popup/div[2]/g-menu/g-menu-item[3]/div/a",
+            "role_based": "getByRole('menuitem', { name: 'Your data in Search' })",
+            "text": "text=\"Your data in Search\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "role_based": 5,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Search history",
+        "attributes": {
+            "href": "/history/optout?hl=en-IN&fg=1",
+            "role": "menuitem",
+            "tabindex": "-1",
+            "ping": "/url?sa=t&rct=j&source=webhp&url=/history/optout%3Fhl%3Den-IN%26fg%3D1&ved=0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQ4YgOCDI&opi=89978449"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/div[2]/div[7]/div/div[2]/div[2]/span/span/g-popup/div[2]/g-menu/g-menu-item[4]/div/a",
+            "role_based": "getByRole('menuitem', { name: 'Search history' })",
+            "text": "text=\"Search history\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "role_based": 5,
+            "text": 4
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Search help",
+        "attributes": {
+            "href": "https://support.google.com/websearch/?p=ws_results_help&hl=en-IN&fg=1",
+            "role": "menuitem",
+            "tabindex": "-1",
+            "ping": "/url?sa=t&rct=j&source=webhp&url=https://support.google.com/websearch/%3Fp%3Dws_results_help%26hl%3Den-IN%26fg%3D1&ved=0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQ4IgOCDM&opi=89978449"
+        },
+        "selectors": {
+            "css": "a",
+            "xpath": "/html/body/div[2]/div[7]/div/div[2]/div[2]/span/span/g-popup/div[2]/g-menu/g-menu-item[5]/div/a",
+            "role_based": "getByRole('menuitem', { name: 'Search help' })",
+            "text": "text=\"Search help\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "role_based": 5,
+            "text": 4
+        }
+    },
+    {
+        "tag": "div",
+        "text": "Dark theme: On",
+        "attributes": {
+            "jscontroller": "fXO0xe",
+            "class": "tFYjZe",
+            "data-spt": "1",
+            "role": "link",
+            "tabindex": "0",
+            "jsaction": "ok5gFc",
+            "data-ved": "0ahUKEwir0dKvgoWUAxWTV3ADHW0lLpYQqsEHCDU"
+        },
+        "selectors": {
+            "css": ".tFYjZe",
+            "xpath": "/html/body/div[2]/div[7]/div/div[2]/div[2]/span/span/g-popup/div[2]/g-menu/g-menu-item[8]/div/div/div",
+            "role_based": "getByRole('link', { name: 'Dark theme: On' })",
+            "class": ".tFYjZe",
+            "text": "text=\"Dark theme: On\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "role_based": 5,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "textarea",
+        "text": "",
+        "attributes": {
+            "class": "csi",
+            "name": "csi",
+            "style": "display:none"
+        },
+        "selectors": {
+            "css": ".csi",
+            "xpath": "/html/body/textarea",
+            "name": "[name=\"csi\"]",
+            "class": ".csi"
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "name": 9,
+            "class": 1
+        }
+    },
+    {
+        "tag": "div",
+        "text": "Do not use Chrome",
+        "attributes": {
+            "jscontroller": "Jlf2lc",
+            "class": "cvSVBe btku5b NQYJvc FR7ZSc sjVJQd",
+            "jsdata": "fXexJ;_;upzqaaDzMNqbnesP1-PeuA03",
+            "jsaction": "UEmoBd",
+            "role": "button",
+            "tabindex": "0",
+            "data-ved": "2ahUKEwiguIWwgoWUAxXaTWcHHdexF9cQ0akPegQIAhAE"
+        },
+        "selectors": {
+            "css": ".cvSVBe",
+            "xpath": "/html/body/div[9]/div/div[2]/div/div/div/div[2]/div/promo-button-text/div",
+            "role_based": "getByRole('button', { name: 'Do not use Chrome' })",
+            "class": ".cvSVBe.btku5b.NQYJvc.FR7ZSc.sjVJQd",
+            "text": "text=\"Do not use Chrome\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "role_based": 5,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "div",
+        "text": "Get Chrome",
+        "attributes": {
+            "jscontroller": "Jlf2lc",
+            "class": "cvSVBe btku5b NQYJvc expUPd sjVJQd",
+            "jsdata": "fXexJ;_;upzqaaDzMNqbnesP1-PeuA04",
+            "jsaction": "UEmoBd",
+            "role": "button",
+            "tabindex": "0",
+            "data-ved": "2ahUKEwiguIWwgoWUAxXaTWcHHdexF9cQ0KkPegQIAhAG"
+        },
+        "selectors": {
+            "css": ".cvSVBe",
+            "xpath": "/html/body/div[9]/div/div[2]/div/div/div/div[2]/div/promo-button-text[2]/div",
+            "role_based": "getByRole('button', { name: 'Get Chrome' })",
+            "class": ".cvSVBe.btku5b.NQYJvc.expUPd.sjVJQd",
+            "text": "text=\"Get Chrome\""
+        },
+        "extraction_mode": "interactive",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "role_based": 5,
+            "class": 1,
+            "text": 4
+        }
+    }
+]

@@ -1,0 +1,360 @@
+[
+    {
+        "tag": "h1",
+        "text": "Wikipedia\nThe Free Encyclopedia",
+        "attributes": {
+            "class": "central-textlogo-wrapper"
+        },
+        "selectors": {
+            "css": ".central-textlogo-wrapper",
+            "xpath": "/html/body/main/div/h1",
+            "class": ".central-textlogo-wrapper",
+            "text": "text=\"Wikipedia\nThe Free Encyclopedia\""
+        },
+        "extraction_mode": "text",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "strong",
+        "text": "The Free Encyclopedia",
+        "attributes": {
+            "class": "jsl10n localized-slogan",
+            "data-jsl10n": "portal.slogan"
+        },
+        "selectors": {
+            "css": ".jsl10n",
+            "xpath": "/html/body/main/div/h1/strong",
+            "class": ".jsl10n.localized-slogan",
+            "text": "text=\"The Free Encyclopedia\""
+        },
+        "extraction_mode": "text",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "strong",
+        "text": "English",
+        "attributes": {},
+        "selectors": {
+            "css": "strong",
+            "xpath": "/html/body/main/nav/div/a/strong",
+            "text": "text=\"English\""
+        },
+        "extraction_mode": "text",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "strong",
+        "text": "日本語",
+        "attributes": {},
+        "selectors": {
+            "css": "strong",
+            "xpath": "/html/body/main/nav/div[2]/a/strong",
+            "text": "text=\"日本語\""
+        },
+        "extraction_mode": "text",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "strong",
+        "text": "Deutsch",
+        "attributes": {},
+        "selectors": {
+            "css": "strong",
+            "xpath": "/html/body/main/nav/div[3]/a/strong",
+            "text": "text=\"Deutsch\""
+        },
+        "extraction_mode": "text",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "strong",
+        "text": "Русский",
+        "attributes": {},
+        "selectors": {
+            "css": "strong",
+            "xpath": "/html/body/main/nav/div[4]/a/strong",
+            "text": "text=\"Русский\""
+        },
+        "extraction_mode": "text",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "strong",
+        "text": "Français",
+        "attributes": {},
+        "selectors": {
+            "css": "strong",
+            "xpath": "/html/body/main/nav/div[5]/a/strong",
+            "text": "text=\"Français\""
+        },
+        "extraction_mode": "text",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "strong",
+        "text": "Español",
+        "attributes": {},
+        "selectors": {
+            "css": "strong",
+            "xpath": "/html/body/main/nav/div[6]/a/strong",
+            "text": "text=\"Español\""
+        },
+        "extraction_mode": "text",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "strong",
+        "text": "中文",
+        "attributes": {},
+        "selectors": {
+            "css": "strong",
+            "xpath": "/html/body/main/nav/div[7]/a/strong",
+            "text": "text=\"中文\""
+        },
+        "extraction_mode": "text",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "strong",
+        "text": "Italiano",
+        "attributes": {},
+        "selectors": {
+            "css": "strong",
+            "xpath": "/html/body/main/nav/div[8]/a/strong",
+            "text": "text=\"Italiano\""
+        },
+        "extraction_mode": "text",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "strong",
+        "text": "Polski",
+        "attributes": {},
+        "selectors": {
+            "css": "strong",
+            "xpath": "/html/body/main/nav/div[9]/a/strong",
+            "text": "text=\"Polski\""
+        },
+        "extraction_mode": "text",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "strong",
+        "text": "Português",
+        "attributes": {},
+        "selectors": {
+            "css": "strong",
+            "xpath": "/html/body/main/nav/div[10]/a/strong",
+            "text": "text=\"Português\""
+        },
+        "extraction_mode": "text",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "text": 4
+        }
+    },
+    {
+        "tag": "label",
+        "text": "Search Wikipedia",
+        "attributes": {
+            "for": "searchInput",
+            "class": "screen-reader-text",
+            "data-jsl10n": "portal.search-input-label"
+        },
+        "selectors": {
+            "css": ".screen-reader-text",
+            "xpath": "/html/body/main/div[2]/form/fieldset/div/label",
+            "class": ".screen-reader-text",
+            "text": "text=\"Search Wikipedia\""
+        },
+        "extraction_mode": "text",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "label",
+        "text": "EN",
+        "attributes": {
+            "for": "searchLanguage",
+            "id": "jsLangLabel",
+            "class": "js-langpicker-label"
+        },
+        "selectors": {
+            "css": "#jsLangLabel",
+            "xpath": "/html/body/main/div[2]/form/fieldset/div/div/div/label",
+            "id": "#jsLangLabel",
+            "class": ".js-langpicker-label",
+            "text": "text=\"EN\""
+        },
+        "extraction_mode": "text",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "id": 10,
+            "class": 1,
+            "text": 4
+        }
+    },
+    {
+        "tag": "h2",
+        "text": "",
+        "attributes": {
+            "class": "bookshelf-container"
+        },
+        "selectors": {
+            "css": ".bookshelf-container",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/h2",
+            "class": ".bookshelf-container"
+        },
+        "extraction_mode": "text",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1
+        }
+    },
+    {
+        "tag": "h2",
+        "text": "",
+        "attributes": {
+            "class": "bookshelf-container"
+        },
+        "selectors": {
+            "css": ".bookshelf-container",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/h2[2]",
+            "class": ".bookshelf-container"
+        },
+        "extraction_mode": "text",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1
+        }
+    },
+    {
+        "tag": "h2",
+        "text": "",
+        "attributes": {
+            "class": "bookshelf-container"
+        },
+        "selectors": {
+            "css": ".bookshelf-container",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/h2[3]",
+            "class": ".bookshelf-container"
+        },
+        "extraction_mode": "text",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1
+        }
+    },
+    {
+        "tag": "h2",
+        "text": "",
+        "attributes": {
+            "class": "bookshelf-container"
+        },
+        "selectors": {
+            "css": ".bookshelf-container",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/h2[4]",
+            "class": ".bookshelf-container"
+        },
+        "extraction_mode": "text",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1
+        }
+    },
+    {
+        "tag": "h2",
+        "text": "",
+        "attributes": {
+            "class": "bookshelf-container"
+        },
+        "selectors": {
+            "css": ".bookshelf-container",
+            "xpath": "/html/body/main/nav[2]/div[3]/div/h2[5]",
+            "class": ".bookshelf-container"
+        },
+        "extraction_mode": "text",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1
+        }
+    },
+    {
+        "tag": "strong",
+        "text": "Download Wikipedia for Android or iOS",
+        "attributes": {
+            "class": "jsl10n",
+            "data-jsl10n": "portal.app-links.title"
+        },
+        "selectors": {
+            "css": ".jsl10n",
+            "xpath": "/html/body/footer/div[2]/div/div/strong",
+            "class": ".jsl10n",
+            "text": "text=\"Download Wikipedia for Android or iOS\""
+        },
+        "extraction_mode": "text",
+        "selector_rankings": {
+            "css": 2,
+            "xpath": 3,
+            "class": 1,
+            "text": 4
+        }
+    }
+]

@@ -1,0 +1,781 @@
+[
+    {
+        "tag": "a",
+        "text": "About",
+        "attributes": {
+            "class": [
+                "MV3Tnb"
+            ],
+            "href": "https://about.google/?fg=1&utm_source=google-IN&utm_medium=referral&utm_campaign=hp-header",
+            "data-jsarwt": "1",
+            "data-usg": "AOvVaw0CtSO059N49aDG_TIeJdnK",
+            "data-ved": "0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQkNQCCAI"
+        },
+        "selectors": {
+            "text": "text=\"About\"",
+            "class": ".MV3Tnb"
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Store",
+        "attributes": {
+            "class": [
+                "MV3Tnb"
+            ],
+            "href": "https://store.google.com/IN?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-IN",
+            "data-jsarwt": "1",
+            "data-usg": "AOvVaw1yMLu5XT-r35gxGQEqYnyy",
+            "data-ved": "0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQpMwCCAM"
+        },
+        "selectors": {
+            "text": "text=\"Store\"",
+            "class": ".MV3Tnb"
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Gmail",
+        "attributes": {
+            "class": [
+                "gb_4"
+            ],
+            "aria-label": "Gmail ",
+            "data-pid": "23",
+            "href": "https://mail.google.com/mail/&ogbl",
+            "target": "_top"
+        },
+        "selectors": {
+            "aria-label": "[aria-label=\"Gmail \"]",
+            "text": "text=\"Gmail\"",
+            "class": ".gb_4"
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Images",
+        "attributes": {
+            "class": [
+                "gb_4"
+            ],
+            "aria-label": "Search for Images ",
+            "data-pid": "2",
+            "href": "https://www.google.com/imghp?hl=en&ogbl",
+            "target": "_top"
+        },
+        "selectors": {
+            "aria-label": "[aria-label=\"Search for Images \"]",
+            "text": "text=\"Images\"",
+            "class": ".gb_4"
+        }
+    },
+    {
+        "tag": "a",
+        "text": "",
+        "attributes": {
+            "class": [
+                "gb_C"
+            ],
+            "aria-label": "Google apps",
+            "href": "https://www.google.co.in/intl/en/about/products",
+            "aria-expanded": "false",
+            "role": "button",
+            "tabindex": "0"
+        },
+        "selectors": {
+            "aria-label": "[aria-label=\"Google apps\"]",
+            "class": ".gb_C"
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Sign in",
+        "attributes": {
+            "class": [
+                "gb_A"
+            ],
+            "aria-label": "Sign in",
+            "href": "https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=futura_exp_og_so_72776762_e",
+            "target": "_top"
+        },
+        "selectors": {
+            "aria-label": "[aria-label=\"Sign in\"]",
+            "text": "text=\"Sign in\"",
+            "class": ".gb_A"
+        }
+    },
+    {
+        "tag": "button",
+        "text": "",
+        "attributes": {
+            "class": [
+                "pz5bj"
+            ],
+            "id": "spchx",
+            "aria-label": "close"
+        },
+        "selectors": {
+            "id": "#spchx",
+            "aria-label": "[aria-label=\"close\"]",
+            "class": ".pz5bj"
+        }
+    },
+    {
+        "tag": "textarea",
+        "text": "",
+        "attributes": {
+            "jsname": "yZiJbe",
+            "class": [
+                "gLFyf"
+            ],
+            "aria-controls": "Alh6id",
+            "aria-owns": "Alh6id",
+            "autofocus": "",
+            "title": "Search",
+            "value": "",
+            "aria-label": "Search",
+            "placeholder": "",
+            "aria-autocomplete": "both",
+            "aria-expanded": "false",
+            "aria-haspopup": "false",
+            "autocapitalize": "off",
+            "autocomplete": "off",
+            "autocorrect": "off",
+            "id": "APjFqb",
+            "maxlength": "2048",
+            "name": "q",
+            "role": "combobox",
+            "rows": "1",
+            "spellcheck": "false",
+            "data-ved": "0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQ39UDCAU"
+        },
+        "selectors": {
+            "id": "#APjFqb",
+            "name": "[name=\"q\"]",
+            "aria-label": "[aria-label=\"Search\"]",
+            "class": ".gLFyf"
+        }
+    },
+    {
+        "tag": "div",
+        "text": "",
+        "attributes": {
+            "class": [
+                "vOY7J"
+            ],
+            "jsname": "pkjasb",
+            "aria-label": "Clear",
+            "role": "button",
+            "tabindex": "0",
+            "jsaction": "AVsnlb;rcuQ6b:npT2md",
+            "data-ved": "0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQ05YFCAY"
+        },
+        "selectors": {
+            "aria-label": "[aria-label=\"Clear\"]",
+            "class": ".vOY7J"
+        }
+    },
+    {
+        "tag": "div",
+        "text": "",
+        "attributes": {
+            "jscontroller": "unV4T",
+            "jsname": "F7uqIe",
+            "class": [
+                "XDyW0e"
+            ],
+            "data-hp": "1",
+            "aria-label": "Search by voice",
+            "role": "button",
+            "tabindex": "0",
+            "jsaction": "h5M12e;rcuQ6b:npT2md;KHxBOb:EANhx;hATt5e:AkD3se;CQJmec:efDZmf",
+            "data-ved": "0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQvs8DCAc"
+        },
+        "selectors": {
+            "aria-label": "[aria-label=\"Search by voice\"]",
+            "class": ".XDyW0e"
+        }
+    },
+    {
+        "tag": "div",
+        "text": "",
+        "attributes": {
+            "jscontroller": "lpsUAf",
+            "jsname": "R5mgy",
+            "class": [
+                "nDcEnd"
+            ],
+            "data-is-images-mode": "false",
+            "aria-label": "Search by image",
+            "role": "button",
+            "tabindex": "0",
+            "jsaction": "rcuQ6b:npT2md;h5M12e;AMruCe:Zpug7c",
+            "data-ved": "0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQhqEICAg"
+        },
+        "selectors": {
+            "aria-label": "[aria-label=\"Search by image\"]",
+            "class": ".nDcEnd"
+        }
+    },
+    {
+        "tag": "span",
+        "text": "",
+        "attributes": {
+            "class": [
+                "Job8vb",
+                "z1asCe",
+                "wuXmqc"
+            ],
+            "aria-label": "Close Choose what you\u2019re giving feedback on",
+            "role": "button",
+            "tabindex": "0",
+            "jsaction": "kEOk4d",
+            "style": "height:20px;line-height:20px;width:20px",
+            "data-ved": "0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQmIkGCA0"
+        },
+        "selectors": {
+            "aria-label": "[aria-label=\"Close Choose what you\u2019re giving feedback on\"]",
+            "class": ".Job8vb.z1asCe.wuXmqc"
+        }
+    },
+    {
+        "tag": "div",
+        "text": "See more",
+        "attributes": {
+            "class": [
+                "Sz7Lee",
+                "MagqMc",
+                "U48fD"
+            ],
+            "style": "display:none",
+            "aria-label": "See more",
+            "role": "button",
+            "tabindex": "0"
+        },
+        "selectors": {
+            "aria-label": "[aria-label=\"See more\"]",
+            "text": "text=\"See more\"",
+            "class": ".Sz7Lee.MagqMc.U48fD"
+        }
+    },
+    {
+        "tag": "div",
+        "text": "Delete",
+        "attributes": {
+            "class": [
+                "AQZ9Vd"
+            ],
+            "aria-atomic": "true",
+            "role": "button"
+        },
+        "selectors": {
+            "text": "text=\"Delete\"",
+            "class": ".AQZ9Vd"
+        }
+    },
+    {
+        "tag": "div",
+        "text": "",
+        "attributes": {
+            "class": [
+                "Tnv2td"
+            ],
+            "style": "display:none",
+            "aria-label": "Word pronunciation",
+            "aria-atomic": "true",
+            "role": "button"
+        },
+        "selectors": {
+            "aria-label": "[aria-label=\"Word pronunciation\"]",
+            "class": ".Tnv2td"
+        }
+    },
+    {
+        "tag": "div",
+        "text": "Delete",
+        "attributes": {
+            "class": [
+                "AQZ9Vd"
+            ],
+            "aria-atomic": "true",
+            "role": "button"
+        },
+        "selectors": {
+            "text": "text=\"Delete\"",
+            "class": ".AQZ9Vd"
+        }
+    },
+    {
+        "tag": "div",
+        "text": "",
+        "attributes": {
+            "class": [
+                "Tnv2td"
+            ],
+            "style": "display:none",
+            "aria-label": "Word pronunciation",
+            "aria-atomic": "true",
+            "role": "button"
+        },
+        "selectors": {
+            "aria-label": "[aria-label=\"Word pronunciation\"]",
+            "class": ".Tnv2td"
+        }
+    },
+    {
+        "tag": "input",
+        "text": "",
+        "attributes": {
+            "class": [
+                "gNO89b"
+            ],
+            "value": "Google Search",
+            "aria-label": "Google Search",
+            "name": "btnK",
+            "role": "button",
+            "tabindex": "0",
+            "type": "submit",
+            "data-ved": "0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQ4dUDCA8"
+        },
+        "selectors": {
+            "name": "[name=\"btnK\"]",
+            "aria-label": "[aria-label=\"Google Search\"]",
+            "class": ".gNO89b"
+        }
+    },
+    {
+        "tag": "input",
+        "text": "",
+        "attributes": {
+            "jscontroller": "s980lf",
+            "class": [
+                "RNmpXc"
+            ],
+            "value": "I'm Feeling Lucky",
+            "aria-label": "I'm Feeling Lucky",
+            "name": "btnI",
+            "type": "submit",
+            "jsaction": "rcuQ6b:npT2md;QIWlh",
+            "data-ved": "0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQ19QECBA"
+        },
+        "selectors": {
+            "name": "[name=\"btnI\"]",
+            "aria-label": "[aria-label=\"I'm Feeling Lucky\"]",
+            "class": ".RNmpXc"
+        }
+    },
+    {
+        "tag": "div",
+        "text": "Report inappropriate predictions",
+        "attributes": {
+            "class": [
+                "WzNHm",
+                "mWcf0e"
+            ],
+            "jscontroller": "gSZvdb",
+            "data-dccl": "false",
+            "role": "button",
+            "tabindex": "0",
+            "jsdata": "vST7rb;_;_WrqaeecH4WX4-EPnpujCQ2",
+            "jsaction": "i5KCU;kVBCVd:yM1YJe",
+            "data-ved": "0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQ6scECBE"
+        },
+        "selectors": {
+            "text": "text=\"Report inappropriate predictions\"",
+            "class": ".WzNHm.mWcf0e"
+        }
+    },
+    {
+        "tag": "input",
+        "text": "",
+        "attributes": {
+            "class": [
+                "gNO89b"
+            ],
+            "value": "Google Search",
+            "aria-label": "Google Search",
+            "name": "btnK",
+            "role": "button",
+            "tabindex": "0",
+            "type": "submit",
+            "data-ved": "0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQ4dUDCBI"
+        },
+        "selectors": {
+            "name": "[name=\"btnK\"]",
+            "aria-label": "[aria-label=\"Google Search\"]",
+            "class": ".gNO89b"
+        }
+    },
+    {
+        "tag": "input",
+        "text": "",
+        "attributes": {
+            "jscontroller": "s980lf",
+            "class": [
+                "RNmpXc"
+            ],
+            "value": "I'm Feeling Lucky",
+            "aria-label": "I'm Feeling Lucky",
+            "name": "btnI",
+            "type": "submit",
+            "jsaction": "rcuQ6b:npT2md;QIWlh",
+            "data-ved": "0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQ19QECBM"
+        },
+        "selectors": {
+            "name": "[name=\"btnI\"]",
+            "aria-label": "[aria-label=\"I'm Feeling Lucky\"]",
+            "class": ".RNmpXc"
+        }
+    },
+    {
+        "tag": "input",
+        "text": "",
+        "attributes": {
+            "name": "sca_esv",
+            "value": "8eb5eb78efc6b1d8",
+            "type": "hidden"
+        },
+        "selectors": {
+            "name": "[name=\"sca_esv\"]"
+        }
+    },
+    {
+        "tag": "input",
+        "text": "",
+        "attributes": {
+            "name": "source",
+            "type": "hidden",
+            "value": "hp"
+        },
+        "selectors": {
+            "name": "[name=\"source\"]"
+        }
+    },
+    {
+        "tag": "input",
+        "text": "",
+        "attributes": {
+            "value": "_WrqaeecH4WX4-EPnpujCQ",
+            "name": "ei",
+            "type": "hidden"
+        },
+        "selectors": {
+            "name": "[name=\"ei\"]"
+        }
+    },
+    {
+        "tag": "input",
+        "text": "",
+        "attributes": {
+            "value": "AFdpzrgAAAAAaep5DYYVLLa5ROj4hE3aa-sF8MujCiXf",
+            "name": "iflsig",
+            "type": "hidden"
+        },
+        "selectors": {
+            "name": "[name=\"iflsig\"]"
+        }
+    },
+    {
+        "tag": "a",
+        "text": "See the latest announcements from Google Cloud Next '26",
+        "attributes": {
+            "jscontroller": "Jlf2lc",
+            "class": [
+                "m5Qfy"
+            ],
+            "jsdata": "fXexJ;_;_mrqac_QBv-jseMPueCOwQ42",
+            "rel": [
+                "nofollow"
+            ],
+            "role": "link",
+            "tabindex": "0",
+            "jsaction": "UEmoBd",
+            "data-ved": "2ahUKEwjPx8_40oSUAxX_UWwGHTmwI-gQ8IcBegQIAhAB"
+        },
+        "selectors": {
+            "text": "text=\"See the latest announcements from Google Cloud Next '26\"",
+            "class": ".m5Qfy"
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u0939\u093f\u0928\u094d\u0926\u0940",
+        "attributes": {
+            "href": "https://www.google.com/setprefs?sig=0_zpIZ19hu79VOXherRVb3UpNhUmo%3D&hl=hi&source=homepage&sa=X&ved=0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQ2ZgBCBc"
+        },
+        "selectors": {
+            "text": "text=\"\u0939\u093f\u0928\u094d\u0926\u0940\""
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u09ac\u09be\u0982\u09b2\u09be",
+        "attributes": {
+            "href": "https://www.google.com/setprefs?sig=0_zpIZ19hu79VOXherRVb3UpNhUmo%3D&hl=bn&source=homepage&sa=X&ved=0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQ2ZgBCBg"
+        },
+        "selectors": {
+            "text": "text=\"\u09ac\u09be\u0982\u09b2\u09be\""
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41",
+        "attributes": {
+            "href": "https://www.google.com/setprefs?sig=0_zpIZ19hu79VOXherRVb3UpNhUmo%3D&hl=te&source=homepage&sa=X&ved=0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQ2ZgBCBk"
+        },
+        "selectors": {
+            "text": "text=\"\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41\""
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u092e\u0930\u093e\u0920\u0940",
+        "attributes": {
+            "href": "https://www.google.com/setprefs?sig=0_zpIZ19hu79VOXherRVb3UpNhUmo%3D&hl=mr&source=homepage&sa=X&ved=0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQ2ZgBCBo"
+        },
+        "selectors": {
+            "text": "text=\"\u092e\u0930\u093e\u0920\u0940\""
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u0ba4\u0bae\u0bbf\u0bb4\u0bcd",
+        "attributes": {
+            "href": "https://www.google.com/setprefs?sig=0_zpIZ19hu79VOXherRVb3UpNhUmo%3D&hl=ta&source=homepage&sa=X&ved=0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQ2ZgBCBs"
+        },
+        "selectors": {
+            "text": "text=\"\u0ba4\u0bae\u0bbf\u0bb4\u0bcd\""
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u0a97\u0ac1\u0a9c\u0ab0\u0abe\u0aa4\u0ac0",
+        "attributes": {
+            "href": "https://www.google.com/setprefs?sig=0_zpIZ19hu79VOXherRVb3UpNhUmo%3D&hl=gu&source=homepage&sa=X&ved=0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQ2ZgBCBw"
+        },
+        "selectors": {
+            "text": "text=\"\u0a97\u0ac1\u0a9c\u0ab0\u0abe\u0aa4\u0ac0\""
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u0c95\u0ca8\u0ccd\u0ca8\u0ca1",
+        "attributes": {
+            "href": "https://www.google.com/setprefs?sig=0_zpIZ19hu79VOXherRVb3UpNhUmo%3D&hl=kn&source=homepage&sa=X&ved=0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQ2ZgBCB0"
+        },
+        "selectors": {
+            "text": "text=\"\u0c95\u0ca8\u0ccd\u0ca8\u0ca1\""
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u0d2e\u0d32\u0d2f\u0d3e\u0d33\u0d02",
+        "attributes": {
+            "href": "https://www.google.com/setprefs?sig=0_zpIZ19hu79VOXherRVb3UpNhUmo%3D&hl=ml&source=homepage&sa=X&ved=0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQ2ZgBCB4"
+        },
+        "selectors": {
+            "text": "text=\"\u0d2e\u0d32\u0d2f\u0d3e\u0d33\u0d02\""
+        }
+    },
+    {
+        "tag": "a",
+        "text": "\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40",
+        "attributes": {
+            "href": "https://www.google.com/setprefs?sig=0_zpIZ19hu79VOXherRVb3UpNhUmo%3D&hl=pa&source=homepage&sa=X&ved=0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQ2ZgBCB8"
+        },
+        "selectors": {
+            "text": "text=\"\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40\""
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Advertising",
+        "attributes": {
+            "class": [
+                "pHiOh"
+            ],
+            "href": "https://www.google.com/intl/en_in/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1",
+            "data-jsarwt": "1",
+            "data-usg": "AOvVaw3Oj62V1xNd5oAI6Vxou5Lx",
+            "data-ved": "0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQkdQCCCA"
+        },
+        "selectors": {
+            "text": "text=\"Advertising\"",
+            "class": ".pHiOh"
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Business",
+        "attributes": {
+            "class": [
+                "pHiOh"
+            ],
+            "href": "https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1",
+            "data-jsarwt": "1",
+            "data-usg": "AOvVaw2SJ4zwRVXKyZr53qG9dm4K",
+            "data-ved": "0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQktQCCCE"
+        },
+        "selectors": {
+            "text": "text=\"Business\"",
+            "class": ".pHiOh"
+        }
+    },
+    {
+        "tag": "a",
+        "text": "How Search works",
+        "attributes": {
+            "class": [
+                "pHiOh"
+            ],
+            "href": "https://google.com/search/howsearchworks/?fg=1"
+        },
+        "selectors": {
+            "text": "text=\"How Search works\"",
+            "class": ".pHiOh"
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Privacy",
+        "attributes": {
+            "class": [
+                "pHiOh"
+            ],
+            "href": "https://policies.google.com/privacy?hl=en-IN&fg=1",
+            "data-jsarwt": "1",
+            "data-usg": "AOvVaw2y-DJehqHRQuhUzwsARmol",
+            "data-ved": "0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQ8awCCCI"
+        },
+        "selectors": {
+            "text": "text=\"Privacy\"",
+            "class": ".pHiOh"
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Terms",
+        "attributes": {
+            "class": [
+                "pHiOh"
+            ],
+            "href": "https://policies.google.com/terms?hl=en-IN&fg=1",
+            "data-jsarwt": "1",
+            "data-usg": "AOvVaw25sheD5OGrPUyBw_FdCQOy",
+            "data-ved": "0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQ8qwCCCM"
+        },
+        "selectors": {
+            "text": "text=\"Terms\"",
+            "class": ".pHiOh"
+        }
+    },
+    {
+        "tag": "div",
+        "text": "Settings",
+        "attributes": {
+            "jsname": "oYxtQd",
+            "class": [
+                "CcNe6e"
+            ],
+            "aria-expanded": "false",
+            "aria-haspopup": "true",
+            "role": "button",
+            "tabindex": "0",
+            "jsaction": "WFrRFb;keydown:uYT2Vb"
+        },
+        "selectors": {
+            "text": "text=\"Settings\"",
+            "class": ".CcNe6e"
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Search settings",
+        "attributes": {
+            "href": "https://www.google.com/preferences?hl=en-IN&fg=1",
+            "role": "menuitem",
+            "tabindex": "-1",
+            "data-jsarwt": "1",
+            "data-usg": "AOvVaw1NsYdnlds8vG9HJRqcq_W4",
+            "data-ved": "0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQs4gOCCY"
+        },
+        "selectors": {
+            "text": "text=\"Search settings\""
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Advanced search",
+        "attributes": {
+            "href": "/advanced_search?hl=en-IN&fg=1",
+            "role": "menuitem",
+            "tabindex": "-1",
+            "data-jsarwt": "1",
+            "data-usg": "AOvVaw3kTJGjj5oOM1q4bMAzKNog",
+            "data-ved": "0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQ3ogOCCc"
+        },
+        "selectors": {
+            "text": "text=\"Advanced search\""
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Your data in Search",
+        "attributes": {
+            "href": "/history/privacyadvisor/search/unauth?utm_source=googlemenu&fg=1&cctld=com",
+            "role": "menuitem",
+            "tabindex": "-1",
+            "data-jsarwt": "1",
+            "data-usg": "AOvVaw2r0Zi2y90SFsMrwdB8fUcz",
+            "data-ved": "0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQgoYOCCg"
+        },
+        "selectors": {
+            "text": "text=\"Your data in Search\""
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Search history",
+        "attributes": {
+            "href": "/history/optout?hl=en-IN&fg=1",
+            "role": "menuitem",
+            "tabindex": "-1",
+            "data-jsarwt": "1",
+            "data-usg": "AOvVaw3UEFqJrxQPGZXV4DaP6zbR",
+            "data-ved": "0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQ4YgOCCk"
+        },
+        "selectors": {
+            "text": "text=\"Search history\""
+        }
+    },
+    {
+        "tag": "a",
+        "text": "Search help",
+        "attributes": {
+            "href": "https://support.google.com/websearch/?p=ws_results_help&hl=en-IN&fg=1",
+            "role": "menuitem",
+            "tabindex": "-1",
+            "data-jsarwt": "1",
+            "data-usg": "AOvVaw1pMqL4P-c2v-w7aJ4SNns7",
+            "data-ved": "0ahUKEwinj6v40oSUAxWFyzgGHZ7NKAEQ4IgOCCo"
+        },
+        "selectors": {
+            "text": "text=\"Search help\""
+        }
+    },
+    {
+        "tag": "textarea",
+        "text": "",
+        "attributes": {
+            "class": [
+                "csi"
+            ],
+            "name": "csi",
+            "style": "display:none"
+        },
+        "selectors": {
+            "name": "[name=\"csi\"]",
+            "class": ".csi"
+        }
+    }
+]

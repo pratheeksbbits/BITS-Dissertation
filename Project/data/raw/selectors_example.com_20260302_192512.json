@@ -1,0 +1,82 @@
+[
+    {
+        "element_id": "elem_0000",
+        "tag": "p",
+        "text": "This domain is for use in documentation examples w",
+        "attributes": {},
+        "boundingBox": {
+            "x": 256,
+            "y": 156.078125,
+            "width": 768,
+            "height": 21,
+            "top": 156.078125,
+            "right": 1024,
+            "bottom": 177.078125,
+            "left": 256
+        },
+        "selectors": {
+            "css": {
+                "selector": "html",
+                "unique": true
+            },
+            "xpath": {
+                "selector": "/html",
+                "unique": false
+            }
+        }
+    },
+    {
+        "element_id": "elem_0001",
+        "tag": "p",
+        "text": "Learn more",
+        "attributes": {},
+        "boundingBox": {
+            "x": 256,
+            "y": 193.078125,
+            "width": 768,
+            "height": 21,
+            "top": 193.078125,
+            "right": 1024,
+            "bottom": 214.078125,
+            "left": 256
+        },
+        "selectors": {
+            "css": {
+                "selector": "head",
+                "unique": true
+            },
+            "xpath": {
+                "selector": "/html/head",
+                "unique": false
+            }
+        }
+    },
+    {
+        "element_id": "elem_0002",
+        "tag": "a",
+        "text": "Learn more",
+        "attributes": {
+            "href": "https://iana.org/domains/example"
+        },
+        "boundingBox": {
+            "x": 256,
+            "y": 193.078125,
+            "width": 80.125,
+            "height": 21,
+            "top": 193.078125,
+            "right": 336.125,
+            "bottom": 214.078125,
+            "left": 256
+        },
+        "selectors": {
+            "css": {
+                "selector": "title",
+                "unique": true
+            },
+            "xpath": {
+                "selector": "/html/head/title",
+                "unique": false
+            }
+        }
+    }
+]

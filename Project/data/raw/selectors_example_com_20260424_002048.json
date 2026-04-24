@@ -1,0 +1,12 @@
+[
+    {
+        "tag": "a",
+        "text": "Learn more",
+        "attributes": {
+            "href": "https://iana.org/domains/example"
+        },
+        "selectors": {
+            "text": "text=\"Learn more\""
+        }
+    }
+]
