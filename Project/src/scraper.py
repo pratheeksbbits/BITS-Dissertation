@@ -1,13 +1,7 @@
-"""
-Web Element Scraper Module
-Handles element extraction from web pages using Playwright.
-"""
-
 import logging
 from typing import List, Dict, Optional
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
 
-# Constants
 IMPORTANT_TAGS = ["button", "input", "textarea", "select", "a"]
 TEXT_CONTENT_TAGS = ["h1", "h2", "h3", "h4", "h5", "h6", "p", "label", "span", "strong", "em", "div"]
 
@@ -17,8 +11,8 @@ MODE_SELECTORS = {
     "all": 'button, input, select, textarea, a, [role="button"], [role="link"], [role="textbox"], h1, h2, h3, h4, h5, h6, label, p, span, strong, em, div[role="article"]'
 }
 
+# Creates a CSS selector for a web element
 def generate_css_selector(element_handle):
-    """Generate CSS selector for element."""
     try:
         return element_handle.evaluate('''el => {
             if (el.id) return '#' + el.id;
@@ -28,8 +22,8 @@ def generate_css_selector(element_handle):
     except:
         return None
 
+# Creates an XPath selector for a web element
 def generate_xpath(element_handle):
-    """Generate XPath selector for element."""
     try:
         return element_handle.evaluate('''el => {
             let path = [];
@@ -47,8 +41,8 @@ def generate_xpath(element_handle):
     except:
         return None
 
+# Generates a locator based on ARIA role and name
 def get_role_based_locator(element_handle):
-    """Generate role-based locator."""
     try:
         role = element_handle.get_attribute('role') or ''
         name = element_handle.get_attribute('aria-label') or element_handle.inner_text().strip()[:50] or ''
@@ -58,15 +52,15 @@ def get_role_based_locator(element_handle):
     except:
         return None
 
+# Generates a locator using test IDs
 def get_test_id_locator(element_handle):
-    """Generate test ID locator."""
     test_id = element_handle.get_attribute('data-testid') or element_handle.get_attribute('data-test') or ''
     if test_id:
         return f"getByTestId('{test_id}')"
     return None
 
+# Generates a locator based on visible text
 def get_text_based_locator(element_handle):
-    """Generate text-based locator."""
     try:
         text = element_handle.inner_text(timeout=2000).strip()[:50]
         if text:
@@ -75,19 +69,8 @@ def get_text_based_locator(element_handle):
         pass
     return None
 
+# Scrapes elements from a webpage using Playwright
 def extract_elements(url: str, mode: str = "all", custom_selector: str = None, headless: bool = True) -> List[Dict]:
-    """
-    Extract elements from a webpage.
-
-    Args:
-        url: Target URL
-        mode: Extraction mode
-        custom_selector: Custom CSS selector
-        headless: Whether to run browser in headless mode
-
-    Returns:
-        List of element dictionaries
-    """
     if custom_selector:
         selector = custom_selector
         mode_to_use = "custom"
@@ -119,7 +102,6 @@ def extract_elements(url: str, mode: str = "all", custom_selector: str = None, h
 
             try:
                 print(f"   [Browser] Navigating to {url}...")
-                # Try networkidle first, but fall back to domcontentloaded if it takes too long
                 try:
                     page.goto(url, wait_until="networkidle", timeout=60000)
                     print("   [Browser] Page loaded with networkidle")
@@ -128,15 +110,12 @@ def extract_elements(url: str, mode: str = "all", custom_selector: str = None, h
                     page.goto(url, wait_until="domcontentloaded", timeout=45000)
                     print("   [Browser] Page loaded with domcontentloaded")
 
-                # Wait a bit for dynamic content
                 print("   [Browser] Waiting for dynamic content...")
                 page.wait_for_timeout(8000)
 
-                # Check if page actually loaded
                 title = page.title()
                 print(f"   [Browser] Page title: '{title}'")
 
-                # Additional check - try to get some basic page info
                 url_check = page.url
                 print(f"   [Browser] Current URL: {url_check}")
 
@@ -148,12 +127,9 @@ def extract_elements(url: str, mode: str = "all", custom_selector: str = None, h
             try:
                 print(f"   [Browser] Extracting elements with selector: {selector[:50]}...")
 
-                # For complex websites, limit the number of elements to prevent hanging
-                MAX_ELEMENTS = 200  # Limit to prevent processing too many elements
+                MAX_ELEMENTS = 200
 
-                # Split complex selectors into smaller chunks to avoid hanging
                 if mode_to_use == "all":
-                    # Process interactive elements first
                     interactive_selector = MODE_SELECTORS["interactive"]
                     text_selector = MODE_SELECTORS["text"]
 
@@ -189,7 +165,6 @@ def extract_elements(url: str, mode: str = "all", custom_selector: str = None, h
 
                     elements = interactive_elements + text_elements
                 else:
-                    # For simpler modes, use the original approach but with timeout and limit
                     try:
                         elements = page.eval_on_selector_all(
                             selector,
@@ -204,7 +179,6 @@ def extract_elements(url: str, mode: str = "all", custom_selector: str = None, h
                         print(f"   [Browser] Error extracting elements: {e}")
                         elements = []
 
-                # Limit total elements to prevent excessive processing
                 if len(elements) > MAX_ELEMENTS:
                     print(f"   [Browser] Limiting elements from {len(elements)} to {MAX_ELEMENTS}")
                     elements = elements[:MAX_ELEMENTS]
@@ -216,13 +190,11 @@ def extract_elements(url: str, mode: str = "all", custom_selector: str = None, h
 
             elements_data = []
 
-            # For complex websites, we need to get handles differently
             if mode == "all":
-                # Get handles for interactive and text elements separately
                 print("   [Browser] Getting handles for interactive elements...")
                 try:
                     interactive_handles = page.query_selector_all(interactive_selector)
-                    interactive_handles = interactive_handles[:100]  # Limit handles too
+                    interactive_handles = interactive_handles[:100]
                     print(f"   [Browser] Got {len(interactive_handles)} interactive handles")
                 except Exception as e:
                     print(f"   [Browser] Error getting interactive handles: {e}")
@@ -231,7 +203,7 @@ def extract_elements(url: str, mode: str = "all", custom_selector: str = None, h
                 print("   [Browser] Getting handles for text elements...")
                 try:
                     text_handles = page.query_selector_all(text_selector)
-                    text_handles = text_handles[:100]  # Limit handles too
+                    text_handles = text_handles[:100]
                     print(f"   [Browser] Got {len(text_handles)} text handles")
                 except Exception as e:
                     print(f"   [Browser] Error getting text handles: {e}")
@@ -283,7 +255,6 @@ def extract_elements(url: str, mode: str = "all", custom_selector: str = None, h
                         logging.warning(f"Error processing element {idx}: {e}")
                         continue
             else:
-                # For simpler modes, use the original approach
                 for idx, elem in enumerate(elements):
                     try:
                         handles = page.query_selector_all(selector)

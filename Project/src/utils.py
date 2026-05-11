@@ -1,21 +1,14 @@
-"""
-Utility Functions Module
-Common utilities used across the framework.
-"""
-
 import json
 from datetime import datetime
 from typing import List, Dict
 from urllib.parse import urlparse
 
 def save_json(data: List[Dict], filename: str) -> str:
-    """Save data to JSON file with timestamp."""
     with open(filename, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
     return filename
 
 def extract_domain(url: str) -> str:
-    """Extract domain name from URL for filename."""
     try:
         parsed = urlparse(url)
         domain = parsed.netloc
@@ -29,7 +22,6 @@ def extract_domain(url: str) -> str:
         return "unknown"
 
 def generate_timestamped_filename(prefix: str = "dataset", website: str = None, extension: str = "json") -> str:
-    """Generate timestamped filename with optional website name."""
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
     if website:
         domain = extract_domain(website)
@@ -38,7 +30,6 @@ def generate_timestamped_filename(prefix: str = "dataset", website: str = None, 
         return f"{prefix}_{timestamp}.{extension}"
 
 def print_dataset_stats(data: List[Dict], title: str = "Dataset Statistics"):
-    """Print comprehensive dataset statistics."""
     if not data:
         print(f"{title}: No data")
         return
@@ -63,14 +54,12 @@ def print_dataset_stats(data: List[Dict], title: str = "Dataset Statistics"):
         print(f"  • Average selector length: {avg_length:.1f}")
 
 def validate_url(url: str) -> bool:
-    """Basic URL validation."""
     if not url or len(url.strip()) == 0:
         return False
     url = url.strip()
     return url.startswith('http://') or url.startswith('https://')
 
 def validate_css_selector(selector: str) -> bool:
-    """Basic CSS selector validation."""
     if not selector or len(selector.strip()) == 0:
         return False
     selector = selector.strip()

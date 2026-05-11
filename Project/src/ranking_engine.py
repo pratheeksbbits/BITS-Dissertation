@@ -1,21 +1,16 @@
-"""
-Selector Ranking Engine Module
-Handles feature extraction, scoring, ranking, and dataset building.
-"""
-
 import logging
 from typing import Dict, List, Optional
 from playwright.sync_api import sync_playwright
 from urllib.parse import urlparse
 
 class SelectorFeatureExtractor:
-    """Extracts features for selector validation."""
 
+    # Initializes the feature extractor with a page
     def __init__(self, page):
         self.page = page
 
+    # Extracts features for a selector to assess its stability
     def extract_features(self, selector: str, selector_type: str, element_attrs: Dict, xpath: Optional[str] = None) -> Dict:
-        """Extract comprehensive features for a selector."""
         features = {}
         playwright_selector = self._prepare_selector_for_playwright(selector, selector_type)
 
@@ -41,11 +36,13 @@ class SelectorFeatureExtractor:
 
         return features
 
+    # Prepares a selector for Playwright locator
     def _prepare_selector_for_playwright(self, selector: str, selector_type: str) -> str:
         if selector_type == "xpath":
             return f"xpath={selector}"
         return selector
 
+    # Checks if selector has dynamic patterns that make it unstable
     def _has_dynamic_pattern(self, selector: str) -> int:
         unstable_attrs = ['style', 'onclick', 'onload', 'onerror', 'javascript', 'onmouseover', 'onmouseout']
         for attr in unstable_attrs:
@@ -53,6 +50,7 @@ class SelectorFeatureExtractor:
                 return 1
         return 0
 
+    # Checks if selector uses unstable attributes
     def _has_unstable_attr(self, selector: str) -> int:
         unstable_attrs = ['style', 'onclick', 'onload', 'onerror', 'javascript', 'onmouseover', 'onmouseout']
         for attr in unstable_attrs:
@@ -60,11 +58,13 @@ class SelectorFeatureExtractor:
                 return 1
         return 0
 
+    # Calculates the DOM depth from XPath
     def _get_dom_depth(self, xpath: str) -> int:
         if not xpath:
             return 0
         return max(0, xpath.count('/') - 1)
 
+    # Gets the sibling count from XPath position
     def _get_sibling_count(self, xpath: str) -> int:
         if not xpath:
             return 0
@@ -76,15 +76,14 @@ class SelectorFeatureExtractor:
         return 0
 
 class SelectorScorer:
-    """Scores selectors based on features."""
 
     SELECTOR_TYPE_SCORES = {
         "data-testid": 1.0, "id": 0.9, "name": 0.8, "aria-label": 0.7,
         "css": 0.6, "text": 0.5, "xpath": 0.3, "class": 0.2
     }
 
+    # Calculates a stability score for a selector based on its features
     def score_selector(self, features: Dict, selector_type: str) -> float:
-        """Calculate score for a selector."""
         if features['match_count'] == 0:
             return -100.0
 
@@ -102,10 +101,9 @@ class SelectorScorer:
         return score
 
 class SelectorRanker:
-    """Ranks selectors by score."""
 
+    # Ranks selectors by their stability score in descending order
     def rank_selectors(self, selector_data: List[Dict]) -> List[Dict]:
-        """Rank selectors by score (descending)."""
         ranked = sorted(selector_data, key=lambda x: x['score'], reverse=True)
         for i, item in enumerate(ranked, 1):
             item['rank'] = i
@@ -113,10 +111,9 @@ class SelectorRanker:
         return ranked
 
 class DatasetBuilder:
-    """Builds training-ready dataset."""
 
+    # Builds a dataset from ranked elements for ML training
     def build_dataset(self, url: str, ranked_elements: List[Dict]) -> List[Dict]:
-        """Transform ranked elements into dataset rows."""
         dataset = []
         for element in ranked_elements:
             for sel_data in element['ranked_selectors']:
@@ -134,17 +131,8 @@ class DatasetBuilder:
                 dataset.append(row)
         return dataset
 
+# Ranks selectors for all elements on a webpage
 def rank_selectors_for_elements(url: str, elements: List[Dict]) -> List[Dict]:
-    """
-    Main function to rank selectors for all elements on a page.
-
-    Args:
-        url: Target URL
-        elements: List of element dicts from DOM extraction
-
-    Returns:
-        Elements with ranked_selectors added
-    """
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()

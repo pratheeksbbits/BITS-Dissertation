@@ -1,0 +1,119 @@
+prediction,probability,confidence,is_stable,original_label,selector
+1,0.987318,0.97463596,True,1,"text=""About"""
+1,0.987318,0.97463596,True,1,"text=""Store"""
+1,0.987318,0.97463596,True,1,"text=""Gmail"""
+1,0.97667956,0.9533591,True,1,"[aria-label=""Gmail ""]"
+1,0.98896503,0.97793007,True,1,"text=""Images"""
+1,0.9836916,0.96738315,True,1,.gb_C
+1,0.9850949,0.9701898,True,1,.gb_A
+1,0.9855297,0.97105944,True,1,"text=""Sign in"""
+1,0.97877777,0.95755553,True,1,"[aria-label=""Sign in""]"
+1,0.963871,0.927742,True,1,.gb_0
+1,0.98417443,0.96834886,True,1,"text=""Sign in"""
+1,0.9836916,0.96738315,True,1,#spchx
+1,0.9553459,0.91069186,True,1,.pz5bj
+1,0.97522384,0.9504477,True,1,"[aria-label=""close""]"
+1,0.9853129,0.97062576,True,1,#spchl
+1,0.9596696,0.9193392,True,1,.r8s4j
+1,0.9864118,0.9728236,True,1,#spchb
+1,0.9864118,0.9728236,True,1,.LgbsSe
+1,0.9839177,0.9678354,True,1,.receiver
+1,0.98425597,0.96851194,True,1,.stem
+1,0.98425597,0.96851194,True,1,.shell
+1,0.9553459,0.91069186,True,1,#yZ04Ef
+1,0.9836916,0.96738315,True,1,#KHjmsf
+1,0.9596696,0.9193392,True,1,.Ty0Rrc
+1,0.9836916,0.96738315,True,1,#APjFqb
+1,0.98682564,0.9736513,True,1,"[name=""q""]"
+1,0.9836916,0.96738315,True,1,.gLFyf
+1,0.9763981,0.9527962,True,1,"[aria-label=""Search""]"
+1,0.9553459,0.91069186,True,1,.vOY7J
+1,0.9763981,0.9527962,True,1,"[aria-label=""Clear""]"
+1,0.9853129,0.97062576,True,1,.ExCKkf
+1,0.9553459,0.91069186,True,1,.XDyW0e
+1,0.9836916,0.96738315,True,1,.nDcEnd
+1,0.9553459,0.91069186,True,1,.Job8vb
+1,0.96288466,0.9257693,True,1,.Sz7Lee
+1,0.97389483,0.94778967,True,1,"[aria-label=""See more""]"
+1,0.9849304,0.9698608,True,1,.LGwnxb
+1,0.98375493,0.96750987,True,1,"text=""See more"""
+1,0.9586278,0.91725564,True,1,.w2fKdd
+1,0.9849101,0.96982014,True,1,.WzNHm
+1,0.95563304,0.9112661,True,1,.WzNHm.mWcf0e
+1,0.9875871,0.9751742,True,1,"[name=""sca_esv""]"
+1,0.98826873,0.97653747,True,1,"[name=""ei""]"
+1,0.9879275,0.975855,True,1,"text=""हिन्दी"""
+1,0.98640335,0.9728067,True,1,"text=""বাংলা"""
+1,0.9879275,0.975855,True,1,"text=""తెలుగు"""
+1,0.98640335,0.9728067,True,1,"text=""मराठी"""
+1,0.98640335,0.9728067,True,1,"text=""தமிழ்"""
+1,0.98640335,0.9728067,True,1,"text=""ಕನ್ನಡ"""
+1,0.9879275,0.975855,True,1,"text=""മലയാളം"""
+1,0.9879275,0.975855,True,1,"text=""ਪੰਜਾਬੀ"""
+1,0.98896503,0.97793007,True,1,"text=""Business"""
+1,0.987318,0.97463596,True,1,"text=""Terms"""
+1,0.98661125,0.9732225,True,1,"text=""Settings"""
+1,0.9633292,0.9266584,True,1,.CcNe6e
+1,0.98896503,0.97793007,True,1,"text=""Settings"""
+1,0.98450977,0.96901953,True,1,.tFYjZe
+1,0.977423,0.954846,True,1,.csi
+1,0.98241836,0.9648367,True,1,"[name=""csi""]"
+0,0.06396636,0.8720673,False,0,.z76Rnb
+0,0.008660338,0.9826793,False,0,/html/body/div[2]/div[4]/form/div/div/div[2]/div[4]/li/div/div[2]/div/div[3]/span
+0,0.008660338,0.9826793,False,0,/html/body/div[2]/div[4]/dialog/div/div/div/div/span[2]/div/span
+0,0.017690467,0.96461904,False,0,"[aria-label=""Search by voice""]"
+0,0.02608576,0.9478285,False,0,"text=""Advanced search"""
+0,0.010072869,0.9798543,False,0,.z76Rnb.z1asCe.JKu1je
+0,0.07675955,0.8464809,False,0,.gNO89b
+0,0.022991268,0.95401746,False,0,"text=""How Search works"""
+0,0.008093408,0.98381317,False,0,/html/body/div[2]/div[4]/form/div/div/div[3]/center/input
+0,0.008660338,0.9826793,False,0,/html/body/div[2]/div[4]/form/div/div/div/div/div/div/span
+0,0.008660338,0.9826793,False,0,/html/body/div[2]/div[5]/div[3]/div/a[4]
+0,0.008660338,0.9826793,False,0,/html/body/div[2]/div[4]/form/div/div/div/div/div[2]/textarea
+0,0.008093408,0.98381317,False,0,/html/body/div[2]/div[4]/form/div/div/div[2]/div[4]/div[5]/div/div[2]
+0,0.06341752,0.87316495,False,0,.gb_4
+0,0.060223613,0.8795528,False,0,"text=""ગુજરાતી"""
+0,0.008660338,0.9826793,False,0,/html/body/div[2]/div[5]/div[3]/div/a[8]
+0,0.014965912,0.97006816,False,0,"[aria-label=""Close Choose what you’re giving feedback on""]"
+0,0.008660338,0.9826793,False,0,/html/body/div[2]/div[4]/form/div/div/div[2]/div[5]/div
+0,0.008660338,0.9826793,False,0,/html/body/div[2]/div[5]/div[3]/div/a[2]
+0,0.0131852515,0.9736295,False,0,"text=""9bb8411b62548352"""
+0,0.010507572,0.97898483,False,0,"text="".microphone{height:87px;pointer-events:none;positi"""
+0,0.008660338,0.9826793,False,0,/html/body/div[2]/div[2]/div/div/header/div[2]/div/a
+0,0.008660338,0.9826793,False,0,/html/body/div[2]/div[7]/div/div[2]/div[2]/span/span/g-popup/div[2]/g-menu/g-menu-item[4]/div/a
+0,0.008660338,0.9826793,False,0,/html/body/div[2]/div[2]/div/div/header/div[3]/a
+0,0.039948177,0.92010367,False,0,.z1asCe.aqvxcd
+0,0.008093408,0.98381317,False,0,/html/body/div[2]/div[4]/form/div/div/div[2]/div[4]/li/div/div[2]/div[2]/div/span
+0,0.18102567,0.63794863,False,0,"[name=""btnK""]"
+0,0.009887942,0.98022413,False,0,"[aria-label=""I'm Feeling Lucky""]"
+0,0.008660338,0.9826793,False,0,/html/body/div[2]/div[4]/form/div/div/div[2]/div[4]/li/div/div[2]/div[2]/div/span[2]
+0,0.06341752,0.87316495,False,0,.MV3Tnb
+0,0.008660338,0.9826793,False,0,/html/body/div[2]/div[2]/div/div/header/div[3]/a/span
+0,0.008660338,0.9826793,False,0,/html/body/div[2]/div[4]/form/div/div/div[2]/div[4]/li/div/div[2]/div[2]
+0,0.061856445,0.8762871,False,0,.Tnv2td
+0,0.008660338,0.9826793,False,0,/html/body/div[2]/div[4]/dialog/div/div/div/div[2]/span[2]
+0,0.008093408,0.98381317,False,0,/html/body/div[2]/div[4]/form/div/div/div[2]/div[4]/li[4]/div/div[2]/div/div/span
+0,0.02608576,0.9478285,False,0,"text=""Search settings"""
+0,0.012996773,0.9740065,False,0,"text=""603raf2KLviJ5OUP7sjb-A8"""
+0,0.010341486,0.979317,False,0,.z1asCe.wuXmqc
+0,0.011424379,0.9771512,False,0,"text=""I'm Feeling Lucky"""
+0,0.06341752,0.87316495,False,0,.z5vYxf
+0,0.040570147,0.9188597,False,0,.LGwnxb.JGD2rd
+0,0.008660338,0.9826793,False,0,/html/body/div[2]/div[4]/form/div/div/div[2]/div[4]/div[5]/div/div[2]/span
+0,0.008660338,0.9826793,False,0,/html/body/div[2]/div[5]/div[3]/div/a[5]
+0,0.008660338,0.9826793,False,0,/html/body/div[2]/div[4]/form/div/div/div/div/div[3]/div/div/span
+0,0.06906778,0.86186445,False,0,.AQZ9Vd
+0,0.008660338,0.9826793,False,0,/html/body/div[2]/div[7]/div/div[2]/div[2]/span/span/g-popup/div[2]/g-menu/g-menu-item[6]/div/span
+0,0.019954585,0.9600908,False,0,"[aria-label=""Google apps""]"
+0,0.017690467,0.96461904,False,0,"[aria-label=""Search by image""]"
+0,0.008660338,0.9826793,False,0,/html/body/div[2]/div[4]/form/div/div/div[2]/div[4]/div[5]/span
+0,0.029921005,0.940158,False,0,.Ty0Rrc.z1asCe.MZy1Rb
+0,0.019987436,0.96002513,False,0,"text=""Your data in Search"""
+0,0.025870934,0.94825816,False,0,/html/body/div[2]/div[4]/form/div/div/div/div/div[3]/div/div
+0,0.008660338,0.9826793,False,0,/html/body/div[2]/div[5]/div[3]/div/a[6]
+0,0.011124667,0.97775066,False,0,/html/body/div[3]/span/span
+0,0.025870934,0.94825816,False,0,/html/body/div[2]/div[4]/form/div/div/div[2]/div[4]/li[2]/div/div/div/div[2]
+0,0.008093408,0.98381317,False,0,/html/body/div[2]/div[2]/div/div/header/div/div/a
+0,0.008660338,0.9826793,False,0,/html/body/div[2]/div[4]/form/div/div/div[2]/div[4]/li[4]/div/div[2]/div/div[2]/span
+0,0.008093408,0.98381317,False,0,/html/body/div[2]/div[4]/form/div/div/div[2]/div[4]/div[6]/center/input
+0,0.008093408,0.98381317,False,0,/html/body/div[2]/div[4]/form/div/div/div[2]/div[4]/li/div/div[2]/div/div[2]/span

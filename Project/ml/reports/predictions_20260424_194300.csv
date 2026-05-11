@@ -1,0 +1,628 @@
+prediction,probability,confidence,is_stable,original_label,selector
+1,0.97614723,0.95229447,True,,.header__skip-link
+1,0.73592085,0.4718417,True,,/html/body/header/a
+1,0.97614723,0.95229447,True,,.header__skip-link
+1,0.9663439,0.93268776,True,,"text=""Skip to main content"""
+1,0.98771733,0.97543466,True,,.header__logo
+1,0.98771733,0.97543466,True,,.header__logo
+1,0.95113754,0.9022751,True,,"[aria-label=""Homepage of ZEISS Group Global""]"
+0,0.06234479,0.8753104,False,,/html/body/header/div[2]/div/div/a
+1,0.9724034,0.9448068,True,,.plain-link.header__backlink
+1,0.6305486,0.2610972,True,,/html/body/header/div[2]/div/div/a[2]
+1,0.95113754,0.9022751,True,,"[aria-label=""Click here to go back to the previous navigation layer""]"
+0,0.15880066,0.6823987,False,,.plain-link
+0,0.15880066,0.6823987,False,,"text=""back"""
+1,0.98771733,0.97543466,True,,"text=""About us"""
+1,0.9717435,0.94348705,True,,"[aria-label=""About us ""]"
+1,0.9544671,0.90893424,True,,.header__first-level-link.header__first-level-link--lazy
+0,0.18490306,0.6301939,False,,.header__first-level-link
+0,0.06234479,0.8753104,False,,/html/body/header/div[2]/div/div/div/div[2]/nav/ul/li/a
+1,0.9659531,0.9319062,True,,"text=""Products and solutions"""
+1,0.95113754,0.9022751,True,,"[aria-label=""Products and solutions""]"
+1,0.6305486,0.2610972,True,,/html/body/header/div[2]/div/div/div/div[2]/nav/ul/li[2]/a
+0,0.18490306,0.6301939,False,,.header__first-level-link
+0,0.18490306,0.6301939,False,,.header__first-level-link
+1,0.98771733,0.97543466,True,,"text=""Careers"""
+1,0.983889,0.96777797,True,,"[aria-label=""Careers""]"
+1,0.6305486,0.2610972,True,,/html/body/header/div[2]/div/div/div/div[2]/nav/ul/li[3]/a
+0,0.18490306,0.6301939,False,,.header__first-level-link
+0,0.18490306,0.6301939,False,,.header__first-level-link
+1,0.6305486,0.2610972,True,,/html/body/header/div[2]/div/div/div/div[2]/nav[2]/ul/li/a
+0,0.1655094,0.6689812,False,,"text=""Contact"""
+0,0.1655094,0.6689812,False,,"[aria-label=""Contact""]"
+0,0.18490306,0.6301939,False,,.header__first-level-link
+0,0.18490306,0.6301939,False,,.header__first-level-link
+1,0.6305486,0.2610972,True,,/html/body/header/div[2]/div/div/div/nav/ul/li/a
+0,0.1655094,0.6689812,False,,"text=""Contact"""
+0,0.1655094,0.6689812,False,,"[aria-label=""Contact""]"
+0,0.18490306,0.6301939,False,,.header__first-level-link
+0,0.18490306,0.6301939,False,,.header__first-level-link
+1,0.6305486,0.2610972,True,,/html/body/header/div[2]/div/div/div/div[4]/ul/li[2]/a
+0,0.18490306,0.6301939,False,,.header__first-level-link
+0,0.18490306,0.6301939,False,,.header__first-level-link
+0,0.1573685,0.68526304,False,,"text=""Annual Report of the ZEISS Group"""
+0,0.1573685,0.68526304,False,,"[aria-label=""Annual Report of the ZEISS Group""]"
+1,0.6305486,0.2610972,True,,/html/body/header/div[2]/div/div/div/div[4]/ul/li[3]/a
+0,0.1655094,0.6689812,False,,"text=""ZEISS Forum"""
+0,0.18490306,0.6301939,False,,"[aria-label=""ZEISS Forum""]"
+0,0.18490306,0.6301939,False,,.header__first-level-link
+0,0.18490306,0.6301939,False,,.header__first-level-link
+1,0.9634313,0.9268626,True,,"[aria-label=""Search on Site""]"
+1,0.6305486,0.2610972,True,,/html/body/header/div[2]/div/div/div[2]/div/div/a
+0,0.18490306,0.6301939,False,,.header__first-level-link
+1,0.9544671,0.90893424,True,,.header__first-level-link.header__action-area__search.header__first-level-link--icon.header__first-level-link--no-label
+1,0.98556155,0.9711231,True,,.main-menu-toggle
+1,0.98556155,0.9711231,True,,.main-menu-toggle
+1,0.95113754,0.9022751,True,,"[aria-label=""Open / close menu""]"
+1,0.6305486,0.2610972,True,,/html/body/header/div[2]/div/div/div[2]/div/div[2]/button
+1,0.95113754,0.9022751,True,,"[aria-label=""Close the megamenu using this link""]"
+1,0.9544671,0.90893424,True,,.plain-link.header__megamenu__close-button
+1,0.6305486,0.2610972,True,,/html/body/header/div[2]/div/div/div[3]/div[2]/div/div/div/a
+0,0.15880066,0.6823987,False,,.plain-link
+1,0.98739064,0.9747813,True,,"[name=""query""]"
+1,0.9834621,0.9669242,True,,"[aria-label=""search""]"
+1,0.9532975,0.906595,True,,"[placeholder=""What can we help you find today?""]"
+1,0.6305486,0.2610972,True,,/html/body/header/div[3]/div/div/section/div/div[2]/div/div/div/div/form/div/div/input
+0,0.12653364,0.74693274,False,,input
+0,0.24009016,0.5198197,False,,"getByRole('combobox', { name: 'search' })"
+1,0.98641706,0.9728341,True,,"text=""Search"""
+1,0.6305486,0.2610972,True,,/html/body/header/div[3]/div/div/section/div/div[2]/div/div/div/div/form/div/div[2]/div/a
+0,0.15190443,0.69619113,False,,.button-link--icon
+0,0.15190443,0.69619113,False,,.button-link--icon
+1,0.9544671,0.90893424,True,,.background-media__video-controls
+1,0.9544671,0.90893424,True,,.background-media__video-controls
+1,0.6305486,0.2610972,True,,/html/body/main/div/div/div[2]/div/div/div/div/figure[2]/button
+1,0.9851783,0.9703566,True,,"text=""Learn more"""
+1,0.9498869,0.89977384,True,,"[aria-label=""Learn more about AI at ZEISS""]"
+1,0.6305486,0.2610972,True,,/html/body/main/div/div/div[2]/div/div/div/div[2]/div/div/div/div/div[2]/a
+0,0.20107034,0.5978593,False,,.
+0,0.20107034,0.5978593,False,,.
+0,0.12950167,0.74099666,False,,#false
+0,0.12950167,0.74099666,False,,#false
+0,0.06234479,0.8753104,False,,/html/body/main/div/div/div[3]/div/div/div/div/ul/li/button
+0,0.24497476,0.5100505,False,,"text=""Vision Care
+
+Extended Reality"""
+1,0.6305486,0.2610972,True,,/html/body/main/div/div/div[3]/div/div/div/div/ul/li[2]/button
+0,0.12950167,0.74099666,False,,#false
+0,0.12950167,0.74099666,False,,#false
+0,0.18490306,0.6301939,False,,"text=""Medical Technology"""
+1,0.6305486,0.2610972,True,,/html/body/main/div/div/div[3]/div/div/div/div/ul/li[3]/button
+0,0.12950167,0.74099666,False,,#false
+0,0.12950167,0.74099666,False,,#false
+0,0.1573685,0.68526304,False,,"text=""Semiconductor Manufacturing Technology"""
+1,0.6305486,0.2610972,True,,/html/body/main/div/div/div[3]/div/div/div/div/ul/li[4]/button
+0,0.12950167,0.74099666,False,,#false
+0,0.12950167,0.74099666,False,,#false
+0,0.1573685,0.68526304,False,,"text=""Industrial Quality Solutions"""
+1,0.6305486,0.2610972,True,,/html/body/main/div/div/div[3]/div/div/div/div/ul/li[5]/button
+0,0.12950167,0.74099666,False,,#false
+0,0.12950167,0.74099666,False,,#false
+0,0.1573685,0.68526304,False,,"text=""Research Microscopy Solutions"""
+1,0.6305486,0.2610972,True,,/html/body/main/div/div/div[3]/div/div/div/div/ul/li[6]/button
+0,0.12950167,0.74099666,False,,#false
+0,0.12950167,0.74099666,False,,#false
+0,0.24497476,0.5100505,False,,"text=""Photography
+
+Cinematography"""
+1,0.6305486,0.2610972,True,,/html/body/main/div/div/div[3]/div/div/div/div/ul/li[7]/button
+0,0.12950167,0.74099666,False,,#false
+0,0.12950167,0.74099666,False,,#false
+0,0.24497476,0.5100505,False,,"text=""Hunting
+
+Nature Observation"""
+1,0.6305486,0.2610972,True,,/html/body/main/div/div/div[3]/div/div/div/div/ul/li[8]/button
+0,0.12950167,0.74099666,False,,#false
+0,0.12950167,0.74099666,False,,#false
+0,0.24497476,0.5100505,False,,"text=""Simulation Projection Solutions
+
+Planetariums"""
+1,0.6305486,0.2610972,True,,/html/body/main/div/div/div[3]/div/div/div/div/ul/li[9]/button
+0,0.12950167,0.74099666,False,,#false
+0,0.12950167,0.74099666,False,,#false
+0,0.24497476,0.5100505,False,,"text=""Spectroscopy
+
+OEM Solutions"""
+1,0.6305486,0.2610972,True,,/html/body/main/div/div/div[3]/div/div/div/div/ul/li[10]/button
+0,0.12950167,0.74099666,False,,#false
+0,0.12950167,0.74099666,False,,#false
+0,0.18490306,0.6301939,False,,"text=""Digital Solutions"""
+0,0.1538747,0.6922506,False,,.segment-routing__content__close-btn
+0,0.1538747,0.6922506,False,,.segment-routing__content__close-btn
+0,0.06234479,0.8753104,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div/button
+0,0.1552809,0.6894382,False,,"text=""back"""
+0,0.16186957,0.6762608,False,,.button-link--backlink
+0,0.06234479,0.8753104,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div/div/a
+0,0.1538747,0.6922506,False,,.button-link--backlink.button-link--icon.button-link--icon-flow-start
+0,0.1538747,0.6922506,False,,.segment-routing__navigation__link
+0,0.1538747,0.6922506,False,,.segment-routing__navigation__link
+0,0.06234479,0.8753104,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div/div[2]/a
+0,0.1538747,0.6922506,False,,.segment-routing__navigation__link
+0,0.1538747,0.6922506,False,,.segment-routing__navigation__link
+0,0.06234479,0.8753104,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div/div[2]/a[2]
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS Vision Care""]"
+0,0.1421187,0.7157626,False,,"text=""Vision Care"""
+0,0.18532449,0.629351,False,,.
+0,0.18532449,0.629351,False,,.
+0,0.05793442,0.8841312,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div/div[3]/div/article/div/div[2]/div[2]/a
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS products for eye care professionals""]"
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+0,0.05793442,0.8841312,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div/div[3]/div/article/div[2]/ul/li/div/a
+1,0.9420589,0.88411784,True,,"[aria-label=""Consumer — nobody sees like you""]"
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+0,0.05793442,0.8841312,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div/div[3]/div/article/div[2]/ul/li[2]/div/a
+1,0.9420589,0.88411784,True,,"[aria-label=""Plano lenses for sun protection""]"
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+0,0.05793442,0.8841312,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div/div[3]/div/article/div[2]/ul/li[3]/div/a
+1,0.9420589,0.88411784,True,,"[aria-label=""Go to the Extended Reality website""]"
+0,0.15019724,0.6996055,False,,"text=""Extended Reality"""
+0,0.18532449,0.629351,False,,.
+0,0.18532449,0.629351,False,,.
+0,0.05793442,0.8841312,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div/div[3]/div[2]/article/div/div[2]/div[2]/a
+1,0.6305486,0.2610972,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[2]/button
+0,0.1538747,0.6922506,False,,.segment-routing__content__close-btn
+0,0.1538747,0.6922506,False,,.segment-routing__content__close-btn
+1,0.6305486,0.2610972,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[2]/div/a
+0,0.1552809,0.6894382,False,,"text=""back"""
+0,0.16186957,0.6762608,False,,.button-link--backlink
+0,0.1538747,0.6922506,False,,.button-link--backlink.button-link--icon.button-link--icon-flow-start
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS Medical Technology""]"
+1,0.6121859,0.22437179,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[2]/div[2]/div/article/div/div[2]/div[2]/a
+0,0.15929481,0.6814104,False,,"text=""Medical Technology"""
+0,0.18532449,0.629351,False,,.
+0,0.18532449,0.629351,False,,.
+1,0.9420589,0.88411784,True,,"[aria-label=""Products & solutions — Medical Technology made by ZEISS""]"
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+0,0.05793442,0.8841312,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[2]/div[2]/div/article/div[2]/ul/li/div/a
+1,0.9420589,0.88411784,True,,"[aria-label=""Carl Zeiss Meditec AG""]"
+1,0.6121859,0.22437179,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[2]/div[2]/div/article/div[2]/ul/li[2]/div/a
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS Medical Technology Contact""]"
+1,0.6121859,0.22437179,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[2]/div[2]/div/article/div[2]/ul/li[3]/div/a
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+1,0.6305486,0.2610972,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[3]/button
+0,0.1538747,0.6922506,False,,.segment-routing__content__close-btn
+0,0.1538747,0.6922506,False,,.segment-routing__content__close-btn
+1,0.6305486,0.2610972,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[3]/div/a
+0,0.1552809,0.6894382,False,,"text=""back"""
+0,0.16186957,0.6762608,False,,.button-link--backlink
+0,0.1538747,0.6922506,False,,.button-link--backlink.button-link--icon.button-link--icon-flow-start
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS Semiconductor Manufacturing Technology​""]"
+1,0.6121859,0.22437179,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[3]/div[2]/div/article/div/div[2]/div[2]/a
+0,0.13494228,0.7301154,False,,"text=""Semiconductor Manufacturing Technology​"""
+0,0.18532449,0.629351,False,,.
+0,0.18532449,0.629351,False,,.
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS SMT — Inspiring technologies""]"
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+0,0.05793442,0.8841312,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[3]/div[2]/div/article/div[2]/ul/li/div/a
+1,0.966358,0.932716,True,,"[aria-label=""About SMT""]"
+1,0.6121859,0.22437179,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[3]/div[2]/div/article/div[2]/ul/li[2]/div/a
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+1,0.9420589,0.88411784,True,,"[aria-label=""Career at ZEISS SMT""]"
+1,0.6121859,0.22437179,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[3]/div[2]/div/article/div[2]/ul/li[3]/div/a
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+1,0.6305486,0.2610972,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[4]/button
+0,0.1538747,0.6922506,False,,.segment-routing__content__close-btn
+0,0.1538747,0.6922506,False,,.segment-routing__content__close-btn
+1,0.6305486,0.2610972,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[4]/div/a
+0,0.1552809,0.6894382,False,,"text=""back"""
+0,0.16186957,0.6762608,False,,.button-link--backlink
+0,0.1538747,0.6922506,False,,.button-link--backlink.button-link--icon.button-link--icon-flow-start
+1,0.6121859,0.22437179,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[4]/div[2]/div/article/div/div[2]/div[2]/a
+0,0.13494228,0.7301154,False,,"text=""Industrial Quality Solutions"""
+0,0.13494228,0.7301154,False,,"[aria-label=""Industrial Quality Solutions""]"
+0,0.18532449,0.629351,False,,.
+0,0.18532449,0.629351,False,,.
+1,0.9420589,0.88411784,True,,"[aria-label=""Learn more about Systems and Software""]"
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+0,0.05793442,0.8841312,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[4]/div[2]/div/article/div[2]/ul/li/div/a
+1,0.9420589,0.88411784,True,,"[aria-label=""Industrial Metrology Shop""]"
+1,0.6121859,0.22437179,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[4]/div[2]/div/article/div[2]/ul/li[2]/div/a
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+1,0.966358,0.932716,True,,"[aria-label=""ZEISS Portal""]"
+1,0.6121859,0.22437179,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[4]/div[2]/div/article/div[2]/ul/li[3]/div/a
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+1,0.6305486,0.2610972,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[5]/button
+0,0.1538747,0.6922506,False,,.segment-routing__content__close-btn
+0,0.1538747,0.6922506,False,,.segment-routing__content__close-btn
+1,0.6305486,0.2610972,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[5]/div/a
+0,0.1552809,0.6894382,False,,"text=""back"""
+0,0.16186957,0.6762608,False,,.button-link--backlink
+0,0.1538747,0.6922506,False,,.button-link--backlink.button-link--icon.button-link--icon-flow-start
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS Research Microscopy Solutions""]"
+1,0.6121859,0.22437179,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[5]/div[2]/div/article/div/div[2]/div[2]/a
+0,0.13494228,0.7301154,False,,"text=""Research Microscopy Solutions"""
+0,0.18532449,0.629351,False,,.
+0,0.18532449,0.629351,False,,.
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS Microscopes & systems""]"
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+0,0.05793442,0.8841312,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[5]/div[2]/div/article/div[2]/ul/li/div/a
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS Microscopy Applications""]"
+1,0.6121859,0.22437179,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[5]/div[2]/div/article/div[2]/ul/li[2]/div/a
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS Microscopy — Service & support""]"
+1,0.6121859,0.22437179,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[5]/div[2]/div/article/div[2]/ul/li[3]/div/a
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+1,0.6305486,0.2610972,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[6]/button
+0,0.1538747,0.6922506,False,,.segment-routing__content__close-btn
+0,0.1538747,0.6922506,False,,.segment-routing__content__close-btn
+0,0.1552809,0.6894382,False,,"text=""back"""
+0,0.16186957,0.6762608,False,,.button-link--backlink
+0,0.06234479,0.8753104,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[6]/div/a
+0,0.1538747,0.6922506,False,,.button-link--backlink.button-link--icon.button-link--icon-flow-start
+0,0.16186957,0.6762608,False,,"text=""Photography"""
+0,0.1809292,0.63814163,False,,"[aria-label=""Photography""]"
+0,0.1538747,0.6922506,False,,.segment-routing__navigation__link
+0,0.1538747,0.6922506,False,,.segment-routing__navigation__link
+0,0.06234479,0.8753104,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[6]/div[2]/a
+1,0.6305486,0.2610972,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[6]/div[2]/a[2]
+0,0.1809292,0.63814163,False,,"[aria-label=""Cinematography""]"
+0,0.16186957,0.6762608,False,,"text=""Cinematography"""
+0,0.1538747,0.6922506,False,,.segment-routing__navigation__link
+0,0.1538747,0.6922506,False,,.segment-routing__navigation__link
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS Photography""]"
+0,0.1421187,0.7157626,False,,"text=""Photography"""
+0,0.18532449,0.629351,False,,.
+0,0.18532449,0.629351,False,,.
+0,0.05793442,0.8841312,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[6]/div[3]/div/article/div/div[2]/div[2]/a
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS Products for photography""]"
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+0,0.05793442,0.8841312,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[6]/div[3]/div/article/div[2]/ul/li/div/a
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS service & contact photography""]"
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+0,0.05793442,0.8841312,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[6]/div[3]/div/article/div[2]/ul/li[2]/div/a
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS dealer search for photography""]"
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+0,0.05793442,0.8841312,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[6]/div[3]/div/article/div[2]/ul/li[3]/div/a
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS Cinematography""]"
+1,0.6121859,0.22437179,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[6]/div[3]/div[2]/article/div/div[2]/div[2]/a
+0,0.1421187,0.7157626,False,,"text=""Cinematography"""
+0,0.18532449,0.629351,False,,.
+0,0.18532449,0.629351,False,,.
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS products for cinematography""]"
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+0,0.05793442,0.8841312,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[6]/div[3]/div[2]/article/div[2]/ul/li/div/a
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS service & contact cinematography""]"
+1,0.6121859,0.22437179,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[6]/div[3]/div[2]/article/div[2]/ul/li[2]/div/a
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS dealer and rental search for cinematography""]"
+1,0.6121859,0.22437179,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[6]/div[3]/div[2]/article/div[2]/ul/li[3]/div/a
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+1,0.6305486,0.2610972,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[7]/button
+0,0.1538747,0.6922506,False,,.segment-routing__content__close-btn
+0,0.1538747,0.6922506,False,,.segment-routing__content__close-btn
+0,0.1552809,0.6894382,False,,"text=""back"""
+0,0.16186957,0.6762608,False,,.button-link--backlink
+0,0.06234479,0.8753104,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[7]/div/a
+0,0.1538747,0.6922506,False,,.button-link--backlink.button-link--icon.button-link--icon-flow-start
+0,0.16186957,0.6762608,False,,"text=""Hunting"""
+0,0.16186957,0.6762608,False,,"[aria-label=""Hunting""]"
+0,0.1538747,0.6922506,False,,.segment-routing__navigation__link
+0,0.1538747,0.6922506,False,,.segment-routing__navigation__link
+0,0.06234479,0.8753104,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[7]/div[2]/a
+1,0.6305486,0.2610972,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[7]/div[2]/a[2]
+0,0.1809292,0.63814163,False,,"text=""Nature Observation"""
+0,0.1538747,0.6922506,False,,"[aria-label=""Nature Observation""]"
+0,0.1538747,0.6922506,False,,.segment-routing__navigation__link
+0,0.1538747,0.6922506,False,,.segment-routing__navigation__link
+1,0.966358,0.932716,True,,"[aria-label=""ZEISS Hunting""]"
+0,0.1421187,0.7157626,False,,"text=""Hunting"""
+0,0.18532449,0.629351,False,,.
+0,0.18532449,0.629351,False,,.
+0,0.05793442,0.8841312,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[7]/div[3]/div/article/div/div[2]/div[2]/a
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS products for hunting""]"
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+0,0.05793442,0.8841312,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[7]/div[3]/div/article/div[2]/ul/li/div/a
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS service & contact hunting""]"
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+0,0.05793442,0.8841312,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[7]/div[3]/div/article/div[2]/ul/li[2]/div/a
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS dealer search for hunting""]"
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+0,0.05793442,0.8841312,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[7]/div[3]/div/article/div[2]/ul/li[3]/div/a
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS Nature Observation""]"
+1,0.6121859,0.22437179,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[7]/div[3]/div[2]/article/div/div[2]/div[2]/a
+0,0.15929481,0.6814104,False,,"text=""Nature Observation"""
+0,0.18532449,0.629351,False,,.
+0,0.18532449,0.629351,False,,.
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS products for nature observation""]"
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+0,0.05793442,0.8841312,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[7]/div[3]/div[2]/article/div[2]/ul/li/div/a
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS service & contact nature observation""]"
+1,0.6121859,0.22437179,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[7]/div[3]/div[2]/article/div[2]/ul/li[2]/div/a
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS dealer search for nature observation""]"
+1,0.6121859,0.22437179,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[7]/div[3]/div[2]/article/div[2]/ul/li[3]/div/a
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+1,0.6305486,0.2610972,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[8]/button
+0,0.1538747,0.6922506,False,,.segment-routing__content__close-btn
+0,0.1538747,0.6922506,False,,.segment-routing__content__close-btn
+0,0.1552809,0.6894382,False,,"text=""back"""
+0,0.16186957,0.6762608,False,,.button-link--backlink
+0,0.06234479,0.8753104,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[8]/div/a
+0,0.1538747,0.6922506,False,,.button-link--backlink.button-link--icon.button-link--icon-flow-start
+0,0.1538747,0.6922506,False,,.segment-routing__navigation__link
+0,0.1538747,0.6922506,False,,"text=""Simulation Projection Solutions"""
+0,0.1538747,0.6922506,False,,"[aria-label=""Simulation Projection Solutions""]"
+0,0.1538747,0.6922506,False,,.segment-routing__navigation__link
+0,0.06234479,0.8753104,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[8]/div[2]/a
+1,0.6305486,0.2610972,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[8]/div[2]/a[2]
+0,0.16186957,0.6762608,False,,"text=""Planetariums"""
+0,0.1809292,0.63814163,False,,"[aria-label=""Planetariums""]"
+0,0.1538747,0.6922506,False,,.segment-routing__navigation__link
+0,0.1538747,0.6922506,False,,.segment-routing__navigation__link
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS Simulation Projection Solutions""]"
+0,0.13494228,0.7301154,False,,"text=""Simulation Projection Solutions"""
+0,0.18532449,0.629351,False,,.
+0,0.18532449,0.629351,False,,.
+0,0.05793442,0.8841312,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[8]/div[3]/div/article/div/div[2]/div[2]/a
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS VELVET 4K SIM Projector""]"
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+0,0.05793442,0.8841312,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[8]/div[3]/div/article/div[2]/ul/li/div/a
+0,0.1421187,0.7157626,False,,"[aria-label=""Contact""]"
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+0,0.05793442,0.8841312,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[8]/div[3]/div/article/div[2]/ul/li[2]/div/a
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS Planetariums""]"
+0,0.1421187,0.7157626,False,,"text=""Planetariums"""
+1,0.6121859,0.22437179,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[8]/div[3]/div[2]/article/div/div[2]/div[2]/a
+0,0.18532449,0.629351,False,,.
+0,0.18532449,0.629351,False,,.
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS Planetarium — Planetarium Technology""]"
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+0,0.05793442,0.8841312,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[8]/div[3]/div[2]/article/div[2]/ul/li/div/a
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS Planetariums News""]"
+1,0.6121859,0.22437179,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[8]/div[3]/div[2]/article/div[2]/ul/li[2]/div/a
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS Planetariums Contact""]"
+1,0.6121859,0.22437179,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[8]/div[3]/div[2]/article/div[2]/ul/li[3]/div/a
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.13494228,0.7301154,False,,.segment-routing__quick-link__item
+0,0.21322317,0.5735537,False,,"text=""<img class=""lazy-image__image"" src=""https://www.ze"""
+1,0.6305486,0.2610972,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[9]/button
+0,0.1538747,0.6922506,False,,.segment-routing__content__close-btn
+0,0.1538747,0.6922506,False,,.segment-routing__content__close-btn
+0,0.1552809,0.6894382,False,,"text=""back"""
+0,0.16186957,0.6762608,False,,.button-link--backlink
+0,0.06234479,0.8753104,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[9]/div/a
+0,0.1538747,0.6922506,False,,.button-link--backlink.button-link--icon.button-link--icon-flow-start
+0,0.16186957,0.6762608,False,,"text=""Spectroscopy"""
+0,0.1809292,0.63814163,False,,"[aria-label=""Spectroscopy""]"
+0,0.1538747,0.6922506,False,,.segment-routing__navigation__link
+0,0.1538747,0.6922506,False,,.segment-routing__navigation__link
+0,0.06234479,0.8753104,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[9]/div[2]/a
+1,0.6305486,0.2610972,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[9]/div[2]/a[2]
+0,0.1809292,0.63814163,False,,"[aria-label=""OEM Solutions""]"
+0,0.16186957,0.6762608,False,,"text=""OEM Solutions"""
+0,0.1538747,0.6922506,False,,.segment-routing__navigation__link
+0,0.1538747,0.6922506,False,,.segment-routing__navigation__link
+1,0.9420589,0.88411784,True,,"[aria-label=""ZEISS Spectroscopy""]"
+0,0.1421187,0.7157626,False,,"text=""Spectroscopy"""
+0,0.18532449,0.629351,False,,.
+0,0.18532449,0.629351,False,,.
+0,0.05793442,0.8841312,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[9]/div[3]/div/article/div/div[2]/div[2]/a
+1,0.61396444,0.22792888,True,,/html/body/header/div[2]/div/div/div/div[4]/ul/li/h3
+0,0.17450373,0.6509925,False,,.related-websites__headline
+0,0.17450373,0.6509925,False,,"text=""Related ZEISS Websites"""
+0,0.14823613,0.70352775,False,,.related-websites__headline.hl-s
+1,0.9816753,0.96335065,True,,h1
+1,0.94077635,0.8815527,True,,"text=""Visionary minds. Enhanced by AI"""
+1,0.5888429,0.17768586,True,,/html/body/main/div/div/div[2]/div/div/div/div[2]/div/div/div/div/div/div/div/h1
+0,0.11949377,0.76101243,False,,h2
+0,0.13373086,0.7325383,False,,"text=""See better"""
+0,0.05420121,0.89159757,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div/div[3]/div/article/div/div/div/h2
+0,0.11949377,0.76101243,False,,h2
+0,0.13373086,0.7325383,False,,"text=""See better"""
+0,0.05420121,0.89159757,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div/div[3]/div[2]/article/div/div/div/h2
+1,0.9736496,0.94729924,True,,"text=""Diagnose & treat"""
+0,0.11949377,0.76101243,False,,h2
+1,0.56982154,0.13964307,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[2]/div[2]/div/article/div/div/div/h2
+1,0.93627435,0.8725487,True,,"text=""Enabling chip manufacturers"""
+0,0.11949377,0.76101243,False,,h2
+1,0.56982154,0.13964307,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[3]/div[2]/div/article/div/div/div/h2
+1,0.9629039,0.92580783,True,,"text=""Measure & inspect"""
+0,0.11949377,0.76101243,False,,h2
+1,0.56982154,0.13964307,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[4]/div[2]/div/article/div/div/div/h2
+1,0.93627435,0.8725487,True,,"text=""Researching micro- and nanostructures"""
+0,0.11949377,0.76101243,False,,h2
+1,0.56982154,0.13964307,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[5]/div[2]/div/article/div/div/div/h2
+1,0.5888429,0.17768586,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[6]/div[2]/div/div/h3
+0,0.13054268,0.7389146,False,,h3
+0,0.17070656,0.65858686,False,,"text=""Photograph & film"""
+0,0.11949377,0.76101243,False,,h2
+0,0.15007056,0.6998589,False,,"text=""Photograph & film"""
+0,0.05420121,0.89159757,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[6]/div[3]/div/article/div/div/div/h2
+0,0.11949377,0.76101243,False,,h2
+1,0.56982154,0.13964307,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[6]/div[3]/div[2]/article/div/div/div/h2
+0,0.15007056,0.6998589,False,,"text=""Photograph & film"""
+1,0.5888429,0.17768586,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[7]/div[2]/div/div/h3
+0,0.13054268,0.7389146,False,,h3
+0,0.17070656,0.65858686,False,,"text=""Observe & experience"""
+0,0.11949377,0.76101243,False,,h2
+0,0.15007056,0.6998589,False,,"text=""Observe & experience"""
+0,0.05420121,0.89159757,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[7]/div[3]/div/article/div/div/div/h2
+0,0.11949377,0.76101243,False,,h2
+1,0.56982154,0.13964307,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[7]/div[3]/div[2]/article/div/div/div/h2
+0,0.15007056,0.6998589,False,,"text=""Observe & experience"""
+1,0.5888429,0.17768586,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[8]/div[2]/div/div/h3
+0,0.13054268,0.7389146,False,,h3
+0,0.17070656,0.65858686,False,,"text=""Create virtual worlds"""
+0,0.11949377,0.76101243,False,,h2
+0,0.15007056,0.6998589,False,,"text=""Create virtual worlds"""
+0,0.05420121,0.89159757,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[8]/div[3]/div/article/div/div/div/h2
+0,0.11949377,0.76101243,False,,h2
+1,0.56982154,0.13964307,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[8]/div[3]/div[2]/article/div/div/div/h2
+0,0.15007056,0.6998589,False,,"text=""Create virtual worlds"""
+1,0.5888429,0.17768586,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[9]/div[2]/div/div/h3
+0,0.13054268,0.7389146,False,,h3
+0,0.17070656,0.65858686,False,,"text=""Develop & produce"""
+0,0.11949377,0.76101243,False,,h2
+0,0.15007056,0.6998589,False,,"text=""Develop & produce"""
+0,0.05420121,0.89159757,False,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[9]/div[3]/div/article/div/div/div/h2
+0,0.11949377,0.76101243,False,,h2
+1,0.56982154,0.13964307,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[9]/div[3]/div[2]/article/div/div/div/h2
+0,0.15007056,0.6998589,False,,"text=""Develop & produce"""
+1,0.93627435,0.8725487,True,,"text=""Develop software solutions"""
+0,0.11949377,0.76101243,False,,h2
+1,0.56982154,0.13964307,True,,/html/body/main/div/div/div[3]/div/div/div/div/div/div/div[10]/div[2]/div/article/div/div/div/h2
+1,0.9777024,0.95540476,True,,"text=""Focus topics"""
+1,0.5888429,0.17768586,True,,/html/body/main/div/div/div[4]/div/div[2]/div/div/div/div/div/div/div/h2
+0,0.13054268,0.7389146,False,,h2
+1,0.9448381,0.8896762,True,,"text=""Our products and solutions"""
+1,0.5888429,0.17768586,True,,/html/body/main/div/div/div[9]/div/div/div/div/div/div/div/div[2]/div/div/h2
+0,0.13054268,0.7389146,False,,h2
+1,0.56982154,0.13964307,True,,/html/body/main/div/div/div[9]/div/div[2]/div/div/div/div/div/div/div/div/div/div/h2
+0,0.11949377,0.76101243,False,,h2
+0,0.13373086,0.7325383,False,,"text=""Newsroom"""
+0,0.11949377,0.76101243,False,,h3
+0,0.20162503,0.5967499,False,,"text=""ZEISS concludes fiscal year 2024/25 with solid gro"""
+0,0.05420121,0.89159757,False,,/html/body/main/div/div/div[9]/div/div[2]/div/div/div/div/div[2]/div/div/div/a/div[3]/div/h3
+0,0.11949377,0.76101243,False,,h3
+1,0.56982154,0.13964307,True,,/html/body/main/div/div/div[9]/div/div[2]/div/div/div/div/div[2]/div[2]/div/div/a/div[3]/div/h3
+0,0.20162503,0.5967499,False,,"text=""ZEISS Medical Technology nominated for German Futu"""
+1,0.94077635,0.8815527,True,,"text=""News from the world of ZEISS"""
+1,0.5888429,0.17768586,True,,/html/body/main/div/div/div[9]/div/div[2]/div/div/div/div/div[2]/div[3]/div/div/div/h2
+0,0.12795399,0.744092,False,,h2
+1,0.98256713,0.96513426,True,,"text=""Events"""
+1,0.56982154,0.13964307,True,,/html/body/main/div/div/div[9]/div/div[3]/div/div/div/div/div/div/div/div/div/div/h2
+0,0.11949377,0.76101243,False,,h2
+1,0.93627435,0.8725487,True,,"text=""ZEISS European Summer School"""
+1,0.56982154,0.13964307,True,,/html/body/main/div/div/div[9]/div/div[3]/div/div/div[2]/div/div/a/div/div/div/div/div/h3
+0,0.11949377,0.76101243,False,,h3
+1,0.98186994,0.9637399,True,,"text=""Highlight"""
+0,0.11949377,0.76101243,False,,h3
+0,0.05420121,0.89159757,False,,/html/body/main/div/div/div[9]/div/div[3]/div/div/div[2]/div[2]/div/div/div/div/div/div/div/div/h3
+1,0.9629039,0.92580783,True,,"text=""Your upcoming events"""
+0,0.11949377,0.76101243,False,,h3
+1,0.56982154,0.13964307,True,,/html/body/main/div/div/div[9]/div/div[3]/div/div/div[2]/div[2]/div[2]/div/div/div/div/div/div/div/h3
+1,0.9680113,0.93602264,True,,"text=""Contact & information"""
+1,0.5888429,0.17768586,True,,/html/body/main/div/div/div[10]/div/div/div/div/div/div/div/div/h2
+0,0.13054268,0.7389146,False,,h2
+1,0.94077635,0.8815527,True,,"text=""Find the right contact person"""
+0,0.12795399,0.744092,False,,h3
+0,0.058344986,0.88331,False,,/html/body/main/div/div/div[10]/div/div/div/div[2]/div/div/a/div/div[2]/div/div/h3
+1,0.975999,0.951998,True,,"text=""ZEISS locations"""
+1,0.5888429,0.17768586,True,,/html/body/main/div/div/div[10]/div/div/div/div[2]/div[2]/div/a/div/div[2]/div/div/h3
+0,0.12795399,0.744092,False,,h3
+1,0.975999,0.951998,True,,"text=""We are hiring"""
+1,0.5888429,0.17768586,True,,/html/body/main/div/div/div[10]/div/div/div/div[2]/div[3]/div/a/div/div[2]/div/div/h3
+0,0.12795399,0.744092,False,,h3
+1,0.98154986,0.9630997,True,,#onetrust-policy-title
+1,0.98154986,0.9630997,True,,#onetrust-policy-title
+1,0.97183955,0.9436791,True,,"text=""Data privacy settings"""
+1,0.61396444,0.22792888,True,,/html/body/div/div[2]/div/div/div/div/h2
+1,0.98617375,0.9723475,True,,#ot-pc-title
+1,0.98617375,0.9723475,True,,#ot-pc-title
+1,0.61396444,0.22792888,True,,/html/body/div/div[3]/div/div[2]/h2
+0,0.17450373,0.6509925,False,,"text=""Cookie preferences"""
+1,0.98374546,0.9674909,True,,#ot-category-title
+1,0.98374546,0.9674909,True,,#ot-category-title
+1,0.98374546,0.9674909,True,,"text=""Categories"""
+1,0.61396444,0.22792888,True,,/html/body/div/div[3]/div/div[2]/section/h3
+1,0.9827853,0.96557057,True,,#ot-header-id-C0001
+1,0.9827853,0.96557057,True,,#ot-header-id-C0001
+1,0.9544671,0.90893424,True,,"text=""Technically necessary technologies"""
+0,0.1655094,0.6689812,False,,.ot-cat-header
+0,0.06234479,0.8753104,False,,/html/body/div/div[3]/div/div[2]/section/div/div/h4
+1,0.9827853,0.96557057,True,,#ot-header-id-C0003
+1,0.9827853,0.96557057,True,,#ot-header-id-C0003
+1,0.6305486,0.2610972,True,,/html/body/div/div[3]/div/div[2]/section/div[2]/div/h4
+0,0.1655094,0.6689812,False,,"text=""Functional"""
+0,0.1655094,0.6689812,False,,.ot-cat-header
+1,0.6305486,0.2610972,True,,/html/body/div/div[3]/div/div[2]/section/div[2]/div/div/label
+0,0.15880066,0.6823987,False,,.ot-switch
+0,0.1655094,0.6689812,False,,"text=""Functional"""
+0,0.15880066,0.6823987,False,,.ot-switch
+1,0.9827853,0.96557057,True,,#ot-header-id-C0002
+1,0.9827853,0.96557057,True,,#ot-header-id-C0002
+1,0.6305486,0.2610972,True,,/html/body/div/div[3]/div/div[2]/section/div[3]/div/h4
+0,0.1655094,0.6689812,False,,"text=""Statistics"""
+0,0.1655094,0.6689812,False,,.ot-cat-header
+1,0.6305486,0.2610972,True,,/html/body/div/div[3]/div/div[2]/section/div[3]/div/div/label
+0,0.15880066,0.6823987,False,,.ot-switch
+0,0.1655094,0.6689812,False,,"text=""Statistics"""
+0,0.15880066,0.6823987,False,,.ot-switch
+1,0.9827853,0.96557057,True,,#ot-header-id-C0004
+1,0.9827853,0.96557057,True,,#ot-header-id-C0004
+1,0.6305486,0.2610972,True,,/html/body/div/div[3]/div/div[2]/section/div[4]/div/h4
+0,0.1655094,0.6689812,False,,"text=""Marketing"""
+0,0.1655094,0.6689812,False,,.ot-cat-header
+1,0.6305486,0.2610972,True,,/html/body/div/div[3]/div/div[2]/section/div[4]/div/div/label
+0,0.15880066,0.6823987,False,,.ot-switch
+0,0.1655094,0.6689812,False,,"text=""Marketing"""
+0,0.15880066,0.6823987,False,,.ot-switch
+1,0.9782747,0.9565494,True,,"text=""Vendors List"""
+1,0.5888429,0.17768586,True,,/html/body/div/div[3]/div/section/div/div/h3
+0,0.13359036,0.7328193,False,,h3
+1,0.61396444,0.22792888,True,,/html/body/div/div[3]/div/section/div/div[2]/section/div/div[2]/ul/li/div/label
+0,0.13054268,0.7389146,False,,label
+0,0.15252328,0.69495344,False,,"text=""checkbox label"""
+0,0.13359036,0.7328193,False,,label
+0,0.15599206,0.6880159,False,,"text=""checkbox label"""
+0,0.058344986,0.88331,False,,/html/body/div/div[3]/div/section/section/div/div/div[2]/div/label
+1,0.61396444,0.22792888,True,,/html/body/div/div[3]/div/section/section/div/div/div[2]/div[2]/label
+0,0.13359036,0.7328193,False,,label
+0,0.15599206,0.6880159,False,,"text=""checkbox label"""
+1,0.61396444,0.22792888,True,,/html/body/div/div[3]/div/section/section/div/div/div[2]/div[3]/label
+0,0.13359036,0.7328193,False,,label
+0,0.15599206,0.6880159,False,,"text=""checkbox label"""
