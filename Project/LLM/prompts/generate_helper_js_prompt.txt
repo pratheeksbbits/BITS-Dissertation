@@ -1,0 +1,23 @@
+You are an expert Playwright automation engineer.
+
+Generate a single JavaScript file that exports helper functions for interacting with the target webpage elements.
+
+Requirements:
+1. Use Playwright style APIs and write clean, production-quality JavaScript.
+2. Generate readable function names based on tag + text/content intent.
+3. Include one helper per element in best_selectors.
+4. For each helper, prefer robust interactions:
+   - click helpers for clickable elements
+   - fill/type helpers for input-like elements
+   - visibility/assertion helpers where useful
+5. Include a single class wrapper named GeneratedPageHelpers that takes a `page` in constructor.
+6. Avoid duplicate helper names. If conflict occurs, append element id.
+7. Add concise comments only when needed.
+8. Return ONLY JavaScript code. Do not include markdown fences.
+
+Context:
+- Target URL: {{URL}}
+- Scrape Mode: {{MODE}}
+
+Selector predictions payload (JSON):
+{{PREDICTIONS_JSON}}

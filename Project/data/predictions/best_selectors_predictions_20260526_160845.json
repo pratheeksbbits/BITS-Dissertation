@@ -1,0 +1,253 @@
+{
+  "url": "https://www.wikipedia.org",
+  "mode": "text",
+  "generated_at": "20260526_160845",
+  "model_path": "ml\\models\\selector_stability_model_20260424_172103.joblib",
+  "raw_dataset_path": "data/raw/raw_selectors_dataset_wikipedia_org_20260526_160845.json",
+  "total_elements": 22,
+  "total_selectors_scored": 72,
+  "best_selectors": [
+    {
+      "element_id": 0,
+      "tag": "h1",
+      "text": "Wikipedia\nThe Free Encyclopedia",
+      "best_selector": ".central-textlogo-wrapper",
+      "selector_type": "css",
+      "prediction": 1,
+      "probability": 0.946442,
+      "confidence": 0.892884,
+      "is_stable": true
+    },
+    {
+      "element_id": 1,
+      "tag": "strong",
+      "text": "The Free Encyclopedia",
+      "best_selector": "text=\"The Free Encyclopedia\"",
+      "selector_type": "text",
+      "prediction": 1,
+      "probability": 0.958073,
+      "confidence": 0.916147,
+      "is_stable": true
+    },
+    {
+      "element_id": 2,
+      "tag": "strong",
+      "text": "English",
+      "best_selector": "text=\"English\"",
+      "selector_type": "text",
+      "prediction": 0,
+      "probability": 0.167937,
+      "confidence": 0.664126,
+      "is_stable": false
+    },
+    {
+      "element_id": 3,
+      "tag": "strong",
+      "text": "日本語",
+      "best_selector": "/html/body/main/nav/div[2]/a/strong",
+      "selector_type": "xpath",
+      "prediction": 0,
+      "probability": 0.167282,
+      "confidence": 0.665437,
+      "is_stable": false
+    },
+    {
+      "element_id": 4,
+      "tag": "strong",
+      "text": "Deutsch",
+      "best_selector": "/html/body/main/nav/div[3]/a/strong",
+      "selector_type": "xpath",
+      "prediction": 0,
+      "probability": 0.175078,
+      "confidence": 0.649845,
+      "is_stable": false
+    },
+    {
+      "element_id": 5,
+      "tag": "strong",
+      "text": "Français",
+      "best_selector": "/html/body/main/nav/div[4]/a/strong",
+      "selector_type": "xpath",
+      "prediction": 0,
+      "probability": 0.175078,
+      "confidence": 0.649845,
+      "is_stable": false
+    },
+    {
+      "element_id": 6,
+      "tag": "strong",
+      "text": "Русский",
+      "best_selector": "/html/body/main/nav/div[5]/a/strong",
+      "selector_type": "xpath",
+      "prediction": 0,
+      "probability": 0.175078,
+      "confidence": 0.649845,
+      "is_stable": false
+    },
+    {
+      "element_id": 7,
+      "tag": "strong",
+      "text": "中文",
+      "best_selector": "/html/body/main/nav/div[6]/a/strong",
+      "selector_type": "xpath",
+      "prediction": 0,
+      "probability": 0.167282,
+      "confidence": 0.665437,
+      "is_stable": false
+    },
+    {
+      "element_id": 8,
+      "tag": "strong",
+      "text": "Español",
+      "best_selector": "/html/body/main/nav/div[7]/a/strong",
+      "selector_type": "xpath",
+      "prediction": 0,
+      "probability": 0.175078,
+      "confidence": 0.649845,
+      "is_stable": false
+    },
+    {
+      "element_id": 9,
+      "tag": "strong",
+      "text": "Italiano",
+      "best_selector": "/html/body/main/nav/div[8]/a/strong",
+      "selector_type": "xpath",
+      "prediction": 0,
+      "probability": 0.175078,
+      "confidence": 0.649845,
+      "is_stable": false
+    },
+    {
+      "element_id": 10,
+      "tag": "strong",
+      "text": "Polski",
+      "best_selector": "/html/body/main/nav/div[9]/a/strong",
+      "selector_type": "xpath",
+      "prediction": 0,
+      "probability": 0.175078,
+      "confidence": 0.649845,
+      "is_stable": false
+    },
+    {
+      "element_id": 11,
+      "tag": "strong",
+      "text": "Português",
+      "best_selector": "/html/body/main/nav/div[10]/a/strong",
+      "selector_type": "xpath",
+      "prediction": 0,
+      "probability": 0.175078,
+      "confidence": 0.649845,
+      "is_stable": false
+    },
+    {
+      "element_id": 12,
+      "tag": "label",
+      "text": "Search Wikipedia",
+      "best_selector": "text=\"Search Wikipedia\"",
+      "selector_type": "text",
+      "prediction": 1,
+      "probability": 0.971028,
+      "confidence": 0.942056,
+      "is_stable": true
+    },
+    {
+      "element_id": 13,
+      "tag": "label",
+      "text": "EN",
+      "best_selector": "#jsLangLabel",
+      "selector_type": "id",
+      "prediction": 1,
+      "probability": 0.987318,
+      "confidence": 0.974636,
+      "is_stable": true
+    },
+    {
+      "element_id": 14,
+      "tag": "h2",
+      "text": "",
+      "best_selector": ".bookshelf-container",
+      "selector_type": "css",
+      "prediction": 0,
+      "probability": 0.156797,
+      "confidence": 0.686406,
+      "is_stable": false
+    },
+    {
+      "element_id": 15,
+      "tag": "h2",
+      "text": "",
+      "best_selector": "/html/body/main/nav[2]/div[3]/div/h2[2]",
+      "selector_type": "xpath",
+      "prediction": 0,
+      "probability": 0.182397,
+      "confidence": 0.635207,
+      "is_stable": false
+    },
+    {
+      "element_id": 16,
+      "tag": "h2",
+      "text": "",
+      "best_selector": "/html/body/main/nav[2]/div[3]/div/h2[3]",
+      "selector_type": "xpath",
+      "prediction": 0,
+      "probability": 0.182397,
+      "confidence": 0.635207,
+      "is_stable": false
+    },
+    {
+      "element_id": 17,
+      "tag": "h2",
+      "text": "",
+      "best_selector": "/html/body/main/nav[2]/div[3]/div/h2[4]",
+      "selector_type": "xpath",
+      "prediction": 0,
+      "probability": 0.182397,
+      "confidence": 0.635207,
+      "is_stable": false
+    },
+    {
+      "element_id": 18,
+      "tag": "h2",
+      "text": "",
+      "best_selector": "/html/body/main/nav[2]/div[3]/div/h2[5]",
+      "selector_type": "xpath",
+      "prediction": 0,
+      "probability": 0.182397,
+      "confidence": 0.635207,
+      "is_stable": false
+    },
+    {
+      "element_id": 19,
+      "tag": "h3",
+      "text": "We owe you an explanation.",
+      "best_selector": "h3",
+      "selector_type": "css",
+      "prediction": 1,
+      "probability": 0.959555,
+      "confidence": 0.91911,
+      "is_stable": true
+    },
+    {
+      "element_id": 20,
+      "tag": "strong",
+      "text": "There are no small contributions: every edit count",
+      "best_selector": "text=\"There are no small contributions: every edit count\"",
+      "selector_type": "text",
+      "prediction": 0,
+      "probability": 0.226195,
+      "confidence": 0.54761,
+      "is_stable": false
+    },
+    {
+      "element_id": 21,
+      "tag": "strong",
+      "text": "Download Wikipedia for Android or iOS",
+      "best_selector": "text=\"Download Wikipedia for Android or iOS\"",
+      "selector_type": "text",
+      "prediction": 1,
+      "probability": 0.935819,
+      "confidence": 0.871639,
+      "is_stable": true
+    }
+  ]
+}

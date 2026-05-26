@@ -1,0 +1,5 @@
+{
+  "model": "gpt-4o",
+  "input": "Summarise the key benefits of automated test generation.",
+  "max_output_tokens": 1024
+}

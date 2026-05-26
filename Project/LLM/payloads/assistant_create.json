@@ -1,0 +1,6 @@
+{
+  "name": "Automation Helper",
+  "model": "gpt-4o",
+  "instructions": "You are a helpful coding assistant.",
+  "tools": []
+}

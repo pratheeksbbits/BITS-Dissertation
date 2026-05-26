@@ -1,0 +1,1869 @@
+{
+  "info": {
+    "name": "LLM Gateway Apis",
+    "_postman_id": "e68e7c46-b59a-4cc8-96b0-c19e80260e17",
+    "description": "Zeiss AI platform gateway supported APIs\n\nVersion: 1.80.10\nBase URL: https://api.genai.zeiss.com/llm",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "BASE_URL",
+      "value": "https://api.genai.zeiss.com/llm",
+      "type": "string"
+    },
+    {
+      "key": "ZEISS_SUB_KEY",
+      "value": "your-subscription-key-here",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Model Management",
+      "item": [
+        {
+          "name": "Model List",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/models",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "models"
+              ],
+              "query": [
+                {
+                  "key": "return_wildcard_routes",
+                  "value": "<return_wildcard_routes>",
+                  "disabled": true
+                },
+                {
+                  "key": "team_id",
+                  "value": "<team_id>",
+                  "disabled": true
+                },
+                {
+                  "key": "include_model_access_groups",
+                  "value": "<include_model_access_groups>",
+                  "disabled": true
+                },
+                {
+                  "key": "only_model_access_groups",
+                  "value": "<only_model_access_groups>",
+                  "disabled": true
+                },
+                {
+                  "key": "include_metadata",
+                  "value": "<include_metadata>",
+                  "disabled": true
+                },
+                {
+                  "key": "fallback_type",
+                  "value": "<fallback_type>",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [],
+          "_postman_id": "ea3024ba-a42f-4f35-abbf-d4873f60ed9d",
+          "description": "Use `/model/info` - to get detailed model information, example - pricing, mode, etc.\n\nThis is just for compatibility with openai projects like aider.\n\nQuery Parameters:\n- include_metadata: Include additional metadata in the response with fallback information\n- fallback_type: Type of fallbacks to include (\"general\", \"context_window\", \"content_policy\")\n                Defaults to \"general\" when include_metadata=true"
+        },
+        {
+          "name": "Model List",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/v1/models",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "v1",
+                "models"
+              ],
+              "query": [
+                {
+                  "key": "return_wildcard_routes",
+                  "value": "<return_wildcard_routes>",
+                  "disabled": true
+                },
+                {
+                  "key": "team_id",
+                  "value": "<team_id>",
+                  "disabled": true
+                },
+                {
+                  "key": "include_model_access_groups",
+                  "value": "<include_model_access_groups>",
+                  "disabled": true
+                },
+                {
+                  "key": "only_model_access_groups",
+                  "value": "<only_model_access_groups>",
+                  "disabled": true
+                },
+                {
+                  "key": "include_metadata",
+                  "value": "<include_metadata>",
+                  "disabled": true
+                },
+                {
+                  "key": "fallback_type",
+                  "value": "<fallback_type>",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [],
+          "_postman_id": "afc803f4-5067-4874-9b74-d984b5b2edea",
+          "description": "Use `/model/info` - to get detailed model information, example - pricing, mode, etc.\n\nThis is just for compatibility with openai projects like aider.\n\nQuery Parameters:\n- include_metadata: Include additional metadata in the response with fallback information\n- fallback_type: Type of fallbacks to include (\"general\", \"context_window\", \"content_policy\")\n                Defaults to \"general\" when include_metadata=true"
+        },
+        {
+          "name": "Model Info",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/models/:model_id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "models",
+                ":model_id"
+              ],
+              "variable": [
+                {
+                  "key": "model_id",
+                  "value": "<model_id>",
+                  "description": ""
+                }
+              ]
+            }
+          },
+          "response": [],
+          "_postman_id": "8e93a0d1-155e-4e57-a4cc-c2277d7a01b4",
+          "description": "Retrieve information about a specific model accessible to your API key.\n\nReturns model details only if the model is available to your API key/team.\nReturns 404 if the model doesn't exist or is not accessible.\n\nFollows OpenAI API specification for individual model retrieval.\nhttps://platform.openai.com/docs/api-reference/models/retrieve"
+        },
+        {
+          "name": "Model Info",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/v1/models/:model_id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "v1",
+                "models",
+                ":model_id"
+              ],
+              "variable": [
+                {
+                  "key": "model_id",
+                  "value": "<model_id>",
+                  "description": ""
+                }
+              ]
+            }
+          },
+          "response": [],
+          "_postman_id": "b1834ddb-8a31-45f6-8b10-a96790ceabc8",
+          "description": "Retrieve information about a specific model accessible to your API key.\n\nReturns model details only if the model is available to your API key/team.\nReturns 404 if the model doesn't exist or is not accessible.\n\nFollows OpenAI API specification for individual model retrieval.\nhttps://platform.openai.com/docs/api-reference/models/retrieve"
+        },
+        {
+          "name": "Model Info V1",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/v1/model/info",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "v1",
+                "model",
+                "info"
+              ],
+              "query": [
+                {
+                  "key": "litellm_model_id",
+                  "value": "<litellm_model_id>",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [],
+          "_postman_id": "428b6ebf-1d28-4d92-ba58-5ae70d7cf9af",
+          "description": "Provides more info about each model in /models, including config.yaml descriptions (except api key and api base)\n\nParameters:\n    litellm_model_id: Optional[str] = None (this is the value of `x-litellm-model-id` returned in response headers)\n\n    - When litellm_model_id is passed, it will return the info for that specific model\n    - When litellm_model_id is not passed, it will return the info for all models\n\nReturns:\n    Returns a dictionary containing information about each model.\n\nExample Response:\n```json\n{\n    \"data\": [\n                {\n                    \"model_name\": \"fake-openai-endpoint\",\n                    \"litellm_params\": {\n                        \"api_base\": \"https://exampleopenaiendpoint-production.up.railway.app/\",\n                        \"model\": \"openai/fake\"\n                    },\n                    \"model_info\": {\n                        \"id\": \"112f74fab24a7a5245d2ced3536dd8f5f9192c57ee6e332af0f0512e08bed5af\",\n                        \"db_model\": false\n                    }\n                }\n            ]\n}\n\n```"
+        },
+        {
+          "name": "Model Info V1",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/model/info",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "model",
+                "info"
+              ],
+              "query": [
+                {
+                  "key": "litellm_model_id",
+                  "value": "<litellm_model_id>",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [],
+          "_postman_id": "16527023-a857-41b4-af66-9c2df03a0a80",
+          "description": "Provides more info about each model in /models, including config.yaml descriptions (except api key and api base)\n\nParameters:\n    litellm_model_id: Optional[str] = None (this is the value of `x-litellm-model-id` returned in response headers)\n\n    - When litellm_model_id is passed, it will return the info for that specific model\n    - When litellm_model_id is not passed, it will return the info for all models\n\nReturns:\n    Returns a dictionary containing information about each model.\n\nExample Response:\n```json\n{\n    \"data\": [\n                {\n                    \"model_name\": \"fake-openai-endpoint\",\n                    \"litellm_params\": {\n                        \"api_base\": \"https://exampleopenaiendpoint-production.up.railway.app/\",\n                        \"model\": \"openai/fake\"\n                    },\n                    \"model_info\": {\n                        \"id\": \"112f74fab24a7a5245d2ced3536dd8f5f9192c57ee6e332af0f0512e08bed5af\",\n                        \"db_model\": false\n                    }\n                }\n            ]\n}\n\n```"
+        }
+      ],
+      "_postman_id": "08140855-f6b6-42de-8ddd-b278e3ae238f"
+    },
+    {
+      "name": "Chat/Completions",
+      "item": [
+        {
+          "name": "Chat Completion",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/openai/deployments/:model/chat/completions",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "openai",
+                "deployments",
+                ":model",
+                "chat",
+                "completions"
+              ],
+              "variable": [
+                {
+                  "key": "model",
+                  "value": "<model>",
+                  "description": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"model\": \"gpt-4o\",\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a helpful assistant.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Hello! What can you do?\"\n    }\n  ],\n  \"max_tokens\": 512,\n  \"temperature\": 0.7\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [],
+          "_postman_id": "8a9d76a5-d669-4dc1-bee9-8a1f9b23c9cc",
+          "description": "\"Follows the exact same API spec as `OpenAI's Chat API https://platform.openai.com/docs/api-reference/chat`\\n\\n```bash\\ncurl\n-X POST https://api.dev.genai-preview.zeiss.com/llm/v1/chat/completions \\n-H \\\"Content-Type: application/json\\\"\n\\n-H \\\"api-key: 1234\" \\n-d '{\\n    \\\"model\\\": \\\"gpt-4o\\\",\\n\n\\   \\\"messages\\\": [\\n        {\\n            \\\"role\\\": \\\"user\\\",\\n            \\\"content\\\":\n\\\"Hello!\\\"\\n        }\\n    ]\\n}'\\n```\"\n"
+        },
+        {
+          "name": "Chat Completion",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/chat/completions",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "chat",
+                "completions"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"model\": \"gpt-4o\",\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a helpful assistant.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Hello! What can you do?\"\n    }\n  ],\n  \"max_tokens\": 512,\n  \"temperature\": 0.7\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [],
+          "_postman_id": "11ad0bd7-08c9-4eb2-a538-5c6559b429db",
+          "description": "\"Follows the exact same API spec as `OpenAI's Chat API https://platform.openai.com/docs/api-reference/chat`\\n\\n```bash\\ncurl\n-X POST https://api.dev.genai-preview.zeiss.com/llm/v1/chat/completions \\n-H \\\"Content-Type: application/json\\\"\n\\n-H \\\"api-key: 1234\" \\n-d '{\\n    \\\"model\\\": \\\"gpt-4o\\\",\\n\n\\   \\\"messages\\\": [\\n        {\\n            \\\"role\\\": \\\"user\\\",\\n            \\\"content\\\":\n\\\"Hello!\\\"\\n        }\\n    ]\\n}'\\n```\"\n"
+        },
+        {
+          "name": "Chat Completion",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/v1/chat/completions",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "v1",
+                "chat",
+                "completions"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"model\": \"gpt-4o\",\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are a helpful assistant.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Hello! What can you do?\"\n    }\n  ],\n  \"max_tokens\": 512,\n  \"temperature\": 0.7\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [],
+          "_postman_id": "c9b7c36f-0572-4eb5-a093-bdeb31182b59",
+          "description": "\"Follows the exact same API spec as `OpenAI's Chat API https://platform.openai.com/docs/api-reference/chat`\\n\\n```bash\\ncurl\n-X POST https://api.dev.genai-preview.zeiss.com/llm/v1/chat/completions \\n-H \\\"Content-Type: application/json\\\"\n\\n-H \\\"api-key: 1234\" \\n-d '{\\n    \\\"model\\\": \\\"gpt-4o\\\",\\n\n\\   \\\"messages\\\": [\\n        {\\n            \\\"role\\\": \\\"user\\\",\\n            \\\"content\\\":\n\\\"Hello!\\\"\\n        }\\n    ]\\n}'\\n```\"\n"
+        }
+      ],
+      "_postman_id": "db03ec65-f36d-406f-97eb-8a4a9eb92ffa"
+    },
+    {
+      "name": "Completions",
+      "item": [
+        {
+          "name": "Completion",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/openai/deployments/:model/completions",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "openai",
+                "deployments",
+                ":model",
+                "completions"
+              ],
+              "variable": [
+                {
+                  "key": "model",
+                  "value": "<model>",
+                  "description": ""
+                }
+              ]
+            }
+          },
+          "response": [],
+          "_postman_id": "8f992f1e-6f2c-4453-abe9-f782ecd78f6d",
+          "description": "\"Follows the exact same API spec as `OpenAI's Completions API https://platform.openai.com/docs/api-reference/completions`\\n\\n```bash\\ncurl\n-X POST https://api.dev.genai-preview.zeiss.com/llm/v1/completions \\n-H \\\"Content-Type: application/json\\\"\n\\n-H \\\"api-key: 1234\" \\n-d '{\\n    \\\"model\\\": \\\"gpt-3.5-turbo-instruct\\\",\\n\n\\   \\\"prompt\\\": \\\"Once upon a time\\\",\\n    \\\"max_tokens\\\": 50,\\n    \\\"temperature\\\":\n0.7\\n}'\\n```\"\n"
+        }
+      ],
+      "_postman_id": "46ee1b93-58b8-4eeb-8cce-8b6f8249a164"
+    },
+    {
+      "name": "Embeddings",
+      "item": [
+        {
+          "name": "Embeddings",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/openai/deployments/:model/embeddings",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "openai",
+                "deployments",
+                ":model",
+                "embeddings"
+              ],
+              "variable": [
+                {
+                  "key": "model",
+                  "value": "<model>",
+                  "description": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"model\": \"text-embedding-3-small\",\n  \"input\": [\n    \"The quick brown fox jumps over the lazy dog.\"\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [],
+          "_postman_id": "b0418366-0992-4828-b7ed-473dee8d3d85",
+          "description": "\"Follows the exact same API spec as `OpenAI's Embeddings API https://platform.openai.com/docs/api-reference/embeddings`\\n\\n```bash\\ncurl\n-X POST https://api.dev.genai-preview.zeiss.com/llm/v1/embeddings \\n-H \\\"Content-Type: application/json\\\"\n\\n-H \\\"api-key: 1234\" \\n-d '{\\n    \\\"model\\\": \\\"text-embedding-ada-002\\\",\\n\n\\   \\\"input\\\": \\\"The quick brown fox jumps over the lazy dog\\\"\\n}'\\n```\"\n"
+        },
+        {
+          "name": "Embeddings",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/embeddings",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "embeddings"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"model\": \"text-embedding-3-small\",\n  \"input\": [\n    \"The quick brown fox jumps over the lazy dog.\"\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [],
+          "_postman_id": "2d1ed31a-24be-47c5-9753-724c0195bfe7",
+          "description": "\"Follows the exact same API spec as `OpenAI's Embeddings API https://platform.openai.com/docs/api-reference/embeddings`\\n\\n```bash\\ncurl\n-X POST https://api.dev.genai-preview.zeiss.com/llm/v1/embeddings \\n-H \\\"Content-Type: application/json\\\"\n\\n-H \\\"api-key: 1234\" \\n-d '{\\n    \\\"model\\\": \\\"text-embedding-ada-002\\\",\\n\n\\   \\\"input\\\": \\\"The quick brown fox jumps over the lazy dog\\\"\\n}'\\n```\"\n"
+        },
+        {
+          "name": "Embeddings",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/v1/embeddings",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "v1",
+                "embeddings"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"model\": \"text-embedding-3-small\",\n  \"input\": [\n    \"The quick brown fox jumps over the lazy dog.\"\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [],
+          "_postman_id": "970e1748-cbef-4283-98b1-0e68bd997119",
+          "description": "\"Follows the exact same API spec as `OpenAI's Embeddings API https://platform.openai.com/docs/api-reference/embeddings`\\n\\n```bash\\ncurl\n-X POST https://api.dev.genai-preview.zeiss.com/llm/v1/embeddings \\n-H \\\"Content-Type: application/json\\\"\n\\n-H \\\"api-key: 1234\" \\n-d '{\\n    \\\"model\\\": \\\"text-embedding-ada-002\\\",\\n\n\\   \\\"input\\\": \\\"The quick brown fox jumps over the lazy dog\\\"\\n}'\\n```\"\n"
+        }
+      ],
+      "_postman_id": "6b548192-9181-4055-a0a6-a65eff84b88e"
+    },
+    {
+      "name": "Audio",
+      "item": [
+        {
+          "name": "Audio Speech",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/audio/speech",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "audio",
+                "speech"
+              ]
+            }
+          },
+          "response": [],
+          "_postman_id": "17eb9757-1962-4401-ae09-b01ebca75b02",
+          "description": "Same params as:\n\nhttps://platform.openai.com/docs/api-reference/audio/createSpeech"
+        },
+        {
+          "name": "Audio Speech",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/v1/audio/speech",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "v1",
+                "audio",
+                "speech"
+              ]
+            }
+          },
+          "response": [],
+          "_postman_id": "070e8c9b-7290-4c94-8f89-6b4b569818a1",
+          "description": "Same params as:\n\nhttps://platform.openai.com/docs/api-reference/audio/createSpeech"
+        },
+        {
+          "name": "Audio Transcriptions",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/audio/transcriptions",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "audio",
+                "transcriptions"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"model\": \"whisper-1\",\n  \"file\": \"<attach audio file>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [],
+          "_postman_id": "3df4f0c5-4bb8-421e-accc-fe412f5321f8",
+          "description": "Same params as:\n\nhttps://platform.openai.com/docs/api-reference/audio/createTranscription?lang=curl"
+        },
+        {
+          "name": "Audio Transcriptions",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/v1/audio/transcriptions",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "v1",
+                "audio",
+                "transcriptions"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"model\": \"whisper-1\",\n  \"file\": \"<attach audio file>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [],
+          "_postman_id": "d3dc9cf4-7a3c-4146-97e2-861a5ff4188d",
+          "description": "Same params as:\n\nhttps://platform.openai.com/docs/api-reference/audio/createTranscription?lang=curl"
+        }
+      ],
+      "_postman_id": "d07980c9-ad49-4d8c-890d-a716e3674ab2"
+    },
+    {
+      "name": "Assistants",
+      "item": [
+        {
+          "name": "Get Assistants",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/assistants",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "assistants"
+              ]
+            }
+          },
+          "response": [],
+          "_postman_id": "c24b2d6e-4e61-461f-85c0-05f9394db03d",
+          "description": "Returns a list of assistants.\n\nAPI Reference docs - https://platform.openai.com/docs/api-reference/assistants/listAssistants"
+        },
+        {
+          "name": "Create Assistant",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/assistants",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "assistants"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"My Assistant\",\n  \"model\": \"gpt-4o\",\n  \"instructions\": \"You are a helpful coding assistant.\",\n  \"tools\": []\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [],
+          "_postman_id": "ee2b48a1-3448-4485-bd05-fd0d9158f5cf",
+          "description": "Create assistant\n\nAPI Reference docs - https://platform.openai.com/docs/api-reference/assistants/createAssistant"
+        },
+        {
+          "name": "Get Assistants",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/v1/assistants",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "v1",
+                "assistants"
+              ]
+            }
+          },
+          "response": [],
+          "_postman_id": "7cfc58cf-5308-4ed3-ba1e-ce656da4e191",
+          "description": "Returns a list of assistants.\n\nAPI Reference docs - https://platform.openai.com/docs/api-reference/assistants/listAssistants"
+        },
+        {
+          "name": "Create Assistant",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/v1/assistants",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "v1",
+                "assistants"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"My Assistant\",\n  \"model\": \"gpt-4o\",\n  \"instructions\": \"You are a helpful coding assistant.\",\n  \"tools\": []\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [],
+          "_postman_id": "6039a660-4a0e-4efb-a026-ea8d6e3aeb4e",
+          "description": "Create assistant\n\nAPI Reference docs - https://platform.openai.com/docs/api-reference/assistants/createAssistant"
+        },
+        {
+          "name": "Delete Assistant",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/assistants/:assistant_id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "assistants",
+                ":assistant_id"
+              ],
+              "variable": [
+                {
+                  "key": "assistant_id",
+                  "value": "<assistant_id>",
+                  "description": ""
+                }
+              ]
+            }
+          },
+          "response": [],
+          "_postman_id": "e548e47f-fc71-44c0-ac2e-94ef4f06bc4d",
+          "description": "Delete assistant\n\nAPI Reference docs - https://platform.openai.com/docs/api-reference/assistants/createAssistant"
+        },
+        {
+          "name": "Delete Assistant",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/v1/assistants/:assistant_id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "v1",
+                "assistants",
+                ":assistant_id"
+              ],
+              "variable": [
+                {
+                  "key": "assistant_id",
+                  "value": "<assistant_id>",
+                  "description": ""
+                }
+              ]
+            }
+          },
+          "response": [],
+          "_postman_id": "07ebb292-4dc2-4a7c-9aa2-4c15cc8fef76",
+          "description": "Delete assistant\n\nAPI Reference docs - https://platform.openai.com/docs/api-reference/assistants/createAssistant"
+        }
+      ],
+      "_postman_id": "b7ea8065-4e29-45cd-b47d-3c82162fb049"
+    },
+    {
+      "name": "Responses",
+      "item": [
+        {
+          "name": "Responses Api",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/openai/v1/responses",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "openai",
+                "v1",
+                "responses"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"model\": \"gpt-4o\",\n  \"input\": \"Summarise the key benefits of automated test generation.\",\n  \"max_output_tokens\": 1024\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [],
+          "_postman_id": "4ace07fb-c594-4203-9eee-a59770f532b2",
+          "description": "Follows the OpenAI Responses API spec: https://platform.openai.com/docs/api-reference/responses\n\nSupports background mode with polling_via_cache for partial response retrieval.\nWhen background=true and polling_via_cache is enabled, returns a polling_id immediately\nand streams the response in the background, updating Redis cache.\n\n```bash\n# Normal request\ncurl -X POST https://api.dev.genai-preview.zeiss.com/llm/v1/responses     -H \"Content-Type: application/json\"     -H \"api-key: 1234\"     -d '{\n    \"model\": \"gpt-4o\",\n    \"input\": \"Tell me about AI\"\n}'\n\n# Background request with polling\ncurl -X POST https://api.dev.genai-preview.zeiss.com/llm/v1/responses     -H \"Content-Type: application/json\"     -H \"api-key: 1234\"     -d '{\n    \"model\": \"gpt-4o\",\n    \"input\": \"Tell me about AI\",\n    \"background\": true\n}'\n```"
+        },
+        {
+          "name": "Responses Api",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/responses",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "responses"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"model\": \"gpt-4o\",\n  \"input\": \"Summarise the key benefits of automated test generation.\",\n  \"max_output_tokens\": 1024\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [],
+          "_postman_id": "9212bf85-2c5e-4f25-bd41-d6c0c65ec8f3",
+          "description": "Follows the OpenAI Responses API spec: https://platform.openai.com/docs/api-reference/responses\n\nSupports background mode with polling_via_cache for partial response retrieval.\nWhen background=true and polling_via_cache is enabled, returns a polling_id immediately\nand streams the response in the background, updating Redis cache.\n\n```bash\n# Normal request\ncurl -X POST https://api.dev.genai-preview.zeiss.com/llm/v1/responses     -H \"Content-Type: application/json\"     -H \"api-key: 1234\"     -d '{\n    \"model\": \"gpt-4o\",\n    \"input\": \"Tell me about AI\"\n}'\n\n# Background request with polling\ncurl -X POST https://api.dev.genai-preview.zeiss.com/llm/v1/responses     -H \"Content-Type: application/json\"     -H \"api-key: 1234\"     -d '{\n    \"model\": \"gpt-4o\",\n    \"input\": \"Tell me about AI\",\n    \"background\": true\n}'\n```"
+        },
+        {
+          "name": "Responses Api",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/v1/responses",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "v1",
+                "responses"
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"model\": \"gpt-4o\",\n  \"input\": \"Summarise the key benefits of automated test generation.\",\n  \"max_output_tokens\": 1024\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [],
+          "_postman_id": "86e56a8d-3090-4df3-bf79-61942b2861f6",
+          "description": "Follows the OpenAI Responses API spec: https://platform.openai.com/docs/api-reference/responses\n\nSupports background mode with polling_via_cache for partial response retrieval.\nWhen background=true and polling_via_cache is enabled, returns a polling_id immediately\nand streams the response in the background, updating Redis cache.\n\n```bash\n# Normal request\ncurl -X POST https://api.dev.genai-preview.zeiss.com/llm/v1/responses     -H \"Content-Type: application/json\"     -H \"api-key: 1234\"     -d '{\n    \"model\": \"gpt-4o\",\n    \"input\": \"Tell me about AI\"\n}'\n\n# Background request with polling\ncurl -X POST https://api.dev.genai-preview.zeiss.com/llm/v1/responses     -H \"Content-Type: application/json\"     -H \"api-key: 1234\"     -d '{\n    \"model\": \"gpt-4o\",\n    \"input\": \"Tell me about AI\",\n    \"background\": true\n}'\n```"
+        },
+        {
+          "name": "Get Response",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/openai/v1/responses/:response_id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "openai",
+                "v1",
+                "responses",
+                ":response_id"
+              ],
+              "variable": [
+                {
+                  "key": "response_id",
+                  "value": "<response_id>",
+                  "description": ""
+                }
+              ]
+            }
+          },
+          "response": [],
+          "_postman_id": "b802de02-a73e-4ef2-8fa7-4e2ea644ca5a",
+          "description": "Get a response by ID.\n\nSupports both:\n- Polling IDs (litellm_poll_*): Returns cumulative cached content from background responses\n- Provider response IDs: Passes through to provider API\n\nFollows the OpenAI Responses API spec: https://platform.openai.com/docs/api-reference/responses/get\n\n```bash\n# Get polling response\ncurl -X GET https://api.dev.genai-preview.zeiss.com/llm/v1/responses/litellm_poll_abc123     -H \"api-key: 1234\"\n\n# Get provider response\ncurl -X GET https://api.dev.genai-preview.zeiss.com/llm/v1/responses/resp_abc123     -H \"api-key: 1234\"\n```"
+        },
+        {
+          "name": "Delete Response",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/openai/v1/responses/:response_id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "openai",
+                "v1",
+                "responses",
+                ":response_id"
+              ],
+              "variable": [
+                {
+                  "key": "response_id",
+                  "value": "<response_id>",
+                  "description": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"model\": \"gpt-4o\",\n  \"input\": \"Summarise the key benefits of automated test generation.\",\n  \"max_output_tokens\": 1024\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [],
+          "_postman_id": "c87a28d4-b643-4518-8a93-9c8ed7342303",
+          "description": "Delete a response by ID.\n\nSupports both:\n- Polling IDs (litellm_poll_*): Deletes from Redis cache\n- Provider response IDs: Passes through to provider API\n\nFollows the OpenAI Responses API spec: https://platform.openai.com/docs/api-reference/responses/delete\n\n```bash\ncurl -X DELETE https://api.dev.genai-preview.zeiss.com/llm/v1/responses/resp_abc123     -H \"api-key: 1234\"\n```"
+        },
+        {
+          "name": "Get Response",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/responses/:response_id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "responses",
+                ":response_id"
+              ],
+              "variable": [
+                {
+                  "key": "response_id",
+                  "value": "<response_id>",
+                  "description": ""
+                }
+              ]
+            }
+          },
+          "response": [],
+          "_postman_id": "9719ae52-069b-4cad-8e7a-a940647f3082",
+          "description": "Get a response by ID.\n\nSupports both:\n- Polling IDs (litellm_poll_*): Returns cumulative cached content from background responses\n- Provider response IDs: Passes through to provider API\n\nFollows the OpenAI Responses API spec: https://platform.openai.com/docs/api-reference/responses/get\n\n```bash\n# Get polling response\ncurl -X GET https://api.dev.genai-preview.zeiss.com/llm/v1/responses/litellm_poll_abc123     -H \"api-key: 1234\"\n\n# Get provider response\ncurl -X GET https://api.dev.genai-preview.zeiss.com/llm/v1/responses/resp_abc123     -H \"api-key: 1234\"\n```"
+        },
+        {
+          "name": "Delete Response",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/responses/:response_id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "responses",
+                ":response_id"
+              ],
+              "variable": [
+                {
+                  "key": "response_id",
+                  "value": "<response_id>",
+                  "description": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"model\": \"gpt-4o\",\n  \"input\": \"Summarise the key benefits of automated test generation.\",\n  \"max_output_tokens\": 1024\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [],
+          "_postman_id": "9067750f-eacd-4850-910f-fd72318972e9",
+          "description": "Delete a response by ID.\n\nSupports both:\n- Polling IDs (litellm_poll_*): Deletes from Redis cache\n- Provider response IDs: Passes through to provider API\n\nFollows the OpenAI Responses API spec: https://platform.openai.com/docs/api-reference/responses/delete\n\n```bash\ncurl -X DELETE https://api.dev.genai-preview.zeiss.com/llm/v1/responses/resp_abc123     -H \"api-key: 1234\"\n```"
+        },
+        {
+          "name": "Get Response",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/v1/responses/:response_id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "v1",
+                "responses",
+                ":response_id"
+              ],
+              "variable": [
+                {
+                  "key": "response_id",
+                  "value": "<response_id>",
+                  "description": ""
+                }
+              ]
+            }
+          },
+          "response": [],
+          "_postman_id": "2e1fc872-cce9-431f-af3a-f3845e4285b2",
+          "description": "Get a response by ID.\n\nSupports both:\n- Polling IDs (litellm_poll_*): Returns cumulative cached content from background responses\n- Provider response IDs: Passes through to provider API\n\nFollows the OpenAI Responses API spec: https://platform.openai.com/docs/api-reference/responses/get\n\n```bash\n# Get polling response\ncurl -X GET https://api.dev.genai-preview.zeiss.com/llm/v1/responses/litellm_poll_abc123     -H \"api-key: 1234\"\n\n# Get provider response\ncurl -X GET https://api.dev.genai-preview.zeiss.com/llm/v1/responses/resp_abc123     -H \"api-key: 1234\"\n```"
+        },
+        {
+          "name": "Delete Response",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/v1/responses/:response_id",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "v1",
+                "responses",
+                ":response_id"
+              ],
+              "variable": [
+                {
+                  "key": "response_id",
+                  "value": "<response_id>",
+                  "description": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"model\": \"gpt-4o\",\n  \"input\": \"Summarise the key benefits of automated test generation.\",\n  \"max_output_tokens\": 1024\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [],
+          "_postman_id": "956aee60-0fc8-4b9d-8da0-8025fb9c778f",
+          "description": "Delete a response by ID.\n\nSupports both:\n- Polling IDs (litellm_poll_*): Deletes from Redis cache\n- Provider response IDs: Passes through to provider API\n\nFollows the OpenAI Responses API spec: https://platform.openai.com/docs/api-reference/responses/delete\n\n```bash\ncurl -X DELETE https://api.dev.genai-preview.zeiss.com/llm/v1/responses/resp_abc123     -H \"api-key: 1234\"\n```"
+        },
+        {
+          "name": "Get Response Input Items",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/openai/v1/responses/:response_id/input_items",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "openai",
+                "v1",
+                "responses",
+                ":response_id",
+                "input_items"
+              ],
+              "variable": [
+                {
+                  "key": "response_id",
+                  "value": "<response_id>",
+                  "description": ""
+                }
+              ]
+            }
+          },
+          "response": [],
+          "_postman_id": "7226a0c9-9ddb-491e-8585-2a675f00bf85",
+          "description": "List input items for a response."
+        },
+        {
+          "name": "Get Response Input Items",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/responses/:response_id/input_items",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "responses",
+                ":response_id",
+                "input_items"
+              ],
+              "variable": [
+                {
+                  "key": "response_id",
+                  "value": "<response_id>",
+                  "description": ""
+                }
+              ]
+            }
+          },
+          "response": [],
+          "_postman_id": "2570b1a7-1d6a-4ed8-88ae-575f5ce11722",
+          "description": "List input items for a response."
+        },
+        {
+          "name": "Get Response Input Items",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/v1/responses/:response_id/input_items",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "v1",
+                "responses",
+                ":response_id",
+                "input_items"
+              ],
+              "variable": [
+                {
+                  "key": "response_id",
+                  "value": "<response_id>",
+                  "description": ""
+                }
+              ]
+            }
+          },
+          "response": [],
+          "_postman_id": "ac090d16-565a-4589-bc23-1e45cbd2fd17",
+          "description": "List input items for a response."
+        },
+        {
+          "name": "Cancel Response",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/openai/v1/responses/:response_id/cancel",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "openai",
+                "v1",
+                "responses",
+                ":response_id",
+                "cancel"
+              ],
+              "variable": [
+                {
+                  "key": "response_id",
+                  "value": "<response_id>",
+                  "description": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"model\": \"gpt-4o\",\n  \"input\": \"Summarise the key benefits of automated test generation.\",\n  \"max_output_tokens\": 1024\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [],
+          "_postman_id": "36a95ee3-babe-4eb3-82bf-0c1eb348896e",
+          "description": "Cancel a response by ID.\n\nSupports both:\n- Polling IDs (litellm_poll_*): Cancels background response and updates status in Redis\n- Provider response IDs: Passes through to provider API\n\nFollows the OpenAI Responses API spec: https://platform.openai.com/docs/api-reference/responses/cancel\n\n```bash\n# Cancel polling response\ncurl -X POST https://api.dev.genai-preview.zeiss.com/llm/v1/responses/litellm_poll_abc123/cancel     -H \"api-key: 1234\"\n\n# Cancel provider response\ncurl -X POST https://api.dev.genai-preview.zeiss.com/llm/v1/responses/resp_abc123/cancel     -H \"api-key: 1234\"\n```"
+        },
+        {
+          "name": "Cancel Response",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/responses/:response_id/cancel",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "responses",
+                ":response_id",
+                "cancel"
+              ],
+              "variable": [
+                {
+                  "key": "response_id",
+                  "value": "<response_id>",
+                  "description": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"model\": \"gpt-4o\",\n  \"input\": \"Summarise the key benefits of automated test generation.\",\n  \"max_output_tokens\": 1024\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [],
+          "_postman_id": "ba954b89-7e56-4b3b-892c-4bde4448b227",
+          "description": "Cancel a response by ID.\n\nSupports both:\n- Polling IDs (litellm_poll_*): Cancels background response and updates status in Redis\n- Provider response IDs: Passes through to provider API\n\nFollows the OpenAI Responses API spec: https://platform.openai.com/docs/api-reference/responses/cancel\n\n```bash\n# Cancel polling response\ncurl -X POST https://api.dev.genai-preview.zeiss.com/llm/v1/responses/litellm_poll_abc123/cancel     -H \"api-key: 1234\"\n\n# Cancel provider response\ncurl -X POST https://api.dev.genai-preview.zeiss.com/llm/v1/responses/resp_abc123/cancel     -H \"api-key: 1234\"\n```"
+        },
+        {
+          "name": "Cancel Response",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": false
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/v1/responses/:response_id/cancel",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "v1",
+                "responses",
+                ":response_id",
+                "cancel"
+              ],
+              "variable": [
+                {
+                  "key": "response_id",
+                  "value": "<response_id>",
+                  "description": ""
+                }
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"model\": \"gpt-4o\",\n  \"input\": \"Summarise the key benefits of automated test generation.\",\n  \"max_output_tokens\": 1024\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [],
+          "_postman_id": "e3ec5866-680a-4a52-b0c7-80f5eb3b202a",
+          "description": "Cancel a response by ID.\n\nSupports both:\n- Polling IDs (litellm_poll_*): Cancels background response and updates status in Redis\n- Provider response IDs: Passes through to provider API\n\nFollows the OpenAI Responses API spec: https://platform.openai.com/docs/api-reference/responses/cancel\n\n```bash\n# Cancel polling response\ncurl -X POST https://api.dev.genai-preview.zeiss.com/llm/v1/responses/litellm_poll_abc123/cancel     -H \"api-key: 1234\"\n\n# Cancel provider response\ncurl -X POST https://api.dev.genai-preview.zeiss.com/llm/v1/responses/resp_abc123/cancel     -H \"api-key: 1234\"\n```"
+        }
+      ],
+      "_postman_id": "7a1369fe-b6c2-44d9-b6b6-cae8f48eabd9"
+    },
+    {
+      "name": "Key Management",
+      "item": [
+        {
+          "name": "Info Key Fn",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/key/info",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "key",
+                "info"
+              ],
+              "query": [
+                {
+                  "key": "key",
+                  "value": "<key>",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [],
+          "_postman_id": "3da347b5-7ba0-4dc8-860e-0161c30dc665",
+          "description": "Retrieve information about a key.\nParameters:\n    key: Optional[str] = Query parameter representing the key in the request\n    user_api_key_dict: UserAPIKeyAuth = Dependency representing the user's API key\nReturns:\n    Dict containing the key and its associated information\n\nExample Curl:\n```\ncurl -X GET \"https://api.dev.genai-preview.zeiss.com/llm/key/info?key=sk-02Wr4IAlN3NvPXvL5JVvDA\" -H \"api-key: 1234\"\n```\n\nExample Curl - if no key is passed, it will use the key provided in the Authorization header:\n```\ncurl -X GET \"https://api.dev.genai-preview.zeiss.com/llm/key/info\" -H \"Authorization: Bearer sk-02Wr4IAlN3NvPXvL5JVvDA\"\n```"
+        }
+      ],
+      "_postman_id": "acd03a5f-297a-495f-851b-6a794f79829e"
+    },
+    {
+      "name": "Budget & Spend Tracking",
+      "item": [
+        {
+          "name": "View Spend Logs",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/spend/logs",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "spend",
+                "logs"
+              ],
+              "query": [
+                {
+                  "key": "api_key",
+                  "value": "<api_key>",
+                  "disabled": true
+                },
+                {
+                  "key": "user_id",
+                  "value": "<user_id>",
+                  "disabled": true
+                },
+                {
+                  "key": "request_id",
+                  "value": "<request_id>",
+                  "disabled": true
+                },
+                {
+                  "key": "start_date",
+                  "value": "<start_date>",
+                  "disabled": true
+                },
+                {
+                  "key": "end_date",
+                  "value": "<end_date>",
+                  "disabled": true
+                },
+                {
+                  "key": "summarize",
+                  "value": "<summarize>",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [],
+          "_postman_id": "55b42d1f-8326-4105-b1a1-1396d9dfd236",
+          "description": "[DEPRECATED] This endpoint is not paginated and can cause performance issues.\nPlease use `/spend/logs/v2` instead for paginated access to spend logs.\n\nView all spend logs, if request_id is provided, only logs for that request_id will be returned\n\nWhen start_date and end_date are provided:\n- summarize=true (default): Returns aggregated spend data grouped by date (maintains backward compatibility)\n- summarize=false: Returns filtered individual log entries within the date range\n\nExample Request for all logs\n```\ncurl -X GET \"https://api.dev.genai-preview.zeiss.com/llm/spend/logs\" -H \"api-key: 1234\"\n```\n\nExample Request for specific request_id\n```\ncurl -X GET \"https://api.dev.genai-preview.zeiss.com/llm/spend/logs?request_id=chatcmpl-6dcb2540-d3d7-4e49-bb27-291f863f112e\" -H \"api-key: 1234\"\n```\n\nExample Request for specific api_key\n```\ncurl -X GET \"https://api.dev.genai-preview.zeiss.com/llm/spend/logs?api_key=sk-Fn8Ej39NkBQmUagFEoUWPQ\" -H \"api-key: 1234\"\n```\n\nExample Request for specific user_id\n```\ncurl -X GET \"https://api.dev.genai-preview.zeiss.com/llm/spend/logs?user_id=ishaan@berri.ai\" -H \"api-key: 1234\"\n```\n\nExample Request for date range with individual logs (unsummarized)\n```\ncurl -X GET \"https://api.dev.genai-preview.zeiss.com/llm/spend/logs?start_date=2024-01-01&end_date=2024-01-02&summarize=false\" -H \"api-key: 1234\"\n```"
+        },
+        {
+          "name": "Get User Daily Activity",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "api-key",
+                "value": "{{ZEISS_SUB_KEY}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{BASE_URL}}/user/daily/activity",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "user",
+                "daily",
+                "activity"
+              ],
+              "query": [
+                {
+                  "key": "start_date",
+                  "value": "<start_date>",
+                  "disabled": true
+                },
+                {
+                  "key": "end_date",
+                  "value": "<end_date>",
+                  "disabled": true
+                },
+                {
+                  "key": "model",
+                  "value": "<model>",
+                  "disabled": true
+                },
+                {
+                  "key": "api_key",
+                  "value": "<api_key>",
+                  "disabled": true
+                },
+                {
+                  "key": "page",
+                  "value": "<page>",
+                  "disabled": true
+                },
+                {
+                  "key": "page_size",
+                  "value": "<page_size>",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [],
+          "_postman_id": "a947f692-772f-44f6-806e-031dc2a98180",
+          "description": "[BETA] This is a beta endpoint. It will change.\n\nMeant to optimize querying spend data for analytics for a user.\n\nReturns:\n(by date)\n- spend\n- prompt_tokens\n- completion_tokens\n- cache_read_input_tokens\n- cache_creation_input_tokens\n- total_tokens\n- api_requests\n- breakdown by model, api_key, provider"
+        }
+      ],
+      "_postman_id": "2c0e7a2a-c013-4927-8fba-ba26853be65d"
+    }
+  ]
+}
