@@ -14,9 +14,14 @@ MODE_SELECTORS = {
 # Creates a CSS selector for a web element
 def generate_css_selector(element_handle):
     try:
-        return element_handle.evaluate('''el => {
+        return element_handle.evaluate(r'''el => {
             if (el.id) return '#' + el.id;
-            if (el.className) return '.' + el.className.split(' ')[0];
+            if (el.className) {
+                const firstClass = String(el.className).trim().split(/\s+/)[0];
+                if (firstClass && /^[a-zA-Z_][a-zA-Z0-9_-]*$/.test(firstClass)) {
+                    return '.' + firstClass;
+                }
+            }
             return el.tagName.toLowerCase();
         }''')
     except:
@@ -304,3 +309,196 @@ def extract_elements(url: str, mode: str = "all", custom_selector: str = None, h
 
     except Exception as e:
         raise ValueError(f"Critical error during extraction: {e}")
+
+
+# Scrapes elements from an existing Playwright page context without relaunching browser
+def extract_elements_from_page(page, mode: str = "all", custom_selector: str = None) -> List[Dict]:
+    if custom_selector:
+        selector = custom_selector
+        mode_to_use = "custom"
+    elif mode not in MODE_SELECTORS:
+        raise ValueError(f"Invalid mode. Choose from: {', '.join(MODE_SELECTORS.keys())}")
+    else:
+        selector = MODE_SELECTORS[mode]
+        mode_to_use = mode
+
+    try:
+        print(f"   [Browser] Using existing page context: {page.url}")
+        print("   [Browser] Waiting for dynamic content...")
+        page.wait_for_timeout(2000)
+
+        print(f"   [Browser] Extracting elements with selector: {selector[:50]}...")
+
+        MAX_ELEMENTS = 200
+
+        if mode_to_use == "all":
+            interactive_selector = MODE_SELECTORS["interactive"]
+            text_selector = MODE_SELECTORS["text"]
+
+            print("   [Browser] Processing interactive elements...")
+            try:
+                interactive_elements = page.eval_on_selector_all(
+                    interactive_selector,
+                    '''els => Array.from(els).slice(0, 100).map(el => ({
+                        tag: el.tagName.toLowerCase(),
+                        text: (el.innerText || el.value || el.alt || '').trim().slice(0, 50),
+                        attributes: Object.fromEntries(Array.from(el.attributes).map(a => [a.name, a.value]))
+                    }))'''
+                )
+                print(f"   [Browser] Found {len(interactive_elements)} interactive elements")
+            except Exception as e:
+                print(f"   [Browser] Error extracting interactive elements: {e}")
+                interactive_elements = []
+
+            print("   [Browser] Processing text elements...")
+            try:
+                text_elements = page.eval_on_selector_all(
+                    text_selector,
+                    '''els => Array.from(els).slice(0, 100).map(el => ({
+                        tag: el.tagName.toLowerCase(),
+                        text: (el.innerText || el.value || el.alt || '').trim().slice(0, 50),
+                        attributes: Object.fromEntries(Array.from(el.attributes).map(a => [a.name, a.value]))
+                    }))'''
+                )
+                print(f"   [Browser] Found {len(text_elements)} text elements")
+            except Exception as e:
+                print(f"   [Browser] Error extracting text elements: {e}")
+                text_elements = []
+
+            elements = interactive_elements + text_elements
+        else:
+            try:
+                elements = page.eval_on_selector_all(
+                    selector,
+                    f'''els => Array.from(els).slice(0, {MAX_ELEMENTS}).map(el => ({{
+                        tag: el.tagName.toLowerCase(),
+                        text: (el.innerText || el.value || el.alt || '').trim().slice(0, 50),
+                        attributes: Object.fromEntries(Array.from(el.attributes).map(a => [a.name, a.value]))
+                    }}))'''
+                )
+                print(f"   [Browser] Found {len(elements)} elements")
+            except Exception as e:
+                print(f"   [Browser] Error extracting elements: {e}")
+                elements = []
+
+        if len(elements) > MAX_ELEMENTS:
+            print(f"   [Browser] Limiting elements from {len(elements)} to {MAX_ELEMENTS}")
+            elements = elements[:MAX_ELEMENTS]
+
+        print(f"   [Browser] Processing {len(elements)} elements...")
+
+        elements_data = []
+
+        if mode == "all":
+            print("   [Browser] Getting handles for interactive elements...")
+            try:
+                interactive_handles = page.query_selector_all(interactive_selector)
+                interactive_handles = interactive_handles[:100]
+                print(f"   [Browser] Got {len(interactive_handles)} interactive handles")
+            except Exception as e:
+                print(f"   [Browser] Error getting interactive handles: {e}")
+                interactive_handles = []
+
+            print("   [Browser] Getting handles for text elements...")
+            try:
+                text_handles = page.query_selector_all(text_selector)
+                text_handles = text_handles[:100]
+                print(f"   [Browser] Got {len(text_handles)} text handles")
+            except Exception as e:
+                print(f"   [Browser] Error getting text handles: {e}")
+                text_handles = []
+
+            all_handles = interactive_handles + text_handles
+            all_elements = interactive_elements + text_elements
+
+            for idx, elem in enumerate(all_elements):
+                try:
+                    if idx >= len(all_handles):
+                        continue
+                    handle = all_handles[idx]
+
+                    selectors = {}
+                    selectors['css'] = generate_css_selector(handle)
+                    selectors['xpath'] = generate_xpath(handle)
+                    selectors['role_based'] = get_role_based_locator(handle)
+                    selectors['test_id'] = get_test_id_locator(handle)
+                    selectors['text_based'] = get_text_based_locator(handle)
+
+                    attrs = elem['attributes']
+                    if attrs.get("data-testid"):
+                        selectors["data-testid"] = f'[data-testid="{attrs["data-testid"]}"]'
+                    if attrs.get("id"):
+                        selectors["id"] = f'#{attrs["id"]}'
+                    if attrs.get("name"):
+                        selectors["name"] = f'[name="{attrs["name"]}"]'
+                    if attrs.get("aria-label"):
+                        selectors["aria-label"] = f'[aria-label="{attrs["aria-label"]}"]'
+                    if attrs.get("placeholder"):
+                        selectors["placeholder"] = f'[placeholder="{attrs["placeholder"]}"]'
+                    text = elem['text']
+                    if text:
+                        selectors["text"] = f'text="{text}"'
+                    if attrs.get("class"):
+                        class_selector = "." + ".".join(attrs["class"].split())
+                        selectors["class"] = class_selector
+
+                    element_data = {
+                        'tag': elem['tag'],
+                        'text': elem['text'],
+                        'attributes': elem['attributes'],
+                        'selectors': selectors
+                    }
+                    elements_data.append(element_data)
+
+                except Exception as e:
+                    logging.warning(f"Error processing element {idx}: {e}")
+                    continue
+        else:
+            handles = page.query_selector_all(selector)
+            for idx, elem in enumerate(elements):
+                try:
+                    if idx >= len(handles):
+                        continue
+                    handle = handles[idx]
+
+                    selectors = {}
+                    selectors['css'] = generate_css_selector(handle)
+                    selectors['xpath'] = generate_xpath(handle)
+                    selectors['role_based'] = get_role_based_locator(handle)
+                    selectors['test_id'] = get_test_id_locator(handle)
+                    selectors['text_based'] = get_text_based_locator(handle)
+
+                    attrs = elem['attributes']
+                    if attrs.get("data-testid"):
+                        selectors["data-testid"] = f'[data-testid="{attrs["data-testid"]}"]'
+                    if attrs.get("id"):
+                        selectors["id"] = f'#{attrs["id"]}'
+                    if attrs.get("name"):
+                        selectors["name"] = f'[name="{attrs["name"]}"]'
+                    if attrs.get("aria-label"):
+                        selectors["aria-label"] = f'[aria-label="{attrs["aria-label"]}"]'
+                    if attrs.get("placeholder"):
+                        selectors["placeholder"] = f'[placeholder="{attrs["placeholder"]}"]'
+                    text = elem['text']
+                    if text:
+                        selectors["text"] = f'text="{text}"'
+                    if attrs.get("class"):
+                        class_selector = "." + ".".join(attrs["class"].split())
+                        selectors["class"] = class_selector
+
+                    element_data = {
+                        'tag': elem['tag'],
+                        'text': elem['text'],
+                        'attributes': elem['attributes'],
+                        'selectors': selectors
+                    }
+                    elements_data.append(element_data)
+
+                except Exception as e:
+                    logging.warning(f"Error processing element {idx}: {e}")
+                    continue
+
+        return elements_data
+
+    except Exception as e:
+        raise ValueError(f"Critical error during extraction from existing page: {e}")

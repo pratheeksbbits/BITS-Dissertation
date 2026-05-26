@@ -1,0 +1,12 @@
+{
+  "url": "https://mgmt.qa.moser.hdp-cicd.zeiss.com/provision",
+  "mode": "all",
+  "generated_at": "20260526_181206",
+  "llm_base_url": "https://api.genai.zeiss.com/llm",
+  "llm_model": "gpt-4o",
+  "llm_version": "v1",
+  "prompt_file": "D:\\BITS Pilani WILP\\BITS-Dissertation\\Project\\LLM\\prompts\\generate_helper_js_prompt.txt",
+  "raw_dataset_path": "data/raw/raw_selectors_dataset_mgmt_qa_moser_hdp_cicd_zeiss_com_20260526_181203.json",
+  "predictions_path": "data/predictions/best_selectors_predictions_20260526_181203.json",
+  "helper_js_path": "data/helpers/generated_helpers_mgmt_qa_moser_hdp_cicd_zeiss_com_20260526_181206.js"
+}

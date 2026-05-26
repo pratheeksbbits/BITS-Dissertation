@@ -1,0 +1,2355 @@
+{
+  "url": "https://www.google.com",
+  "mode": "all",
+  "generated_at": "20260526_190557",
+  "total_elements": 79,
+  "elements": [
+    {
+      "element_id": 0,
+      "tag": "a",
+      "text": "About",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"About\"",
+          "selector_type": "text",
+          "rule_score": 55.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".w5hRs",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": ".w5hRs",
+          "selector_type": "class",
+          "rule_score": -34.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "/html/body/div[2]/div[2]/a",
+          "selector_type": "xpath",
+          "rule_score": -51.0,
+          "rule_rank": 4
+        }
+      ]
+    },
+    {
+      "element_id": 1,
+      "tag": "a",
+      "text": "Store",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"Store\"",
+          "selector_type": "text",
+          "rule_score": 55.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".w5hRs",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": ".w5hRs",
+          "selector_type": "class",
+          "rule_score": -34.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": "/html/body/div[2]/div[2]/a[2]",
+          "selector_type": "xpath",
+          "rule_score": 39.0,
+          "rule_rank": 2
+        }
+      ]
+    },
+    {
+      "element_id": 2,
+      "tag": "a",
+      "text": "Gmail",
+      "candidate_selectors": [
+        {
+          "selector": "[aria-label=\"Gmail \"]",
+          "selector_type": "aria-label",
+          "rule_score": 51.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "text=\"Gmail\"",
+          "selector_type": "text",
+          "rule_score": 55.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".gb_4",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": ".gb_4",
+          "selector_type": "class",
+          "rule_score": -34.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": "/html/body/div[2]/div[2]/div/div/header/div/div/a",
+          "selector_type": "xpath",
+          "rule_score": -71.0,
+          "rule_rank": 5
+        }
+      ]
+    },
+    {
+      "element_id": 3,
+      "tag": "a",
+      "text": "Images",
+      "candidate_selectors": [
+        {
+          "selector": "[aria-label=\"Search for Images \"]",
+          "selector_type": "aria-label",
+          "rule_score": 41.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "text=\"Images\"",
+          "selector_type": "text",
+          "rule_score": 55.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".gb_4",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": ".gb_4",
+          "selector_type": "class",
+          "rule_score": -34.0,
+          "rule_rank": 5
+        },
+        {
+          "selector": "/html/body/div[2]/div[2]/div/div/header/div/div[2]/a",
+          "selector_type": "xpath",
+          "rule_score": 9.0,
+          "rule_rank": 3
+        }
+      ]
+    },
+    {
+      "element_id": 4,
+      "tag": "a",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": "[aria-label=\"Google apps\"]",
+          "selector_type": "aria-label",
+          "rule_score": 51.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": ".gb_C",
+          "selector_type": "css",
+          "rule_score": 68.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".gb_C",
+          "selector_type": "class",
+          "rule_score": 56.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/div[2]/div[2]/div/div/header/div[2]/div/a",
+          "selector_type": "xpath",
+          "rule_score": 9.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": "getByRole('button', { name: 'Google apps' })",
+          "selector_type": "role_based",
+          "rule_score": -100.0,
+          "rule_rank": 5
+        }
+      ]
+    },
+    {
+      "element_id": 5,
+      "tag": "a",
+      "text": "Sign in",
+      "candidate_selectors": [
+        {
+          "selector": "[aria-label=\"Sign in\"]",
+          "selector_type": "aria-label",
+          "rule_score": 51.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": "text=\"Sign in\"",
+          "selector_type": "text",
+          "rule_score": 55.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": ".gb_A",
+          "selector_type": "css",
+          "rule_score": 68.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".gb_A",
+          "selector_type": "class",
+          "rule_score": 56.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/div[2]/div[2]/div/div/header/div[3]/a",
+          "selector_type": "xpath",
+          "rule_score": 19.0,
+          "rule_rank": 5
+        }
+      ]
+    },
+    {
+      "element_id": 6,
+      "tag": "a",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": "[aria-label=\"Go to Google Home\"]",
+          "selector_type": "aria-label",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "/html/body/div[2]/div[4]/header/header/div/a",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 2
+        }
+      ]
+    },
+    {
+      "element_id": 7,
+      "tag": "a",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": "/html/body/div[2]/div[5]/div/a",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 2
+        }
+      ]
+    },
+    {
+      "element_id": 8,
+      "tag": "div",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": "[aria-label=\"Share\"]",
+          "selector_type": "aria-label",
+          "rule_score": -39.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "div",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": "/html/body/div[2]/div[5]/div/div[2]/div",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "getByRole('button', { name: 'Share' })",
+          "selector_type": "role_based",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        }
+      ]
+    },
+    {
+      "element_id": 9,
+      "tag": "a",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": "/html/body/div[2]/div[5]/div/div[2]/div/div[2]/div/a",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 2
+        }
+      ]
+    },
+    {
+      "element_id": 10,
+      "tag": "a",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": "/html/body/div[2]/div[5]/div/div[2]/div/div[2]/div/a[2]",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 2
+        }
+      ]
+    },
+    {
+      "element_id": 11,
+      "tag": "a",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": "/html/body/div[2]/div[5]/div/div[2]/div/div[2]/div/a[3]",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 2
+        }
+      ]
+    },
+    {
+      "element_id": 12,
+      "tag": "a",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": "/html/body/div[2]/div[5]/div/div[2]/div/div[2]/div/a[4]",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 2
+        }
+      ]
+    },
+    {
+      "element_id": 13,
+      "tag": "a",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": "/html/body/div[2]/div[5]/div/div[2]/div/div[2]/div/a[5]",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 2
+        }
+      ]
+    },
+    {
+      "element_id": 14,
+      "tag": "button",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": "#spchx",
+          "selector_type": "id",
+          "rule_score": 77.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": "[aria-label=\"close\"]",
+          "selector_type": "aria-label",
+          "rule_score": 51.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": "#spchx",
+          "selector_type": "css",
+          "rule_score": 68.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": ".pz5bj",
+          "selector_type": "class",
+          "rule_score": 56.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/dialog/div/button",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 5
+        }
+      ]
+    },
+    {
+      "element_id": 15,
+      "tag": "button",
+      "text": ".O35uA{width:28px;height:28px}.tLrs7b{stroke-dasha",
+      "candidate_selectors": [
+        {
+          "selector": "[aria-label=\"Remove file attachment\"]",
+          "selector_type": "aria-label",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "text=\".O35uA{width:28px;height:28px}.tLrs7b{stroke-dasha\"",
+          "selector_type": "text",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": ".XOUhue",
+          "selector_type": "css",
+          "rule_score": -100.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".XOUhue",
+          "selector_type": "class",
+          "rule_score": -100.0,
+          "rule_rank": 5
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div/div/div/div/button",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 2
+        }
+      ]
+    },
+    {
+      "element_id": 16,
+      "tag": "button",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": "[aria-label=\"Add files and tools\"]",
+          "selector_type": "aria-label",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": ".UbbAWe",
+          "selector_type": "css",
+          "rule_score": -100.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".UbbAWe",
+          "selector_type": "class",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div/div/div/div[2]/div/div/button",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 2
+        }
+      ]
+    },
+    {
+      "element_id": 17,
+      "tag": "button",
+      "text": "Upload image",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"Upload image\"",
+          "selector_type": "text",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": ".izN7If",
+          "selector_type": "css",
+          "rule_score": -100.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".izN7If",
+          "selector_type": "class",
+          "rule_score": -100.0,
+          "rule_rank": 5
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div/div/div/div[2]/div/div/div/ul/li/button",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "getByRole('menuitem', { name: 'Upload image' })",
+          "selector_type": "role_based",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        }
+      ]
+    },
+    {
+      "element_id": 18,
+      "tag": "button",
+      "text": "Upload file",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"Upload file\"",
+          "selector_type": "text",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": ".izN7If",
+          "selector_type": "css",
+          "rule_score": -100.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".izN7If",
+          "selector_type": "class",
+          "rule_score": -100.0,
+          "rule_rank": 5
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div/div/div/div[2]/div/div/div/ul/li[2]/button",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "getByRole('menuitem', { name: 'Upload file' })",
+          "selector_type": "role_based",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        }
+      ]
+    },
+    {
+      "element_id": 19,
+      "tag": "button",
+      "text": ".aAXUB{display:flex;align-items:center;justify-con",
+      "candidate_selectors": [
+        {
+          "selector": "text=\".aAXUB{display:flex;align-items:center;justify-con\"",
+          "selector_type": "text",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": ".izN7If",
+          "selector_type": "css",
+          "rule_score": -100.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".izN7If",
+          "selector_type": "class",
+          "rule_score": -100.0,
+          "rule_rank": 5
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div/div/div/div[2]/div/div/div/ul/li[3]/ul/li/button",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "getByRole('menuitemradio', { name: '.aAXUB{display:flex;align-items:center;justify-con' })",
+          "selector_type": "role_based",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        }
+      ]
+    },
+    {
+      "element_id": 20,
+      "tag": "input",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": "input",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div/div/div/div[2]/div/div/div/input",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 2
+        }
+      ]
+    },
+    {
+      "element_id": 21,
+      "tag": "input",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": "input",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div/div/div/div[2]/div/div/div/input[2]",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 2
+        }
+      ]
+    },
+    {
+      "element_id": 22,
+      "tag": "textarea",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": "#APjFqb",
+          "selector_type": "id",
+          "rule_score": 77.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": "[name=\"q\"]",
+          "selector_type": "name",
+          "rule_score": 64.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "[aria-label=\"Search\"]",
+          "selector_type": "aria-label",
+          "rule_score": 51.0,
+          "rule_rank": 5
+        },
+        {
+          "selector": "#APjFqb",
+          "selector_type": "css",
+          "rule_score": 68.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": ".gLFyf",
+          "selector_type": "class",
+          "rule_score": 56.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div/div/div/div[2]/div[2]/textarea",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 6
+        },
+        {
+          "selector": "getByRole('combobox', { name: 'Search' })",
+          "selector_type": "role_based",
+          "rule_score": -100.0,
+          "rule_rank": 7
+        }
+      ]
+    },
+    {
+      "element_id": 23,
+      "tag": "div",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": "[aria-label=\"Clear\"]",
+          "selector_type": "aria-label",
+          "rule_score": 51.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": ".vOY7J",
+          "selector_type": "css",
+          "rule_score": 68.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".vOY7J",
+          "selector_type": "class",
+          "rule_score": 56.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div/div/div/div[2]/div[3]/div/div",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": "getByRole('button', { name: 'Clear' })",
+          "selector_type": "role_based",
+          "rule_score": -100.0,
+          "rule_rank": 5
+        }
+      ]
+    },
+    {
+      "element_id": 24,
+      "tag": "div",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": "[aria-label=\"Search by voice\"]",
+          "selector_type": "aria-label",
+          "rule_score": 41.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": ".fzj3ad",
+          "selector_type": "css",
+          "rule_score": 68.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".fzj3ad",
+          "selector_type": "class",
+          "rule_score": 56.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div/div/div/div[2]/div[3]/div[2]/div",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": "getByRole('button', { name: 'Search by voice' })",
+          "selector_type": "role_based",
+          "rule_score": -100.0,
+          "rule_rank": 5
+        }
+      ]
+    },
+    {
+      "element_id": 25,
+      "tag": "div",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": "[aria-label=\"Search by image\"]",
+          "selector_type": "aria-label",
+          "rule_score": 41.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": ".etxtjc",
+          "selector_type": "css",
+          "rule_score": 68.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".etxtjc",
+          "selector_type": "class",
+          "rule_score": 56.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div/div/div/div[2]/div[3]/div[2]/div[2]",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": "getByRole('button', { name: 'Search by image' })",
+          "selector_type": "role_based",
+          "rule_score": -100.0,
+          "rule_rank": 5
+        }
+      ]
+    },
+    {
+      "element_id": 26,
+      "tag": "button",
+      "text": "AI Mode",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"AI Mode\"",
+          "selector_type": "text",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": ".plR5qb",
+          "selector_type": "css",
+          "rule_score": -100.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".plR5qb.Y5MKCd",
+          "selector_type": "class",
+          "rule_score": -100.0,
+          "rule_rank": 5
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div/div/div/div[2]/div[3]/button",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "getByRole('link', { name: 'AI Mode' })",
+          "selector_type": "role_based",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        }
+      ]
+    },
+    {
+      "element_id": 27,
+      "tag": "button",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": "[aria-label=\"Send\"]",
+          "selector_type": "aria-label",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": ".byb4Md",
+          "selector_type": "css",
+          "rule_score": -100.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".byb4Md",
+          "selector_type": "class",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div/div/div/div[2]/div[3]/button[2]",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 2
+        }
+      ]
+    },
+    {
+      "element_id": 28,
+      "tag": "button",
+      "text": ".DBqRk{display:flex;align-self:center;border-radiu",
+      "candidate_selectors": [
+        {
+          "selector": "text=\".DBqRk{display:flex;align-self:center;border-radiu\"",
+          "selector_type": "text",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": ".DBqRk",
+          "selector_type": "css",
+          "rule_score": -100.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".DBqRk",
+          "selector_type": "class",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div/div/div/div[3]/div/button",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 2
+        }
+      ]
+    },
+    {
+      "element_id": 29,
+      "tag": "span",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": "[aria-label=\"Close Choose what you’re giving feedback on\"]",
+          "selector_type": "aria-label",
+          "rule_score": 21.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": ".Job8vb",
+          "selector_type": "css",
+          "rule_score": 68.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".Job8vb.z1asCe.wuXmqc",
+          "selector_type": "class",
+          "rule_score": 36.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div/div/div[3]/div[2]/div/span",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": "getByRole('button', { name: 'Close Choose what you’re giving feedback on' })",
+          "selector_type": "role_based",
+          "rule_score": -100.0,
+          "rule_rank": 5
+        }
+      ]
+    },
+    {
+      "element_id": 30,
+      "tag": "div",
+      "text": ".U48fD{-webkit-tap-highlight-color:transparent;cur",
+      "candidate_selectors": [
+        {
+          "selector": "[aria-label=\"See more\"]",
+          "selector_type": "aria-label",
+          "rule_score": 51.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "text=\".U48fD{-webkit-tap-highlight-color:transparent;cur\"",
+          "selector_type": "text",
+          "rule_score": -100.0,
+          "rule_rank": 6
+        },
+        {
+          "selector": ".Sz7Lee",
+          "selector_type": "css",
+          "rule_score": 68.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".Sz7Lee.MagqMc.U48fD",
+          "selector_type": "class",
+          "rule_score": 36.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div/div/div[3]/div[4]/li/div/div[2]/div[2]",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": "getByRole('button', { name: 'See more' })",
+          "selector_type": "role_based",
+          "rule_score": -100.0,
+          "rule_rank": 5
+        }
+      ]
+    },
+    {
+      "element_id": 31,
+      "tag": "div",
+      "text": ".JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-de",
+      "candidate_selectors": [
+        {
+          "selector": "text=\".JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-de\"",
+          "selector_type": "text",
+          "rule_score": -100.0,
+          "rule_rank": 5
+        },
+        {
+          "selector": ".AQZ9Vd",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".AQZ9Vd",
+          "selector_type": "class",
+          "rule_score": -34.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div/div/div[3]/div[4]/li/div/div[3]",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "getByRole('button', { name: '.JCHpcb:hover,.LvqzR .JCHpcb{color:#1558d6;text-de' })",
+          "selector_type": "role_based",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        }
+      ]
+    },
+    {
+      "element_id": 32,
+      "tag": "div",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": "[aria-label=\"Word pronunciation\"]",
+          "selector_type": "aria-label",
+          "rule_score": -49.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": ".Tnv2td",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".Tnv2td",
+          "selector_type": "class",
+          "rule_score": -34.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div/div/div[3]/div[4]/li[2]/div/div/div/div[2]",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": "getByRole('button', { name: 'Word pronunciation' })",
+          "selector_type": "role_based",
+          "rule_score": -100.0,
+          "rule_rank": 5
+        }
+      ]
+    },
+    {
+      "element_id": 33,
+      "tag": "div",
+      "text": "Delete",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"Delete\"",
+          "selector_type": "text",
+          "rule_score": -35.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": ".AQZ9Vd",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".AQZ9Vd",
+          "selector_type": "class",
+          "rule_score": -34.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div/div/div[3]/div[4]/li[3]/div/div[3]",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": "getByRole('button', { name: 'Delete' })",
+          "selector_type": "role_based",
+          "rule_score": -100.0,
+          "rule_rank": 5
+        }
+      ]
+    },
+    {
+      "element_id": 34,
+      "tag": "div",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": "[aria-label=\"Word pronunciation\"]",
+          "selector_type": "aria-label",
+          "rule_score": -49.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": ".Tnv2td",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".Tnv2td",
+          "selector_type": "class",
+          "rule_score": -34.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div/div/div[3]/div[4]/div[5]/div/div[2]",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": "getByRole('button', { name: 'Word pronunciation' })",
+          "selector_type": "role_based",
+          "rule_score": -100.0,
+          "rule_rank": 5
+        }
+      ]
+    },
+    {
+      "element_id": 35,
+      "tag": "input",
+      "text": "Google Search",
+      "candidate_selectors": [
+        {
+          "selector": "[name=\"btnK\"]",
+          "selector_type": "name",
+          "rule_score": -26.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "[aria-label=\"Google Search\"]",
+          "selector_type": "aria-label",
+          "rule_score": -39.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": "text=\"Google Search\"",
+          "selector_type": "text",
+          "rule_score": -45.0,
+          "rule_rank": 5
+        },
+        {
+          "selector": ".gNO89b",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".gNO89b",
+          "selector_type": "class",
+          "rule_score": -34.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div/div/div[3]/div[4]/div[6]/center/input",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 6
+        },
+        {
+          "selector": "getByRole('button', { name: 'Google Search' })",
+          "selector_type": "role_based",
+          "rule_score": -100.0,
+          "rule_rank": 7
+        }
+      ]
+    },
+    {
+      "element_id": 36,
+      "tag": "input",
+      "text": "I'm Feeling Lucky",
+      "candidate_selectors": [
+        {
+          "selector": "[name=\"btnI\"]",
+          "selector_type": "name",
+          "rule_score": -26.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "[aria-label=\"I'm Feeling Lucky\"]",
+          "selector_type": "aria-label",
+          "rule_score": -49.0,
+          "rule_rank": 5
+        },
+        {
+          "selector": "text=\"I'm Feeling Lucky\"",
+          "selector_type": "text",
+          "rule_score": -45.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": ".RNmpXc",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".RNmpXc",
+          "selector_type": "class",
+          "rule_score": -34.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div/div/div[3]/div[4]/div[6]/center/input[2]",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 6
+        }
+      ]
+    },
+    {
+      "element_id": 37,
+      "tag": "div",
+      "text": "Report inappropriate predictions",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"Report inappropriate predictions\"",
+          "selector_type": "text",
+          "rule_score": 35.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": ".WzNHm",
+          "selector_type": "css",
+          "rule_score": 68.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".WzNHm.mWcf0e",
+          "selector_type": "class",
+          "rule_score": 46.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div/div/div[3]/div[5]/div",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": "getByRole('button', { name: 'Report inappropriate predictions' })",
+          "selector_type": "role_based",
+          "rule_score": -100.0,
+          "rule_rank": 5
+        }
+      ]
+    },
+    {
+      "element_id": 38,
+      "tag": "input",
+      "text": "Google Search",
+      "candidate_selectors": [
+        {
+          "selector": "[name=\"btnK\"]",
+          "selector_type": "name",
+          "rule_score": -26.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "[aria-label=\"Google Search\"]",
+          "selector_type": "aria-label",
+          "rule_score": -39.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": "text=\"Google Search\"",
+          "selector_type": "text",
+          "rule_score": -45.0,
+          "rule_rank": 5
+        },
+        {
+          "selector": ".gNO89b",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".gNO89b",
+          "selector_type": "class",
+          "rule_score": -34.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div/div/div[4]/center/input",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 6
+        },
+        {
+          "selector": "getByRole('button', { name: 'Google Search' })",
+          "selector_type": "role_based",
+          "rule_score": -100.0,
+          "rule_rank": 7
+        }
+      ]
+    },
+    {
+      "element_id": 39,
+      "tag": "input",
+      "text": "I'm Feeling Lucky",
+      "candidate_selectors": [
+        {
+          "selector": "[name=\"btnI\"]",
+          "selector_type": "name",
+          "rule_score": -26.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "[aria-label=\"I'm Feeling Lucky\"]",
+          "selector_type": "aria-label",
+          "rule_score": -49.0,
+          "rule_rank": 5
+        },
+        {
+          "selector": "text=\"I'm Feeling Lucky\"",
+          "selector_type": "text",
+          "rule_score": -45.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": ".RNmpXc",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".RNmpXc",
+          "selector_type": "class",
+          "rule_score": -34.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div/div/div[4]/center/input[2]",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 6
+        }
+      ]
+    },
+    {
+      "element_id": 40,
+      "tag": "div",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": "[aria-label=\"Close\"]",
+          "selector_type": "aria-label",
+          "rule_score": 51.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".NnfpFe",
+          "selector_type": "css",
+          "rule_score": -100.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": ".NnfpFe.btku5b.FR7ZSc.dmKIje.OJeuxf",
+          "selector_type": "class",
+          "rule_score": -100.0,
+          "rule_rank": 5
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div/div/g-snackbar/div/div/div/div/span/span/div",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "getByRole('button', { name: 'Close' })",
+          "selector_type": "role_based",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        }
+      ]
+    },
+    {
+      "element_id": 41,
+      "tag": "input",
+      "text": "7d9c60e3220b4d37",
+      "candidate_selectors": [
+        {
+          "selector": "[name=\"sca_esv\"]",
+          "selector_type": "name",
+          "rule_score": 64.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": "text=\"7d9c60e3220b4d37\"",
+          "selector_type": "text",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": "input",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div[2]/input",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        }
+      ]
+    },
+    {
+      "element_id": 42,
+      "tag": "input",
+      "text": "hp",
+      "candidate_selectors": [
+        {
+          "selector": "[name=\"source\"]",
+          "selector_type": "name",
+          "rule_score": 64.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": "text=\"hp\"",
+          "selector_type": "text",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": "input",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div[2]/input[2]",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        }
+      ]
+    },
+    {
+      "element_id": 43,
+      "tag": "input",
+      "text": "paEVatvBFKWRvr0P3pT1kAI",
+      "candidate_selectors": [
+        {
+          "selector": "[name=\"ei\"]",
+          "selector_type": "name",
+          "rule_score": 64.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": "text=\"paEVatvBFKWRvr0P3pT1kAI\"",
+          "selector_type": "text",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": "input",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div[2]/input[3]",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        }
+      ]
+    },
+    {
+      "element_id": 44,
+      "tag": "input",
+      "text": "AFdpzrgAAAAAahWvtZ0SVN5MhC-YJ-XEUfjoXjzoZ-8R",
+      "candidate_selectors": [
+        {
+          "selector": "[name=\"iflsig\"]",
+          "selector_type": "name",
+          "rule_score": 64.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": "text=\"AFdpzrgAAAAAahWvtZ0SVN5MhC-YJ-XEUfjoXjzoZ-8R\"",
+          "selector_type": "text",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": "input",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div[2]/input[4]",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        }
+      ]
+    },
+    {
+      "element_id": 45,
+      "tag": "a",
+      "text": "हिन्दी",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"हिन्दी\"",
+          "selector_type": "text",
+          "rule_score": 55.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": "/html/body/div[2]/div[7]/div[3]/div/a",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        }
+      ]
+    },
+    {
+      "element_id": 46,
+      "tag": "a",
+      "text": "বাংলা",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"বাংলা\"",
+          "selector_type": "text",
+          "rule_score": 55.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": "/html/body/div[2]/div[7]/div[3]/div/a[2]",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        }
+      ]
+    },
+    {
+      "element_id": 47,
+      "tag": "a",
+      "text": "తెలుగు",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"తెలుగు\"",
+          "selector_type": "text",
+          "rule_score": 55.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": "/html/body/div[2]/div[7]/div[3]/div/a[3]",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        }
+      ]
+    },
+    {
+      "element_id": 48,
+      "tag": "a",
+      "text": "मराठी",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"मराठी\"",
+          "selector_type": "text",
+          "rule_score": 55.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": "/html/body/div[2]/div[7]/div[3]/div/a[4]",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        }
+      ]
+    },
+    {
+      "element_id": 49,
+      "tag": "a",
+      "text": "தமிழ்",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"தமிழ்\"",
+          "selector_type": "text",
+          "rule_score": 55.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": "/html/body/div[2]/div[7]/div[3]/div/a[5]",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        }
+      ]
+    },
+    {
+      "element_id": 50,
+      "tag": "a",
+      "text": "ગુજરાતી",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"ગુજરાતી\"",
+          "selector_type": "text",
+          "rule_score": 55.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": "/html/body/div[2]/div[7]/div[3]/div/a[6]",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        }
+      ]
+    },
+    {
+      "element_id": 51,
+      "tag": "a",
+      "text": "ಕನ್ನಡ",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"ಕನ್ನಡ\"",
+          "selector_type": "text",
+          "rule_score": 55.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": "/html/body/div[2]/div[7]/div[3]/div/a[7]",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        }
+      ]
+    },
+    {
+      "element_id": 52,
+      "tag": "a",
+      "text": "മലയാളം",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"മലയാളം\"",
+          "selector_type": "text",
+          "rule_score": 55.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": "/html/body/div[2]/div[7]/div[3]/div/a[8]",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        }
+      ]
+    },
+    {
+      "element_id": 53,
+      "tag": "a",
+      "text": "ਪੰਜਾਬੀ",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"ਪੰਜਾਬੀ\"",
+          "selector_type": "text",
+          "rule_score": 55.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": "/html/body/div[2]/div[7]/div[3]/div/a[9]",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        }
+      ]
+    },
+    {
+      "element_id": 54,
+      "tag": "a",
+      "text": "Advertising",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"Advertising\"",
+          "selector_type": "text",
+          "rule_score": 55.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".pHiOh",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": ".pHiOh",
+          "selector_type": "class",
+          "rule_score": -34.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "/html/body/div[2]/div[9]/div/div[2]/div/a",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        }
+      ]
+    },
+    {
+      "element_id": 55,
+      "tag": "a",
+      "text": "Business",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"Business\"",
+          "selector_type": "text",
+          "rule_score": 55.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".pHiOh",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": ".pHiOh",
+          "selector_type": "class",
+          "rule_score": -34.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "/html/body/div[2]/div[9]/div/div[2]/div/a[2]",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        }
+      ]
+    },
+    {
+      "element_id": 56,
+      "tag": "a",
+      "text": "How Search works",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"How Search works\"",
+          "selector_type": "text",
+          "rule_score": 45.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".pHiOh",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": ".pHiOh",
+          "selector_type": "class",
+          "rule_score": -34.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "/html/body/div[2]/div[9]/div/div[2]/div/a[3]",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        }
+      ]
+    },
+    {
+      "element_id": 57,
+      "tag": "a",
+      "text": "Privacy",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"Privacy\"",
+          "selector_type": "text",
+          "rule_score": 55.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".pHiOh",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": ".pHiOh",
+          "selector_type": "class",
+          "rule_score": -34.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "/html/body/div[2]/div[9]/div/div[2]/div[2]/a",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        }
+      ]
+    },
+    {
+      "element_id": 58,
+      "tag": "a",
+      "text": "Terms",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"Terms\"",
+          "selector_type": "text",
+          "rule_score": 55.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".pHiOh",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": ".pHiOh",
+          "selector_type": "class",
+          "rule_score": -34.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "/html/body/div[2]/div[9]/div/div[2]/div[2]/a[2]",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        }
+      ]
+    },
+    {
+      "element_id": 59,
+      "tag": "div",
+      "text": "Settings",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"Settings\"",
+          "selector_type": "text",
+          "rule_score": 55.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": ".CcNe6e",
+          "selector_type": "css",
+          "rule_score": 68.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".CcNe6e",
+          "selector_type": "class",
+          "rule_score": 56.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/div[2]/div[9]/div/div[2]/div[2]/span/span/g-popup/div",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": "getByRole('button', { name: 'Settings' })",
+          "selector_type": "role_based",
+          "rule_score": -100.0,
+          "rule_rank": 5
+        }
+      ]
+    },
+    {
+      "element_id": 60,
+      "tag": "a",
+      "text": "Search settings",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"Search settings\"",
+          "selector_type": "text",
+          "rule_score": 45.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": "/html/body/div[2]/div[9]/div/div[2]/div[2]/span/span/g-popup/div[2]/g-menu/g-menu-item/div/a",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "getByRole('menuitem', { name: 'Search settings' })",
+          "selector_type": "role_based",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        }
+      ]
+    },
+    {
+      "element_id": 61,
+      "tag": "a",
+      "text": "Advanced search",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"Advanced search\"",
+          "selector_type": "text",
+          "rule_score": 45.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": "/html/body/div[2]/div[9]/div/div[2]/div[2]/span/span/g-popup/div[2]/g-menu/g-menu-item[2]/div/a",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "getByRole('menuitem', { name: 'Advanced search' })",
+          "selector_type": "role_based",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        }
+      ]
+    },
+    {
+      "element_id": 62,
+      "tag": "a",
+      "text": "Your data in Search",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"Your data in Search\"",
+          "selector_type": "text",
+          "rule_score": 45.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": "/html/body/div[2]/div[9]/div/div[2]/div[2]/span/span/g-popup/div[2]/g-menu/g-menu-item[3]/div/a",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "getByRole('menuitem', { name: 'Your data in Search' })",
+          "selector_type": "role_based",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        }
+      ]
+    },
+    {
+      "element_id": 63,
+      "tag": "a",
+      "text": "Search history",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"Search history\"",
+          "selector_type": "text",
+          "rule_score": 45.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": "/html/body/div[2]/div[9]/div/div[2]/div[2]/span/span/g-popup/div[2]/g-menu/g-menu-item[4]/div/a",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "getByRole('menuitem', { name: 'Search history' })",
+          "selector_type": "role_based",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        }
+      ]
+    },
+    {
+      "element_id": 64,
+      "tag": "a",
+      "text": "Search help",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"Search help\"",
+          "selector_type": "text",
+          "rule_score": 55.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": "/html/body/div[2]/div[9]/div/div[2]/div[2]/span/span/g-popup/div[2]/g-menu/g-menu-item[5]/div/a",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "getByRole('menuitem', { name: 'Search help' })",
+          "selector_type": "role_based",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        }
+      ]
+    },
+    {
+      "element_id": 65,
+      "tag": "div",
+      "text": "Dark theme: Off",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"Dark theme: Off\"",
+          "selector_type": "text",
+          "rule_score": 45.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": ".tFYjZe",
+          "selector_type": "css",
+          "rule_score": 68.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".tFYjZe",
+          "selector_type": "class",
+          "rule_score": 56.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/div[2]/div[9]/div/div[2]/div[2]/span/span/g-popup/div[2]/g-menu/g-menu-item[8]/div/div/div",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": "getByRole('link', { name: 'Dark theme: Off' })",
+          "selector_type": "role_based",
+          "rule_score": -100.0,
+          "rule_rank": 5
+        }
+      ]
+    },
+    {
+      "element_id": 66,
+      "tag": "textarea",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": "[name=\"csi\"]",
+          "selector_type": "name",
+          "rule_score": 64.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": ".csi",
+          "selector_type": "css",
+          "rule_score": 68.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".csi",
+          "selector_type": "class",
+          "rule_score": 56.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "/html/body/textarea",
+          "selector_type": "xpath",
+          "rule_score": 49.0,
+          "rule_rank": 4
+        }
+      ]
+    },
+    {
+      "element_id": 67,
+      "tag": "div",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": ".LjfRsf",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".LjfRsf",
+          "selector_type": "class",
+          "rule_score": -34.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/div[7]/g-dialog/div/div[2]/div",
+          "selector_type": "xpath",
+          "rule_score": -71.0,
+          "rule_rank": 3
+        }
+      ]
+    },
+    {
+      "element_id": 68,
+      "tag": "span",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": "[aria-label=\"Close\"]",
+          "selector_type": "aria-label",
+          "rule_score": 51.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": ".xjR8dd",
+          "selector_type": "css",
+          "rule_score": 68.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".xjR8dd.bvSTKc.z1asCe",
+          "selector_type": "class",
+          "rule_score": 36.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "/html/body/div[7]/g-dialog/div/div[2]/span/div/span",
+          "selector_type": "xpath",
+          "rule_score": 9.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": "getByRole('button', { name: 'Close' })",
+          "selector_type": "role_based",
+          "rule_score": -100.0,
+          "rule_rank": 5
+        }
+      ]
+    },
+    {
+      "element_id": 69,
+      "tag": "a",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": ".H3ZkHf",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".H3ZkHf.wHYlTd.eJtrMc.Wt5Tfe",
+          "selector_type": "class",
+          "rule_score": -54.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/div[7]/g-dialog/div/div[2]/span/div/div[3]/div/a",
+          "selector_type": "xpath",
+          "rule_score": -81.0,
+          "rule_rank": 3
+        }
+      ]
+    },
+    {
+      "element_id": 70,
+      "tag": "a",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": ".H3ZkHf",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": ".H3ZkHf.wHYlTd.eJtrMc.Wt5Tfe",
+          "selector_type": "class",
+          "rule_score": -54.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "/html/body/div[7]/g-dialog/div/div[2]/span/div/div[3]/div/a[2]",
+          "selector_type": "xpath",
+          "rule_score": -1.0,
+          "rule_rank": 1
+        }
+      ]
+    },
+    {
+      "element_id": 71,
+      "tag": "a",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": ".H3ZkHf",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": ".H3ZkHf.wHYlTd.eJtrMc.Wt5Tfe",
+          "selector_type": "class",
+          "rule_score": -54.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "/html/body/div[7]/g-dialog/div/div[2]/span/div/div[3]/div/a[3]",
+          "selector_type": "xpath",
+          "rule_score": -1.0,
+          "rule_rank": 1
+        }
+      ]
+    },
+    {
+      "element_id": 72,
+      "tag": "a",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": ".H3ZkHf",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": ".H3ZkHf.wHYlTd.eJtrMc.Wt5Tfe.Q7PwXb",
+          "selector_type": "class",
+          "rule_score": 26.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": "/html/body/div[7]/g-dialog/div/div[2]/span/div/div[3]/div/a[4]",
+          "selector_type": "xpath",
+          "rule_score": -1.0,
+          "rule_rank": 2
+        }
+      ]
+    },
+    {
+      "element_id": 73,
+      "tag": "div",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": ".n5Hqzc",
+          "selector_type": "css",
+          "rule_score": 68.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".n5Hqzc.ApHyTb.OdBhM.zUdppc",
+          "selector_type": "class",
+          "rule_score": 36.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/div[7]/g-dialog/div/div[2]/span/div/div[3]/div[2]/div/div/div",
+          "selector_type": "xpath",
+          "rule_score": -101.0,
+          "rule_rank": 3
+        }
+      ]
+    },
+    {
+      "element_id": 74,
+      "tag": "input",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": "[aria-label=\"Share link\"]",
+          "selector_type": "aria-label",
+          "rule_score": 51.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": ".baeIxf",
+          "selector_type": "css",
+          "rule_score": 68.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".baeIxf.OhScic.Wt5Tfe.TkZZsf.K4PHmc",
+          "selector_type": "class",
+          "rule_score": 26.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "/html/body/div[7]/g-dialog/div/div[2]/span/div/div[3]/div[2]/div[3]/div/g-text-field/div/div/input",
+          "selector_type": "xpath",
+          "rule_score": -31.0,
+          "rule_rank": 4
+        }
+      ]
+    },
+    {
+      "element_id": 75,
+      "tag": "div",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": ".LjfRsf",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": ".LjfRsf",
+          "selector_type": "class",
+          "rule_score": -34.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "/html/body/div[7]/g-dialog/div/div[2]/div[2]",
+          "selector_type": "xpath",
+          "rule_score": 19.0,
+          "rule_rank": 1
+        }
+      ]
+    },
+    {
+      "element_id": 76,
+      "tag": "div",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": ".k1zIA",
+          "selector_type": "css",
+          "rule_score": 68.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".k1zIA.VntuPb.DYz2A",
+          "selector_type": "class",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "/html/body/div[2]/div[5]/div[2]",
+          "selector_type": "xpath",
+          "rule_score": 29.0,
+          "rule_rank": 2
+        }
+      ]
+    },
+    {
+      "element_id": 77,
+      "tag": "div",
+      "text": "Choose what you’re giving feedback on",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"Choose what you’re giving feedback on\"",
+          "selector_type": "text",
+          "rule_score": 25.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": ".C85rO",
+          "selector_type": "css",
+          "rule_score": 68.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".C85rO",
+          "selector_type": "class",
+          "rule_score": 56.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/div[2]/div[6]/form/div/div/div[3]/div[2]/div/div[2]",
+          "selector_type": "xpath",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": "getByRole('heading', { name: 'Choose what you’re giving feedback on' })",
+          "selector_type": "role_based",
+          "rule_score": -100.0,
+          "rule_rank": 5
+        }
+      ]
+    },
+    {
+      "element_id": 78,
+      "tag": "div",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": ".Wm2B8c",
+          "selector_type": "css",
+          "rule_score": 68.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".Wm2B8c.v0rrvd",
+          "selector_type": "class",
+          "rule_score": 46.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/div[7]/g-dialog/div/div[2]/span/div/div",
+          "selector_type": "xpath",
+          "rule_score": -81.0,
+          "rule_rank": 3
+        }
+      ]
+    }
+  ]
+}

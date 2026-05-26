@@ -4,16 +4,51 @@ Generate a single JavaScript file that exports helper functions for interacting 
 
 Requirements:
 1. Use Playwright style APIs and write clean, production-quality JavaScript.
-2. Generate readable function names based on tag + text/content intent.
-3. Include one helper per element in best_selectors.
-4. For each helper, prefer robust interactions:
+2. Include one helper per element in best_selectors. Do not skip any element_id.
+3. For each helper, prefer robust interactions:
    - click helpers for clickable elements
    - fill/type helpers for input-like elements
    - visibility/assertion helpers where useful
-5. Include a single class wrapper named GeneratedPageHelpers that takes a `page` in constructor.
-6. Avoid duplicate helper names. If conflict occurs, append element id.
-7. Add concise comments only when needed.
-8. Return ONLY JavaScript code. Do not include markdown fences.
+4. Include a single class wrapper named GeneratedPageHelpers that takes a `page` in constructor.
+5. Avoid duplicate helper names. If conflict occurs, append a numeric suffix (e.g., 2, 3).
+6. Add concise comments only when needed.
+7. Return ONLY JavaScript code. Do not include markdown fences.
+
+Method naming policy (STRICT):
+1. Every method name MUST be a valid JavaScript identifier and match this pattern:
+   ^[A-Za-z_$][A-Za-z0-9_$]*$
+2. Never use hyphen (-), whitespace, punctuation, or quotes in method names.
+3. Do NOT include element_id in method names.
+4. Use this structure: <Action><ElementType><TextPart>
+5. Action mapping:
+   - button/a => click
+   - input/textarea => fill
+   - others => waitFor
+6. ElementType must be simple and safe:
+   - use Button, Link, Input, Textarea, Select, Checkbox, Radio, Image, Form, Div, Span, Heading, or Element
+   - if raw tag has symbols/non-letters (example: g-right-button), do NOT copy it; map to Element
+7. TextPart rules:
+   - If visible text exists, use a simplified CamelCase text fragment (max 2 words, max 16 chars total)
+   - Remove symbols, punctuation, and extra spaces
+   - Keep only letters and digits
+   - If no usable text, use Generic
+8. Keep names short and crisp. Preferred max length: 30 characters.
+9. Good examples:
+   - clickButtonSearch
+   - fillInputEmail
+   - waitForElementNext
+   - clickLinkSignIn
+
+Method ordering policy (STRICT):
+1. After generating all helpers, sort methods by name readability before writing the class body.
+2. High-readability methods must appear first:
+   - names with meaningful text parts (example: clickLinkSearchHistory, clickButtonAddFiles)
+   - names that are specific and intent-revealing
+3. Low-readability methods must appear later:
+   - names containing Generic (Generic, Generic2, Generic3, etc.)
+   - weak/placeholder names with little semantic meaning
+4. Keep constructor at the top; only reorder method blocks.
+5. Do not remove or merge methods. This is ordering only.
 
 Context:
 - Target URL: {{URL}}

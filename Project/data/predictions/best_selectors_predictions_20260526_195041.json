@@ -1,0 +1,99 @@
+{
+  "url": "https://accounts.google.com/lifecycle/steps/signup/name?continue=https://www.google.com/&dsh=S-972315772:1779805200753718&ec=futura_exp_og_so_72776762_e&flowEntry=SignUp&flowName=GlifWebSignIn&hl=en&ifkv=AWa2PavABNrC_ljHlYZvQHjFQYpDWsR7SZkkjCgn807QDNe0qR2dPnQWpuj63WROjFmgWGiiT3yoGw&TL=APouJz5o6TxdBTgwevcxXIxR18fQkSZ_TaPj37Ic5J_RQD4mrKXt4dkNnRF5TcFY",
+  "mode": "all",
+  "generated_at": "20260526_195041",
+  "model_path": "ml\\models\\selector_stability_model_20260424_172103.joblib",
+  "raw_dataset_path": "data/raw/raw_selectors_dataset_accounts_google_com_20260526_195041.json",
+  "total_elements": 8,
+  "total_selectors_scored": 38,
+  "best_selectors": [
+    {
+      "element_id": 0,
+      "tag": "input",
+      "text": "",
+      "best_selector": "#firstName",
+      "selector_type": "id",
+      "prediction": 1,
+      "probability": 0.984599,
+      "confidence": 0.969198,
+      "is_stable": true
+    },
+    {
+      "element_id": 1,
+      "tag": "input",
+      "text": "",
+      "best_selector": "[name=\"lastName\"]",
+      "selector_type": "name",
+      "prediction": 1,
+      "probability": 0.982763,
+      "confidence": 0.965526,
+      "is_stable": true
+    },
+    {
+      "element_id": 2,
+      "tag": "button",
+      "text": "Next",
+      "best_selector": ".VfPpkd-LgbsSe",
+      "selector_type": "css",
+      "prediction": 1,
+      "probability": 0.987391,
+      "confidence": 0.974781,
+      "is_stable": true
+    },
+    {
+      "element_id": 3,
+      "tag": "a",
+      "text": "Help",
+      "best_selector": "text=\"Help\"",
+      "selector_type": "text",
+      "prediction": 1,
+      "probability": 0.987318,
+      "confidence": 0.974636,
+      "is_stable": true
+    },
+    {
+      "element_id": 4,
+      "tag": "a",
+      "text": "Privacy",
+      "best_selector": "text=\"Privacy\"",
+      "selector_type": "text",
+      "prediction": 1,
+      "probability": 0.988965,
+      "confidence": 0.97793,
+      "is_stable": true
+    },
+    {
+      "element_id": 5,
+      "tag": "a",
+      "text": "Terms",
+      "best_selector": "text=\"Terms\"",
+      "selector_type": "text",
+      "prediction": 1,
+      "probability": 0.987318,
+      "confidence": 0.974636,
+      "is_stable": true
+    },
+    {
+      "element_id": 6,
+      "tag": "textarea",
+      "text": "",
+      "best_selector": ".g-recaptcha-response",
+      "selector_type": "class",
+      "prediction": 1,
+      "probability": 0.969974,
+      "confidence": 0.939947,
+      "is_stable": true
+    },
+    {
+      "element_id": 7,
+      "tag": "h1",
+      "text": "Create a Google Account",
+      "best_selector": "#headingText",
+      "selector_type": "id",
+      "prediction": 1,
+      "probability": 0.988269,
+      "confidence": 0.976537,
+      "is_stable": true
+    }
+  ]
+}

@@ -10,6 +10,7 @@ from pathlib import Path
 
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
+from playwright.sync_api import sync_playwright
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 from LLM.zeiss_gateway_client import ZeissLLMGatewayClient
@@ -19,21 +20,27 @@ class FrameworkUI(tk.Tk):
     def __init__(self) -> None:
         super().__init__()
         self.title("Selector Framework UI")
-        self.geometry("1100x760")
-        self.minsize(980, 680)
+        self.geometry("1180x800")
+        self.minsize(1020, 700)
 
         self.project_root = Path(__file__).resolve().parents[1]
         self.run_script = self.project_root / "scripts" / "run.py"
         self.default_prompt = self.project_root / "LLM" / "prompts" / "generate_helper_js_prompt.txt"
+        self.default_prompt_direct = self.project_root / "LLM" / "prompts" / "generate_helper_js_direct_prompt.txt"
 
         self.process = None
         self.output_queue: "queue.Queue[str]" = queue.Queue()
         self.last_helper_file = None
         self.model_choices = ["gpt-4o", "gpt-4o-mini"]
+        self.playwright_driver = None
+        self.live_browser = None
+        self.live_context = None
+        self.live_page = None
 
         self._init_style()
         self._init_state()
         self._build_ui()
+        self.protocol("WM_DELETE_WINDOW", self._on_close)
         self.after(250, self._refresh_models)
         self.after(120, self._drain_log_queue)
 
@@ -65,6 +72,8 @@ class FrameworkUI(tk.Tk):
         self.mode_var = tk.StringVar(value="all")
         self.workflow_var = tk.StringVar(value="generate-js")
         self.headless_var = tk.BooleanVar(value=True)
+        self.source_mode_var = tk.StringVar(value="url")
+        self.cdp_port_var = tk.StringVar(value="9222")
 
         self.llm_api_key_var = tk.StringVar(value=os.getenv("ZEISS_SUB_KEY", ""))
         self.llm_model_var = tk.StringVar(value="gpt-4o")
@@ -72,6 +81,8 @@ class FrameworkUI(tk.Tk):
         self.llm_temperature_var = tk.StringVar(value="0.2")
         self.llm_max_tokens_var = tk.StringVar(value="2500")
         self.prompt_file_var = tk.StringVar(value=str(self.default_prompt))
+        self.helper_strategy_var = tk.StringVar(value="xgboost")
+        self.direct_input_mode_var = tk.StringVar(value="raw")
         self.show_key_var = tk.BooleanVar(value=False)
 
         self.status_var = tk.StringVar(value="Ready")
@@ -97,14 +108,22 @@ class FrameworkUI(tk.Tk):
         config_card = ttk.LabelFrame(root, text="Configuration", style="Card.TLabelframe", padding=12)
         config_card.pack(fill=tk.X)
 
+        config_card.columnconfigure(0, weight=0)
         config_card.columnconfigure(1, weight=1)
+        config_card.columnconfigure(2, weight=0)
         config_card.columnconfigure(3, weight=1)
 
         self._row_entry(config_card, 0, "Target URL", self.url_var)
-        self._row_combobox(config_card, 1, "Scrape Mode", self.mode_var, ["all", "interactive", "text"])
+        source_mode_row = ttk.Frame(config_card)
+        source_mode_row.grid(row=1, column=0, columnspan=4, sticky="ew", pady=(8, 2))
+        ttk.Label(source_mode_row, text="Source Mode", style="Field.TLabel").pack(side=tk.LEFT, padx=(0, 10))
+        ttk.Radiobutton(source_mode_row, text="URL", value="url", variable=self.source_mode_var).pack(side=tk.LEFT)
+        ttk.Radiobutton(source_mode_row, text="Browser Context", value="context", variable=self.source_mode_var).pack(side=tk.LEFT, padx=(12, 0))
+
+        self._row_combobox(config_card, 2, "Scrape Mode", self.mode_var, ["all", "interactive", "text"])
         self._row_combobox(
             config_card,
-            1,
+            2,
             "Workflow",
             self.workflow_var,
             ["generate-js", "predict"],
@@ -112,8 +131,15 @@ class FrameworkUI(tk.Tk):
         )
 
         headless_frame = ttk.Frame(config_card)
-        headless_frame.grid(row=2, column=0, columnspan=2, sticky="w", pady=(6, 2))
+        headless_frame.grid(row=3, column=0, columnspan=2, sticky="w", pady=(8, 2))
         ttk.Checkbutton(headless_frame, text="Headless Browser", variable=self.headless_var).pack(side=tk.LEFT)
+
+        context_row = ttk.Frame(config_card)
+        context_row.grid(row=3, column=2, columnspan=2, sticky="ew", pady=(8, 2))
+        ttk.Label(context_row, text="CDP Port", style="Field.TLabel").pack(side=tk.LEFT, padx=(0, 6))
+        ttk.Entry(context_row, width=8, textvariable=self.cdp_port_var).pack(side=tk.LEFT, padx=(0, 8))
+        ttk.Button(context_row, text="Launch Browser", command=self._launch_live_browser).pack(side=tk.LEFT, padx=(0, 6))
+        ttk.Button(context_row, text="Close Browser", command=self._close_live_browser).pack(side=tk.LEFT)
 
         llm_card = ttk.LabelFrame(root, text="LLM Settings", style="Card.TLabelframe", padding=12)
         llm_card.pack(fill=tk.X, pady=(10, 0))
@@ -150,34 +176,58 @@ class FrameworkUI(tk.Tk):
             pady=(6, 2),
         )
 
-        self._row_entry(llm_card, 3, "Temperature", self.llm_temperature_var)
-        self._row_entry(llm_card, 3, "Max Tokens", self.llm_max_tokens_var, col=2)
+        ttk.Label(llm_card, text="Helper Strategy", style="Field.TLabel").grid(row=3, column=0, sticky="w", pady=(6, 2), padx=(0, 8))
+        self.strategy_cb = ttk.Combobox(
+            llm_card,
+            textvariable=self.helper_strategy_var,
+            values=["xgboost", "direct-llm"],
+            state="readonly",
+        )
+        self.strategy_cb.grid(row=3, column=1, sticky="ew", pady=(6, 2), padx=(0, 10))
+        self.strategy_cb.bind("<<ComboboxSelected>>", self._on_helper_strategy_change)
 
-        ttk.Label(llm_card, text="Prompt Template", style="Field.TLabel").grid(row=4, column=0, sticky="w", pady=(8, 2))
+        ttk.Label(llm_card, text="Direct Input", style="Field.TLabel").grid(row=3, column=2, sticky="w", pady=(6, 2), padx=(0, 8))
+        self.direct_input_cb = ttk.Combobox(
+            llm_card,
+            textvariable=self.direct_input_mode_var,
+            values=["raw", "cleaned"],
+            state="readonly",
+        )
+        self.direct_input_cb.grid(row=3, column=3, sticky="ew", pady=(6, 2), padx=(0, 10))
+
+        self._row_entry(llm_card, 4, "Temperature", self.llm_temperature_var)
+        self._row_entry(llm_card, 4, "Max Tokens", self.llm_max_tokens_var, col=2)
+
+        ttk.Label(llm_card, text="Prompt Template", style="Field.TLabel").grid(row=5, column=0, sticky="w", pady=(8, 2))
         prompt_row = ttk.Frame(llm_card)
-        prompt_row.grid(row=4, column=1, columnspan=3, sticky="ew", pady=(8, 2))
+        prompt_row.grid(row=5, column=1, columnspan=3, sticky="ew", pady=(8, 2))
         prompt_row.columnconfigure(0, weight=1)
         ttk.Entry(prompt_row, textvariable=self.prompt_file_var).grid(row=0, column=0, sticky="ew")
         ttk.Button(prompt_row, text="Browse", command=self._browse_prompt_file).grid(row=0, column=1, padx=(8, 0))
 
         controls = ttk.Frame(root, style="Root.TFrame")
         controls.pack(fill=tk.X, pady=(12, 8))
+        controls.columnconfigure(0, weight=1)
+        controls.columnconfigure(1, weight=0)
 
-        self.run_btn = ttk.Button(controls, text="Run Workflow", style="Primary.TButton", command=self._start_run)
+        button_row = ttk.Frame(controls, style="Root.TFrame")
+        button_row.grid(row=0, column=0, sticky="w")
+
+        self.run_btn = ttk.Button(button_row, text="Run Workflow", style="Primary.TButton", command=self._start_run)
         self.run_btn.pack(side=tk.LEFT)
 
-        self.stop_btn = ttk.Button(controls, text="Stop", command=self._stop_run, state=tk.DISABLED)
+        self.stop_btn = ttk.Button(button_row, text="Stop", command=self._stop_run, state=tk.DISABLED)
         self.stop_btn.pack(side=tk.LEFT, padx=(8, 0))
 
         self.open_helper_btn = ttk.Button(
-            controls,
+            button_row,
             text="Open Generated Helper JS",
             command=self._open_helper_file,
             state=tk.DISABLED,
         )
         self.open_helper_btn.pack(side=tk.LEFT, padx=(8, 0))
 
-        ttk.Label(controls, textvariable=self.status_var).pack(side=tk.RIGHT)
+        ttk.Label(controls, textvariable=self.status_var, anchor="e").grid(row=0, column=1, sticky="e", padx=(10, 0))
 
         log_card = ttk.LabelFrame(root, text="Live Processing Log", style="Card.TLabelframe", padding=8)
         log_card.pack(fill=tk.BOTH, expand=True)
@@ -216,6 +266,17 @@ class FrameworkUI(tk.Tk):
 
     def _toggle_key_visibility(self) -> None:
         self.key_entry.configure(show="" if self.show_key_var.get() else "*")
+
+    def _on_helper_strategy_change(self, _event=None) -> None:
+        strategy = self.helper_strategy_var.get().strip()
+        current_prompt = self.prompt_file_var.get().strip()
+
+        if strategy == "direct-llm":
+            if current_prompt == str(self.default_prompt):
+                self.prompt_file_var.set(str(self.default_prompt_direct))
+        else:
+            if current_prompt == str(self.default_prompt_direct):
+                self.prompt_file_var.set(str(self.default_prompt))
 
     def _fetch_models_worker(self, api_key: str, base_url: str) -> None:
         try:
@@ -300,9 +361,19 @@ class FrameworkUI(tk.Tk):
         self.after(120, self._drain_log_queue)
 
     def _validate_inputs(self) -> bool:
-        if not self.url_var.get().strip():
+        if self.source_mode_var.get() == "url" and not self.url_var.get().strip():
             messagebox.showerror("Missing URL", "Please provide a target URL.")
             return False
+
+        if self.source_mode_var.get() == "context":
+            if self.live_browser is None:
+                messagebox.showerror("Browser Not Running", "Launch browser context first, then navigate/login before running workflow.")
+                return False
+            try:
+                int(self.cdp_port_var.get().strip())
+            except ValueError:
+                messagebox.showerror("Invalid CDP Port", "CDP Port must be a valid integer.")
+                return False
 
         if self.workflow_var.get() == "generate-js":
             if not self.llm_model_var.get().strip():
@@ -331,16 +402,29 @@ class FrameworkUI(tk.Tk):
         url = self.url_var.get().strip()
         mode = self.mode_var.get().strip()
         workflow = self.workflow_var.get().strip()
+        source_mode = self.source_mode_var.get().strip()
 
-        cmd = [
-            sys.executable,
-            str(self.run_script),
-            url,
-            mode,
-            workflow,
-        ]
+        if source_mode == "context":
+            cdp_url = f"http://127.0.0.1:{self.cdp_port_var.get().strip()}"
+            cmd = [
+                sys.executable,
+                str(self.run_script),
+                "context",
+                mode,
+                workflow,
+                f"--cdp-url={cdp_url}",
+            ]
+        else:
+            cmd = [
+                sys.executable,
+                str(self.run_script),
+                url,
+                mode,
+                workflow,
+            ]
 
-        cmd.append("--headless" if self.headless_var.get() else "--no-headless")
+        if source_mode == "url":
+            cmd.append("--headless" if self.headless_var.get() else "--no-headless")
 
         if workflow == "generate-js":
             if self.llm_api_key_var.get().strip():
@@ -350,9 +434,69 @@ class FrameworkUI(tk.Tk):
             cmd.append(f"--llm-model={self.llm_model_var.get().strip()}")
             cmd.append(f"--llm-temperature={self.llm_temperature_var.get().strip()}")
             cmd.append(f"--llm-max-tokens={self.llm_max_tokens_var.get().strip()}")
+            cmd.append(f"--helper-strategy={self.helper_strategy_var.get().strip()}")
+            cmd.append(f"--direct-input={self.direct_input_mode_var.get().strip()}")
             cmd.append(f"--prompt-file={self.prompt_file_var.get().strip()}")
 
         return cmd
+
+    def _launch_live_browser(self) -> None:
+        if self.live_browser is not None:
+            messagebox.showinfo("Browser Running", "Live browser context is already running.")
+            return
+
+        try:
+            port = int(self.cdp_port_var.get().strip())
+        except ValueError:
+            messagebox.showerror("Invalid CDP Port", "CDP Port must be a valid integer.")
+            return
+
+        try:
+            self.playwright_driver = sync_playwright().start()
+            self.live_browser = self.playwright_driver.chromium.launch(
+                headless=False,
+                args=[f"--remote-debugging-port={port}"],
+            )
+            self.live_context = self.live_browser.new_context()
+            self.live_page = self.live_context.new_page()
+
+            initial_url = self.url_var.get().strip()
+            if initial_url:
+                self.live_page.goto(initial_url, wait_until="domcontentloaded", timeout=60000)
+
+            self.source_mode_var.set("context")
+            self.output_queue.put(f"[INFO] Live browser launched on CDP port {port}. Navigate/login, then click Run Workflow.\n")
+        except Exception as exc:
+            self.output_queue.put(f"[ERROR] Failed to launch live browser: {exc}\n")
+            self._close_live_browser()
+
+    def _close_live_browser(self) -> None:
+        try:
+            if self.live_context is not None:
+                self.live_context.close()
+        except Exception:
+            pass
+        finally:
+            self.live_context = None
+
+        try:
+            if self.live_browser is not None:
+                self.live_browser.close()
+        except Exception:
+            pass
+        finally:
+            self.live_browser = None
+
+        try:
+            if self.playwright_driver is not None:
+                self.playwright_driver.stop()
+        except Exception:
+            pass
+        finally:
+            self.playwright_driver = None
+            self.live_page = None
+
+        self.output_queue.put("[INFO] Live browser context closed.\n")
 
     def _start_run(self) -> None:
         if self.process is not None:
@@ -434,6 +578,15 @@ class FrameworkUI(tk.Tk):
                 subprocess.Popen(["xdg-open", str(self.last_helper_file)])
         except Exception as exc:
             messagebox.showerror("Open Failed", f"Could not open file:\n{exc}")
+
+    def _on_close(self) -> None:
+        if self.process is not None:
+            try:
+                self.process.terminate()
+            except Exception:
+                pass
+        self._close_live_browser()
+        self.destroy()
 
 
 def main() -> int:

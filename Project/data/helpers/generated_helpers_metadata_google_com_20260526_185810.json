@@ -1,0 +1,15 @@
+{
+  "url": "https://www.google.com",
+  "mode": "all",
+  "generated_at": "20260526_185810",
+  "strategy": "direct-llm",
+  "llm_base_url": "https://api.genai.zeiss.com/llm",
+  "llm_model": "gpt-4o",
+  "llm_version": "v1",
+  "prompt_file": "D:\\BITS Pilani WILP\\BITS-Dissertation\\Project\\LLM\\prompts\\generate_helper_js_direct_prompt.txt",
+  "helper_source": "deterministic-fallback",
+  "raw_dataset_path": "data/raw/direct_llm_selectors_raw_google_com_20260526_185757.json",
+  "candidates_path": "data/predictions/direct_llm_candidates_google_com_20260526_185757.json",
+  "helper_js_path": "data/helpers/generated_helpers_google_com_20260526_185810.js",
+  "llm_raw_helper_js_path": "data/helpers/generated_helpers_llm_raw_google_com_20260526_185810.js"
+}

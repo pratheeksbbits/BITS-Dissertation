@@ -1,0 +1,594 @@
+{
+  "url": "https://www.wikipedia.org",
+  "mode": "text",
+  "generated_at": "20260526_185606",
+  "total_elements": 22,
+  "elements": [
+    {
+      "element_id": 0,
+      "tag": "h1",
+      "text": "Wikipedia\nThe Free Encyclopedia",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"Wikipedia\nThe Free Encyclopedia\"",
+          "selector_type": "text",
+          "rule_score": -100.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": ".central-textlogo-wrapper",
+          "selector_type": "css",
+          "rule_score": 48.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".central-textlogo-wrapper",
+          "selector_type": "class",
+          "rule_score": 36.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "/html/body/main/div/h1",
+          "selector_type": "xpath",
+          "rule_score": 39.0,
+          "rule_rank": 2
+        }
+      ]
+    },
+    {
+      "element_id": 1,
+      "tag": "strong",
+      "text": "The Free Encyclopedia",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"The Free Encyclopedia\"",
+          "selector_type": "text",
+          "rule_score": 45.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".jsl10n",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": ".jsl10n.localized-slogan",
+          "selector_type": "class",
+          "rule_score": 36.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "/html/body/main/div/h1/strong",
+          "selector_type": "xpath",
+          "rule_score": 39.0,
+          "rule_rank": 2
+        }
+      ]
+    },
+    {
+      "element_id": 2,
+      "tag": "strong",
+      "text": "English",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"English\"",
+          "selector_type": "text",
+          "rule_score": -35.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "strong",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": "/html/body/main/nav/div/a/strong",
+          "selector_type": "xpath",
+          "rule_score": -61.0,
+          "rule_rank": 3
+        }
+      ]
+    },
+    {
+      "element_id": 3,
+      "tag": "strong",
+      "text": "日本語",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"日本語\"",
+          "selector_type": "text",
+          "rule_score": -35.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "strong",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/main/nav/div[2]/a/strong",
+          "selector_type": "xpath",
+          "rule_score": 29.0,
+          "rule_rank": 1
+        }
+      ]
+    },
+    {
+      "element_id": 4,
+      "tag": "strong",
+      "text": "Deutsch",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"Deutsch\"",
+          "selector_type": "text",
+          "rule_score": -35.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "strong",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/main/nav/div[3]/a/strong",
+          "selector_type": "xpath",
+          "rule_score": 29.0,
+          "rule_rank": 1
+        }
+      ]
+    },
+    {
+      "element_id": 5,
+      "tag": "strong",
+      "text": "Français",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"Français\"",
+          "selector_type": "text",
+          "rule_score": -35.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "strong",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/main/nav/div[4]/a/strong",
+          "selector_type": "xpath",
+          "rule_score": 29.0,
+          "rule_rank": 1
+        }
+      ]
+    },
+    {
+      "element_id": 6,
+      "tag": "strong",
+      "text": "Русский",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"Русский\"",
+          "selector_type": "text",
+          "rule_score": -35.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "strong",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/main/nav/div[5]/a/strong",
+          "selector_type": "xpath",
+          "rule_score": 29.0,
+          "rule_rank": 1
+        }
+      ]
+    },
+    {
+      "element_id": 7,
+      "tag": "strong",
+      "text": "中文",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"中文\"",
+          "selector_type": "text",
+          "rule_score": -25.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "strong",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/main/nav/div[6]/a/strong",
+          "selector_type": "xpath",
+          "rule_score": 29.0,
+          "rule_rank": 1
+        }
+      ]
+    },
+    {
+      "element_id": 8,
+      "tag": "strong",
+      "text": "Español",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"Español\"",
+          "selector_type": "text",
+          "rule_score": -35.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "strong",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/main/nav/div[7]/a/strong",
+          "selector_type": "xpath",
+          "rule_score": 29.0,
+          "rule_rank": 1
+        }
+      ]
+    },
+    {
+      "element_id": 9,
+      "tag": "strong",
+      "text": "Italiano",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"Italiano\"",
+          "selector_type": "text",
+          "rule_score": -35.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "strong",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/main/nav/div[8]/a/strong",
+          "selector_type": "xpath",
+          "rule_score": 29.0,
+          "rule_rank": 1
+        }
+      ]
+    },
+    {
+      "element_id": 10,
+      "tag": "strong",
+      "text": "Polski",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"Polski\"",
+          "selector_type": "text",
+          "rule_score": -35.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "strong",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/main/nav/div[9]/a/strong",
+          "selector_type": "xpath",
+          "rule_score": 29.0,
+          "rule_rank": 1
+        }
+      ]
+    },
+    {
+      "element_id": 11,
+      "tag": "strong",
+      "text": "Português",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"Português\"",
+          "selector_type": "text",
+          "rule_score": -35.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "strong",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/main/nav/div[10]/a/strong",
+          "selector_type": "xpath",
+          "rule_score": 29.0,
+          "rule_rank": 1
+        }
+      ]
+    },
+    {
+      "element_id": 12,
+      "tag": "label",
+      "text": "Search Wikipedia",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"Search Wikipedia\"",
+          "selector_type": "text",
+          "rule_score": 45.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": ".screen-reader-text",
+          "selector_type": "css",
+          "rule_score": 58.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".screen-reader-text",
+          "selector_type": "class",
+          "rule_score": 46.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/main/div[2]/form/fieldset/div/label",
+          "selector_type": "xpath",
+          "rule_score": 19.0,
+          "rule_rank": 4
+        }
+      ]
+    },
+    {
+      "element_id": 13,
+      "tag": "label",
+      "text": "EN",
+      "candidate_selectors": [
+        {
+          "selector": "#jsLangLabel",
+          "selector_type": "id",
+          "rule_score": 67.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": "text=\"EN\"",
+          "selector_type": "text",
+          "rule_score": -100.0,
+          "rule_rank": 5
+        },
+        {
+          "selector": "#jsLangLabel",
+          "selector_type": "css",
+          "rule_score": 58.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": ".js-langpicker-label",
+          "selector_type": "class",
+          "rule_score": 36.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "/html/body/main/div[2]/form/fieldset/div/div/div/label",
+          "selector_type": "xpath",
+          "rule_score": 9.0,
+          "rule_rank": 4
+        }
+      ]
+    },
+    {
+      "element_id": 14,
+      "tag": "h2",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": ".bookshelf-container",
+          "selector_type": "css",
+          "rule_score": -42.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": ".bookshelf-container",
+          "selector_type": "class",
+          "rule_score": -54.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/main/nav[2]/div[3]/div/h2",
+          "selector_type": "xpath",
+          "rule_score": -61.0,
+          "rule_rank": 3
+        }
+      ]
+    },
+    {
+      "element_id": 15,
+      "tag": "h2",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": ".bookshelf-container",
+          "selector_type": "css",
+          "rule_score": -42.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": ".bookshelf-container",
+          "selector_type": "class",
+          "rule_score": -54.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "/html/body/main/nav[2]/div[3]/div/h2[2]",
+          "selector_type": "xpath",
+          "rule_score": 29.0,
+          "rule_rank": 1
+        }
+      ]
+    },
+    {
+      "element_id": 16,
+      "tag": "h2",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": ".bookshelf-container",
+          "selector_type": "css",
+          "rule_score": -42.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": ".bookshelf-container",
+          "selector_type": "class",
+          "rule_score": -54.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "/html/body/main/nav[2]/div[3]/div/h2[3]",
+          "selector_type": "xpath",
+          "rule_score": 29.0,
+          "rule_rank": 1
+        }
+      ]
+    },
+    {
+      "element_id": 17,
+      "tag": "h2",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": ".bookshelf-container",
+          "selector_type": "css",
+          "rule_score": -42.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": ".bookshelf-container",
+          "selector_type": "class",
+          "rule_score": -54.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "/html/body/main/nav[2]/div[3]/div/h2[4]",
+          "selector_type": "xpath",
+          "rule_score": 29.0,
+          "rule_rank": 1
+        }
+      ]
+    },
+    {
+      "element_id": 18,
+      "tag": "h2",
+      "text": "",
+      "candidate_selectors": [
+        {
+          "selector": ".bookshelf-container",
+          "selector_type": "css",
+          "rule_score": -42.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": ".bookshelf-container",
+          "selector_type": "class",
+          "rule_score": -54.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "/html/body/main/nav[2]/div[3]/div/h2[5]",
+          "selector_type": "xpath",
+          "rule_score": 29.0,
+          "rule_rank": 1
+        }
+      ]
+    },
+    {
+      "element_id": 19,
+      "tag": "h3",
+      "text": "We owe you an explanation.",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"We owe you an explanation.\"",
+          "selector_type": "text",
+          "rule_score": 35.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "h3",
+          "selector_type": "css",
+          "rule_score": 68.0,
+          "rule_rank": 1
+        },
+        {
+          "selector": "/html/body/main/div[3]/div/div/div/div/h3",
+          "selector_type": "xpath",
+          "rule_score": 19.0,
+          "rule_rank": 3
+        }
+      ]
+    },
+    {
+      "element_id": 20,
+      "tag": "strong",
+      "text": "There are no small contributions: every edit count",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"There are no small contributions: every edit count\"",
+          "selector_type": "text",
+          "rule_score": -100.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": "strong",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": "/html/body/main/div[3]/div/div/div[2]/p/strong",
+          "selector_type": "xpath",
+          "rule_score": 19.0,
+          "rule_rank": 1
+        }
+      ]
+    },
+    {
+      "element_id": 21,
+      "tag": "strong",
+      "text": "Download Wikipedia for Android or iOS",
+      "candidate_selectors": [
+        {
+          "selector": "text=\"Download Wikipedia for Android or iOS\"",
+          "selector_type": "text",
+          "rule_score": 25.0,
+          "rule_rank": 2
+        },
+        {
+          "selector": ".jsl10n",
+          "selector_type": "css",
+          "rule_score": -22.0,
+          "rule_rank": 3
+        },
+        {
+          "selector": ".jsl10n",
+          "selector_type": "class",
+          "rule_score": -34.0,
+          "rule_rank": 4
+        },
+        {
+          "selector": "/html/body/footer/div[2]/div/div/strong",
+          "selector_type": "xpath",
+          "rule_score": 29.0,
+          "rule_rank": 1
+        }
+      ]
+    }
+  ]
+}

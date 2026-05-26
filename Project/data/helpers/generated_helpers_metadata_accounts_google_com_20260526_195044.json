@@ -1,0 +1,15 @@
+{
+  "url": "https://accounts.google.com/lifecycle/steps/signup/name?continue=https://www.google.com/&dsh=S-972315772:1779805200753718&ec=futura_exp_og_so_72776762_e&flowEntry=SignUp&flowName=GlifWebSignIn&hl=en&ifkv=AWa2PavABNrC_ljHlYZvQHjFQYpDWsR7SZkkjCgn807QDNe0qR2dPnQWpuj63WROjFmgWGiiT3yoGw&TL=APouJz5o6TxdBTgwevcxXIxR18fQkSZ_TaPj37Ic5J_RQD4mrKXt4dkNnRF5TcFY",
+  "mode": "all",
+  "generated_at": "20260526_195044",
+  "llm_base_url": "https://api.genai.zeiss.com/llm",
+  "llm_model": "gpt-4o",
+  "llm_version": "v1",
+  "prompt_file": "D:\\BITS Pilani WILP\\BITS-Dissertation\\Project\\LLM\\prompts\\generate_helper_js_prompt.txt",
+  "helper_source": "deterministic-fallback",
+  "required_helper_count": 8,
+  "raw_dataset_path": "data/raw/raw_selectors_dataset_accounts_google_com_20260526_195041.json",
+  "predictions_path": "data/predictions/best_selectors_predictions_20260526_195041.json",
+  "helper_js_path": "data/helpers/generated_helpers_accounts_google_com_20260526_195044.js",
+  "llm_raw_helper_js_path": "data/helpers/generated_helpers_llm_raw_accounts_google_com_20260526_195044.js"
+}

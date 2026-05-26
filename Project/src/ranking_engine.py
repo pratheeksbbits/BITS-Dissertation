@@ -144,35 +144,42 @@ def rank_selectors_for_elements(url: str, elements: List[Dict]) -> List[Dict]:
             browser.close()
             return []
 
-        extractor = SelectorFeatureExtractor(page)
-        scorer = SelectorScorer()
-        ranker = SelectorRanker()
-
-        ranked_elements = []
-
-        for element in elements:
-            selector_data = []
-            xpath = element['selectors'].get('xpath')
-
-            for sel_type, selector in element['selectors'].items():
-                if not selector or not selector.strip():
-                    continue
-
-                features = extractor.extract_features(selector, sel_type, element['attributes'], xpath)
-                score = scorer.score_selector(features, sel_type)
-
-                selector_data.append({
-                    'selector': selector,
-                    'selector_type': sel_type,
-                    'features': features,
-                    'score': score
-                })
-
-            if selector_data:
-                ranked = ranker.rank_selectors(selector_data)
-                element_copy = element.copy()
-                element_copy['ranked_selectors'] = ranked
-                ranked_elements.append(element_copy)
+        ranked_elements = rank_selectors_for_elements_on_page(page, elements)
 
         browser.close()
         return ranked_elements
+
+
+# Ranks selectors for all elements using an existing Playwright page context
+def rank_selectors_for_elements_on_page(page, elements: List[Dict]) -> List[Dict]:
+    extractor = SelectorFeatureExtractor(page)
+    scorer = SelectorScorer()
+    ranker = SelectorRanker()
+
+    ranked_elements = []
+
+    for element in elements:
+        selector_data = []
+        xpath = element['selectors'].get('xpath')
+
+        for sel_type, selector in element['selectors'].items():
+            if not selector or not selector.strip():
+                continue
+
+            features = extractor.extract_features(selector, sel_type, element['attributes'], xpath)
+            score = scorer.score_selector(features, sel_type)
+
+            selector_data.append({
+                'selector': selector,
+                'selector_type': sel_type,
+                'features': features,
+                'score': score
+            })
+
+        if selector_data:
+            ranked = ranker.rank_selectors(selector_data)
+            element_copy = element.copy()
+            element_copy['ranked_selectors'] = ranked
+            ranked_elements.append(element_copy)
+
+    return ranked_elements

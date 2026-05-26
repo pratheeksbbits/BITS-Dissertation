@@ -7,13 +7,14 @@ import re
 from datetime import datetime
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from playwright.sync_api import sync_playwright
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
 from main import generate_clean_dataset
-from src.scraper import extract_elements
-from src.ranking_engine import rank_selectors_for_elements
+from src.scraper import extract_elements, extract_elements_from_page
+from src.ranking_engine import rank_selectors_for_elements, rank_selectors_for_elements_on_page
 from src.utils import generate_timestamped_filename, save_json, validate_url, extract_domain
 from ml.evaluate import SelectorStabilityInference
 from LLM.zeiss_gateway_client import ZeissLLMGatewayClient
@@ -23,6 +24,8 @@ DEFAULT_LLM_BASE_URL = "https://api.genai.zeiss.com/llm"
 DEFAULT_LLM_MODEL = "gpt-4o"
 DEFAULT_LLM_API_KEY = "827180ec60ba42d5a82503b538298779"
 DEFAULT_PROMPT_FILE = "LLM/prompts/generate_helper_js_prompt.txt"
+DEFAULT_DIRECT_PROMPT_FILE = "LLM/prompts/generate_helper_js_direct_prompt.txt"
+DEFAULT_CDP_URL = "http://127.0.0.1:9222"
 
 # Processes multiple URLs in parallel for dataset generation
 def run_batch(urls, mode="all", headless=True, max_workers=None, raw=False):
@@ -117,6 +120,568 @@ def _add_missing_features(X, rows, expected_features):
 
     return X
 
+
+def _is_usable_selector(selector, selector_type):
+    if not selector or not str(selector).strip():
+        return False
+
+    s = str(selector).strip()
+    t = str(selector_type or "").strip().lower()
+
+    # Reject clearly broken selectors.
+    if s in {".", "#", "[]", "._", "#.", ".."}:
+        return False
+    if len(s) < 2:
+        return False
+
+    if t in {"id"} and not s.startswith("#"):
+        return False
+    if t in {"xpath"} and not (s.startswith("/") or s.startswith("(") or s.startswith("xpath=")):
+        return False
+    if t in {"text", "text_based"} and "text=" not in s and "getByText(" not in s:
+        return False
+    if t in {"placeholder", "aria-label", "name", "data-testid"} and "[" not in s and "getBy" not in s:
+        return False
+
+    return True
+
+
+def _selector_priority(row):
+    usable = 1 if _is_usable_selector(row.get("selector"), row.get("selector_type")) else 0
+    stable = 1 if row.get("prediction") == 1 else 0
+    prob = float(row.get("probability", 0))
+    conf = float(row.get("confidence", 0))
+    sel_len = len(str(row.get("selector", "")))
+
+    # Strong preference order: usable > stable > high probability > confidence > shorter selector.
+    return (usable, stable, prob, conf, -sel_len)
+
+
+def _safe_js_string(value):
+    return json.dumps(str(value), ensure_ascii=False)
+
+
+def _to_method_suffix(text):
+    raw = re.sub(r"[^a-zA-Z0-9]+", " ", str(text or "")).strip()
+    if not raw:
+        return "Generic"
+    parts = [p for p in raw.split(" ") if p][:2]
+    suffix = "".join(p[:1].upper() + p[1:] for p in parts)
+    # Keep helper names short and readable.
+    return suffix[:16] if suffix else "Generic"
+
+
+def _element_type_name(tag):
+    t = str(tag or "").strip().lower()
+    if not t:
+        return "Element"
+
+    semantic_map = {
+        "a": "Link",
+        "button": "Button",
+        "input": "Input",
+        "textarea": "Textarea",
+        "select": "Select",
+        "img": "Image",
+        "form": "Form",
+        "div": "Div",
+        "span": "Span",
+        "h1": "Heading",
+        "h2": "Heading",
+        "h3": "Heading",
+        "h4": "Heading",
+        "h5": "Heading",
+        "h6": "Heading",
+    }
+    if t in semantic_map:
+        return semantic_map[t]
+
+    cleaned = re.sub(r"[^a-zA-Z0-9]+", " ", t).strip()
+    if not cleaned:
+        return "Element"
+
+    token = cleaned.split(" ")[0]
+    if not token or not token[0].isalpha():
+        return "Element"
+    return token[:1].upper() + token[1:]
+
+
+def _action_prefix(tag):
+    t = str(tag or "").strip().lower()
+    if t in {"button", "a"}:
+        return "click"
+    if t in {"input", "textarea"}:
+        return "fill"
+    return "waitFor"
+
+
+def _build_guaranteed_helpers(predictions_payload):
+    best = predictions_payload.get("best_selectors", [])
+    lines = []
+    lines.append("class GeneratedPageHelpers {")
+    lines.append("  constructor(page) {")
+    lines.append("    this.page = page;")
+    lines.append("  }")
+    lines.append("")
+
+    method_names = []
+
+    for item in best:
+        eid = item.get("element_id")
+        tag = str(item.get("tag", "")).lower()
+        selector = str(item.get("best_selector", "")).strip()
+        stable = bool(item.get("is_stable", False))
+
+        suffix = _to_method_suffix(item.get("text") or "")
+        element_type = _element_type_name(tag)
+        action = _action_prefix(tag)
+        method = f"{action}{element_type}{suffix}"
+
+        if tag in {"button", "a"}:
+            body = [f"await this.page.click({_safe_js_string(selector)});"]
+        elif tag in {"input", "textarea"}:
+            body = [f"await this.page.fill({_safe_js_string(selector)}, value);"]
+        else:
+            body = [f"await this.page.waitForSelector({_safe_js_string(selector)}, {{ state: 'visible' }});"]
+
+        # Ensure unique method names.
+        original = method
+        i = 2
+        while method in method_names:
+            method = f"{original}{i}"
+            i += 1
+        method_names.append(method)
+
+        lines.append(f"  // element_id={eid}, tag={tag}, stable={str(stable).lower()}")
+        if tag in {"input", "textarea"}:
+            lines.append(f"  async {method}(value) {{")
+        else:
+            lines.append(f"  async {method}() {{")
+        for stmt in body:
+            lines.append(f"    {stmt}")
+        lines.append("  }")
+        lines.append("")
+
+    lines.append("}")
+    lines.append("")
+    lines.append("module.exports = GeneratedPageHelpers;")
+
+    return "\n".join(lines), method_names
+
+
+def _llm_has_all_methods(helper_js, required_methods):
+    for name in required_methods:
+        if re.search(rf"\b{name}\s*\(", helper_js) is None:
+            return False
+    return True
+
+
+def _build_guaranteed_helpers_from_candidate_payload(candidate_payload):
+    lines = []
+    lines.append("class GeneratedPageHelpers {")
+    lines.append("  constructor(page) {")
+    lines.append("    this.page = page;")
+    lines.append("  }")
+    lines.append("")
+
+    method_names = []
+    for element in candidate_payload.get("elements", []):
+        eid = element.get("element_id")
+        tag = str(element.get("tag", "")).lower()
+        text = element.get("text", "")
+        candidates = element.get("candidate_selectors", [])
+        if not candidates:
+            continue
+
+        selector = candidates[0].get("selector", "")
+        action = _action_prefix(tag)
+        element_type = _element_type_name(tag)
+        suffix = _to_method_suffix(text)
+        method = f"{action}{element_type}{suffix}"
+
+        original = method
+        i = 2
+        while method in method_names:
+            method = f"{original}{i}"
+            i += 1
+        method_names.append(method)
+
+        lines.append(f"  // element_id={eid}, selected_by=deterministic")
+        if tag in {"input", "textarea"}:
+            lines.append(f"  async {method}(value) {{")
+            lines.append(f"    await this.page.fill({_safe_js_string(selector)}, value);")
+        elif tag in {"button", "a"}:
+            lines.append(f"  async {method}() {{")
+            lines.append(f"    await this.page.click({_safe_js_string(selector)});")
+        else:
+            lines.append(f"  async {method}() {{")
+            lines.append(f"    await this.page.waitForSelector({_safe_js_string(selector)}, {{ state: 'visible' }});")
+        lines.append("  }")
+        lines.append("")
+
+    lines.append("}")
+    lines.append("")
+    lines.append("module.exports = GeneratedPageHelpers;")
+
+    return "\n".join(lines), method_names
+
+
+def _llm_has_all_element_comments(helper_js, element_ids):
+    for eid in element_ids:
+        if re.search(rf"element_id\s*=\s*{eid}\b", helper_js) is None:
+            return False
+    return True
+
+
+def _build_direct_candidate_artifacts(url, mode, ranked_elements, input_mode="raw"):
+    raw_rows = _build_raw_rows_from_ranked(url, ranked_elements)
+    if not raw_rows:
+        raise ValueError("No selectors available for direct LLM workflow")
+
+    os.makedirs("data/raw", exist_ok=True)
+    raw_output_filename = generate_timestamped_filename("direct_llm_selectors_raw", url)
+    raw_output_path = f"data/raw/{raw_output_filename}"
+    save_json(raw_rows, raw_output_path)
+
+    rows_for_llm = raw_rows if input_mode == "raw" else _clean_raw_selector_rows(raw_rows)
+    if not rows_for_llm:
+        rows_for_llm = raw_rows
+
+    candidate_payload = _group_selector_candidates_for_llm(url, mode, rows_for_llm)
+
+    os.makedirs("data/predictions", exist_ok=True)
+    candidate_output_path = f"data/predictions/direct_llm_candidates_{extract_domain(url)}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+    save_json(candidate_payload, candidate_output_path)
+
+    return raw_output_path, candidate_output_path, candidate_payload
+
+
+def _generate_helper_from_direct_candidates(
+    url,
+    mode,
+    raw_output_path,
+    candidate_output_path,
+    candidate_payload,
+    llm_api_key,
+    llm_base_url,
+    llm_model,
+    llm_temperature,
+    llm_max_tokens,
+    prompt_file,
+    llm_version,
+):
+    if not os.path.exists(prompt_file):
+        raise FileNotFoundError(
+            f"Prompt file not found: {prompt_file}. Create it or pass --prompt-file=<path>."
+        )
+
+    with open(prompt_file, "r", encoding="utf-8") as f:
+        prompt_template = f.read()
+
+    candidates_json = json.dumps(candidate_payload, indent=2, ensure_ascii=False)
+    final_prompt = (
+        prompt_template
+        .replace("{{URL}}", url)
+        .replace("{{MODE}}", mode)
+        .replace("{{SCRAPER_CANDIDATES_JSON}}", candidates_json)
+    )
+
+    print("[DIRECT LLM 2/3] Calling ZEISS LLM endpoint...")
+    effective_api_key = llm_api_key or os.getenv("ZEISS_SUB_KEY") or DEFAULT_LLM_API_KEY
+    client = ZeissLLMGatewayClient(base_url=llm_base_url, api_key=effective_api_key, timeout=180)
+
+    chat_response = client.chat_completions(
+        body={
+            "model": llm_model,
+            "messages": [
+                {
+                    "role": "system",
+                    "content": "You generate Playwright helper JavaScript from selector candidate JSON. Choose the best selector per element and provide one helper for each element_id.",
+                },
+                {
+                    "role": "user",
+                    "content": final_prompt,
+                },
+            ],
+            "temperature": llm_temperature,
+            "max_tokens": llm_max_tokens,
+        },
+        version=llm_version,
+    )
+
+    llm_helper_js = _unwrap_js_fence(_extract_chat_content(chat_response))
+    deterministic_js, _ = _build_guaranteed_helpers_from_candidate_payload(candidate_payload)
+    element_ids = [e.get("element_id") for e in candidate_payload.get("elements", [])]
+
+    if llm_helper_js and _llm_has_all_element_comments(llm_helper_js, element_ids):
+        helper_js = llm_helper_js
+        helper_source = "llm-direct"
+    else:
+        helper_js = deterministic_js
+        helper_source = "deterministic-fallback"
+        print("[WARN] Direct LLM output missed one or more element_id sections. Using deterministic full-coverage helper generation.")
+
+    print("[DIRECT LLM 3/3] Saving generated helper JavaScript...")
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    domain = extract_domain(url)
+    os.makedirs("data/helpers", exist_ok=True)
+
+    js_output_path = f"data/helpers/generated_helpers_{domain}_{timestamp}.js"
+    metadata_output_path = f"data/helpers/generated_helpers_metadata_{domain}_{timestamp}.json"
+    llm_raw_output_path = f"data/helpers/generated_helpers_llm_raw_{domain}_{timestamp}.js"
+
+    with open(js_output_path, "w", encoding="utf-8") as f:
+        f.write(helper_js)
+
+    if llm_helper_js:
+        with open(llm_raw_output_path, "w", encoding="utf-8") as f:
+            f.write(llm_helper_js)
+
+    metadata = {
+        "url": url,
+        "mode": mode,
+        "generated_at": timestamp,
+        "strategy": "direct-llm",
+        "llm_base_url": llm_base_url,
+        "llm_model": llm_model,
+        "llm_version": llm_version,
+        "prompt_file": prompt_file,
+        "helper_source": helper_source,
+        "raw_dataset_path": raw_output_path,
+        "candidates_path": candidate_output_path,
+        "helper_js_path": js_output_path,
+        "llm_raw_helper_js_path": llm_raw_output_path,
+    }
+    save_json(metadata, metadata_output_path)
+
+    print(f"   [OK] Helper JavaScript saved: {js_output_path}")
+    print(f"   [OK] Generation metadata saved: {metadata_output_path}")
+    print("\n[SUCCESS] Direct LLM helper generation workflow completed.")
+
+    return {
+        "raw_dataset_path": raw_output_path,
+        "candidates_path": candidate_output_path,
+        "helper_js_path": js_output_path,
+        "metadata_path": metadata_output_path,
+    }
+
+
+def run_direct_llm_workflow(
+    url,
+    mode="all",
+    headless=True,
+    llm_api_key=None,
+    llm_base_url=DEFAULT_LLM_BASE_URL,
+    llm_model=DEFAULT_LLM_MODEL,
+    llm_temperature=0.2,
+    llm_max_tokens=3000,
+    prompt_file=DEFAULT_DIRECT_PROMPT_FILE,
+    llm_version="v1",
+    direct_input_mode="raw",
+):
+    if not validate_url(url):
+        raise ValueError("URL must start with http:// or https://")
+
+    valid_modes = ["interactive", "text", "all"]
+    if mode not in valid_modes:
+        raise ValueError(f"Invalid mode '{mode}'. Valid modes: {', '.join(valid_modes)}")
+
+    print("\n[DIRECT LLM] Starting scraper-to-LLM workflow (XGBoost bypass)...")
+    print(f"[TARGET] {url}")
+    print(f"[MODE] {mode}")
+    print(f"[INPUT] Selector candidate mode: {direct_input_mode}")
+
+    print("\n[DIRECT LLM 1/3] Extracting and ranking selectors...")
+    elements = extract_elements(url, mode=mode, headless=headless)
+    if not elements:
+        raise ValueError("No elements extracted from URL")
+
+    ranked_elements = rank_selectors_for_elements(url, elements)
+    if not ranked_elements:
+        raise ValueError("No ranked selectors produced")
+
+    raw_output_path, candidate_output_path, candidate_payload = _build_direct_candidate_artifacts(
+        url,
+        mode,
+        ranked_elements,
+        input_mode=direct_input_mode,
+    )
+
+    return _generate_helper_from_direct_candidates(
+        url=url,
+        mode=mode,
+        raw_output_path=raw_output_path,
+        candidate_output_path=candidate_output_path,
+        candidate_payload=candidate_payload,
+        llm_api_key=llm_api_key,
+        llm_base_url=llm_base_url,
+        llm_model=llm_model,
+        llm_temperature=llm_temperature,
+        llm_max_tokens=llm_max_tokens,
+        prompt_file=prompt_file,
+        llm_version=llm_version,
+    )
+
+
+def run_direct_llm_workflow_from_page(
+    page,
+    mode="all",
+    llm_api_key=None,
+    llm_base_url=DEFAULT_LLM_BASE_URL,
+    llm_model=DEFAULT_LLM_MODEL,
+    llm_temperature=0.2,
+    llm_max_tokens=3000,
+    prompt_file=DEFAULT_DIRECT_PROMPT_FILE,
+    llm_version="v1",
+    direct_input_mode="raw",
+):
+    current_url = page.url
+    print("\n[DIRECT LLM] Starting scraper-to-LLM workflow from live browser context (XGBoost bypass)...")
+    print(f"[TARGET] {current_url}")
+    print(f"[MODE] {mode}")
+    print(f"[INPUT] Selector candidate mode: {direct_input_mode}")
+
+    print("\n[DIRECT LLM 1/3] Extracting and ranking selectors from existing context...")
+    elements = extract_elements_from_page(page, mode=mode)
+    if not elements:
+        raise ValueError("No elements extracted from current page")
+    ranked_elements = rank_selectors_for_elements_on_page(page, elements)
+    if not ranked_elements:
+        raise ValueError("No ranked selectors produced")
+
+    raw_output_path, candidate_output_path, candidate_payload = _build_direct_candidate_artifacts(
+        current_url,
+        mode,
+        ranked_elements,
+        input_mode=direct_input_mode,
+    )
+
+    return _generate_helper_from_direct_candidates(
+        url=current_url,
+        mode=mode,
+        raw_output_path=raw_output_path,
+        candidate_output_path=candidate_output_path,
+        candidate_payload=candidate_payload,
+        llm_api_key=llm_api_key,
+        llm_base_url=llm_base_url,
+        llm_model=llm_model,
+        llm_temperature=llm_temperature,
+        llm_max_tokens=llm_max_tokens,
+        prompt_file=prompt_file,
+        llm_version=llm_version,
+    )
+
+
+def _build_raw_rows_from_ranked(url, ranked_elements):
+    rows = []
+    for element_id, element in enumerate(ranked_elements):
+        for sel_data in element.get("ranked_selectors", []):
+            rows.append(
+                {
+                    "element_id": element_id,
+                    "url": url,
+                    "tag": element.get("tag", ""),
+                    "text": element.get("text", ""),
+                    "selector": sel_data.get("selector", ""),
+                    "selector_type": sel_data.get("selector_type", ""),
+                    "features": sel_data.get("features", {}),
+                    "rule_score": sel_data.get("score", 0),
+                    "rule_rank": sel_data.get("rank", 0),
+                    "is_rule_best": sel_data.get("is_best", 0),
+                }
+            )
+    return rows
+
+
+def _selector_type_priority(selector_type):
+    priorities = {
+        "data-testid": 10,
+        "id": 9,
+        "name": 8,
+        "aria-label": 7,
+        "placeholder": 6,
+        "text": 5,
+        "css": 4,
+        "class": 3,
+        "xpath": 2,
+        "role_based": 1,
+        "text_based": 1,
+        "test_id": 1,
+    }
+    return priorities.get(str(selector_type or "").lower(), 0)
+
+
+def _clean_raw_selector_rows(raw_rows):
+    cleaned = []
+    seen = set()
+    for row in raw_rows:
+        key = (row.get("element_id"), row.get("selector"), row.get("selector_type"))
+        if key in seen:
+            continue
+        seen.add(key)
+
+        if not _is_usable_selector(row.get("selector"), row.get("selector_type")):
+            continue
+
+        # Discard very long absolute XPaths unless no better options remain later.
+        selector = str(row.get("selector", ""))
+        if row.get("selector_type") == "xpath" and len(selector) > 120:
+            continue
+
+        cleaned.append(row)
+
+    return cleaned
+
+
+def _group_selector_candidates_for_llm(url, mode, selector_rows, max_candidates_per_element=8):
+    grouped = {}
+    for row in selector_rows:
+        eid = row.get("element_id")
+        grouped.setdefault(eid, []).append(row)
+
+    payload_elements = []
+    for eid in sorted(grouped.keys()):
+        rows = grouped[eid]
+
+        rows_sorted = sorted(
+            rows,
+            key=lambda r: (
+                1 if _is_usable_selector(r.get("selector"), r.get("selector_type")) else 0,
+                _selector_type_priority(r.get("selector_type")),
+                float(r.get("rule_score", 0)),
+                -len(str(r.get("selector", ""))),
+            ),
+            reverse=True,
+        )
+
+        top = rows_sorted[:max_candidates_per_element]
+        head = top[0]
+
+        payload_elements.append(
+            {
+                "element_id": eid,
+                "tag": head.get("tag", ""),
+                "text": head.get("text", ""),
+                "candidate_selectors": [
+                    {
+                        "selector": r.get("selector", ""),
+                        "selector_type": r.get("selector_type", ""),
+                        "rule_score": r.get("rule_score", 0),
+                        "rule_rank": r.get("rule_rank", 0),
+                    }
+                    for r in top
+                ],
+            }
+        )
+
+    return {
+        "url": url,
+        "mode": mode,
+        "generated_at": datetime.now().strftime("%Y%m%d_%H%M%S"),
+        "total_elements": len(payload_elements),
+        "elements": payload_elements,
+    }
+
 # Runs URL -> raw selectors -> ML prediction -> best selectors JSON workflow
 def run_predict_workflow(url, mode="all", headless=True):
     if not validate_url(url):
@@ -138,27 +703,16 @@ def run_predict_workflow(url, mode="all", headless=True):
 
     print("\n[2/5] Ranking selectors for each element...")
     ranked_elements = rank_selectors_for_elements(url, elements)
+    return _finalize_prediction_outputs(url, mode, elements, ranked_elements)
+
+
+# Persists prediction artifacts from extracted + ranked element data
+def _finalize_prediction_outputs(url, mode, elements, ranked_elements):
     if not ranked_elements:
         raise ValueError("Failed to rank selectors")
     print(f"   [OK] Ranked selectors for {len(ranked_elements)} elements")
 
-    raw_rows = []
-    for element_id, element in enumerate(ranked_elements):
-        for sel_data in element.get("ranked_selectors", []):
-            raw_rows.append(
-                {
-                    "element_id": element_id,
-                    "url": url,
-                    "tag": element.get("tag", ""),
-                    "text": element.get("text", ""),
-                    "selector": sel_data.get("selector", ""),
-                    "selector_type": sel_data.get("selector_type", ""),
-                    "features": sel_data.get("features", {}),
-                    "rule_score": sel_data.get("score", 0),
-                    "rule_rank": sel_data.get("rank", 0),
-                    "is_rule_best": sel_data.get("is_best", 0),
-                }
-            )
+    raw_rows = _build_raw_rows_from_ranked(url, ranked_elements)
 
     if not raw_rows:
         raise ValueError("No selectors available for prediction")
@@ -190,7 +744,7 @@ def run_predict_workflow(url, mode="all", headless=True):
         enriched["is_stable"] = bool(predictions.iloc[i]["is_stable"])
         enriched_rows.append(enriched)
 
-    # Pick the best selector per element based on model probability, then confidence, then shortest selector.
+    # Pick the best selector per element with quality gating so broken selectors are not preferred.
     best_by_element = {}
     for row in enriched_rows:
         element_id = row["element_id"]
@@ -199,18 +753,7 @@ def run_predict_workflow(url, mode="all", headless=True):
             best_by_element[element_id] = row
             continue
 
-        is_better = (
-            row["probability"] > current["probability"]
-            or (
-                row["probability"] == current["probability"]
-                and row["confidence"] > current["confidence"]
-            )
-            or (
-                row["probability"] == current["probability"]
-                and row["confidence"] == current["confidence"]
-                and len(row["selector"]) < len(current["selector"])
-            )
-        )
+        is_better = _selector_priority(row) > _selector_priority(current)
         if is_better:
             best_by_element[element_id] = row
 
@@ -250,6 +793,31 @@ def run_predict_workflow(url, mode="all", headless=True):
     print("\n[SUCCESS] Predict workflow completed.")
 
     return raw_output_path, best_output_path
+
+
+# Runs prediction workflow directly on an existing Playwright page context
+def run_predict_workflow_from_page(page, mode="all"):
+    current_url = page.url
+    if not current_url or not current_url.startswith("http"):
+        raise ValueError("Current page URL is invalid. Navigate to a valid http/https page first.")
+
+    valid_modes = ["interactive", "text", "all"]
+    if mode not in valid_modes:
+        raise ValueError(f"Invalid mode '{mode}'. Valid modes: {', '.join(valid_modes)}")
+
+    print(f"[TARGET] Predict workflow for existing browser context: {current_url}")
+    print(f"[MODE] Mode: {mode}")
+    print("[BROWSER] Source: existing live browser context")
+
+    print("\n[1/5] Extracting webpage elements from existing context...")
+    elements = extract_elements_from_page(page, mode=mode)
+    if not elements:
+        raise ValueError("No elements extracted from the current browser page")
+    print(f"   [OK] Extracted {len(elements)} elements")
+
+    print("\n[2/5] Ranking selectors for each element on existing context...")
+    ranked_elements = rank_selectors_for_elements_on_page(page, elements)
+    return _finalize_prediction_outputs(current_url, mode, elements, ranked_elements)
 
 
 # Extracts text content from OpenAI-compatible chat response payload
@@ -296,11 +864,102 @@ def run_e2e_helper_workflow(
     llm_max_tokens=3000,
     prompt_file=DEFAULT_PROMPT_FILE,
     llm_version="v1",
+    helper_strategy="xgboost",
+    direct_input_mode="raw",
 ):
+    if helper_strategy == "direct-llm":
+        return run_direct_llm_workflow(
+            url=url,
+            mode=mode,
+            headless=headless,
+            llm_api_key=llm_api_key,
+            llm_base_url=llm_base_url,
+            llm_model=llm_model,
+            llm_temperature=llm_temperature,
+            llm_max_tokens=llm_max_tokens,
+            prompt_file=prompt_file or DEFAULT_DIRECT_PROMPT_FILE,
+            llm_version=llm_version,
+            direct_input_mode=direct_input_mode,
+        )
+
     print("\n[E2E] Starting end-to-end helper generation workflow...")
 
     raw_output_path, best_output_path = run_predict_workflow(url, mode=mode, headless=headless)
+    return _generate_helper_from_predictions(
+        url=url,
+        mode=mode,
+        raw_output_path=raw_output_path,
+        best_output_path=best_output_path,
+        llm_api_key=llm_api_key,
+        llm_base_url=llm_base_url,
+        llm_model=llm_model,
+        llm_temperature=llm_temperature,
+        llm_max_tokens=llm_max_tokens,
+        prompt_file=prompt_file,
+        llm_version=llm_version,
+    )
 
+
+# Runs end-to-end helper generation from an existing Playwright page context
+def run_e2e_helper_workflow_from_page(
+    page,
+    mode="all",
+    llm_api_key=None,
+    llm_base_url=DEFAULT_LLM_BASE_URL,
+    llm_model=DEFAULT_LLM_MODEL,
+    llm_temperature=0.2,
+    llm_max_tokens=3000,
+    prompt_file=DEFAULT_PROMPT_FILE,
+    llm_version="v1",
+    helper_strategy="xgboost",
+    direct_input_mode="raw",
+):
+    if helper_strategy == "direct-llm":
+        return run_direct_llm_workflow_from_page(
+            page=page,
+            mode=mode,
+            llm_api_key=llm_api_key,
+            llm_base_url=llm_base_url,
+            llm_model=llm_model,
+            llm_temperature=llm_temperature,
+            llm_max_tokens=llm_max_tokens,
+            prompt_file=prompt_file or DEFAULT_DIRECT_PROMPT_FILE,
+            llm_version=llm_version,
+            direct_input_mode=direct_input_mode,
+        )
+
+    print("\n[E2E] Starting end-to-end helper generation workflow from live browser context...")
+
+    raw_output_path, best_output_path = run_predict_workflow_from_page(page, mode=mode)
+
+    return _generate_helper_from_predictions(
+        url=page.url,
+        mode=mode,
+        raw_output_path=raw_output_path,
+        best_output_path=best_output_path,
+        llm_api_key=llm_api_key,
+        llm_base_url=llm_base_url,
+        llm_model=llm_model,
+        llm_temperature=llm_temperature,
+        llm_max_tokens=llm_max_tokens,
+        prompt_file=prompt_file,
+        llm_version=llm_version,
+    )
+
+
+def _generate_helper_from_predictions(
+    url,
+    mode,
+    raw_output_path,
+    best_output_path,
+    llm_api_key,
+    llm_base_url,
+    llm_model,
+    llm_temperature,
+    llm_max_tokens,
+    prompt_file,
+    llm_version,
+):
     print("\n[E2E 1/3] Loading predictions and prompt template...")
     with open(best_output_path, "r", encoding="utf-8") as f:
         predictions_payload = json.load(f)
@@ -336,7 +995,7 @@ def run_e2e_helper_workflow(
             "messages": [
                 {
                     "role": "system",
-                    "content": "You generate high-quality Playwright helper JavaScript files based on selector prediction JSON.",
+                    "content": "You generate high-quality Playwright helper JavaScript files based on selector prediction JSON. Method names must be readable and follow Action+ElementType+Text naming without element IDs.",
                 },
                 {
                     "role": "user",
@@ -349,9 +1008,17 @@ def run_e2e_helper_workflow(
         version=llm_version,
     )
 
-    helper_js = _unwrap_js_fence(_extract_chat_content(chat_response))
-    if not helper_js:
-        raise ValueError("LLM response did not contain helper JavaScript content")
+    llm_helper_js = _unwrap_js_fence(_extract_chat_content(chat_response))
+
+    guaranteed_helper_js, required_methods = _build_guaranteed_helpers(predictions_payload)
+
+    if llm_helper_js and _llm_has_all_methods(llm_helper_js, required_methods):
+        helper_js = llm_helper_js
+        helper_source = "llm"
+    else:
+        helper_js = guaranteed_helper_js
+        helper_source = "deterministic-fallback"
+        print("[WARN] LLM output missed one or more required element helpers. Using deterministic full-coverage helper generation.")
 
     print("[E2E 3/3] Saving generated helper JavaScript...")
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -360,9 +1027,14 @@ def run_e2e_helper_workflow(
     os.makedirs("data/helpers", exist_ok=True)
     js_output_path = f"data/helpers/generated_helpers_{domain}_{timestamp}.js"
     metadata_output_path = f"data/helpers/generated_helpers_metadata_{domain}_{timestamp}.json"
+    llm_raw_output_path = f"data/helpers/generated_helpers_llm_raw_{domain}_{timestamp}.js"
 
     with open(js_output_path, "w", encoding="utf-8") as f:
         f.write(helper_js)
+
+    if llm_helper_js:
+        with open(llm_raw_output_path, "w", encoding="utf-8") as f:
+            f.write(llm_helper_js)
 
     metadata = {
         "url": url,
@@ -372,9 +1044,12 @@ def run_e2e_helper_workflow(
         "llm_model": llm_model,
         "llm_version": llm_version,
         "prompt_file": prompt_file,
+        "helper_source": helper_source,
+        "required_helper_count": len(required_methods),
         "raw_dataset_path": raw_output_path,
         "predictions_path": best_output_path,
         "helper_js_path": js_output_path,
+        "llm_raw_helper_js_path": llm_raw_output_path,
     }
     save_json(metadata, metadata_output_path)
 
@@ -389,7 +1064,150 @@ def run_e2e_helper_workflow(
         "metadata_path": metadata_output_path,
     }
 
+
+def _pick_active_page_from_browser(browser):
+    candidate_page = None
+
+    for context in browser.contexts:
+        for page in context.pages:
+            if page.url and page.url != "about:blank":
+                candidate_page = page
+
+    if candidate_page is None:
+        for context in browser.contexts:
+            if context.pages:
+                candidate_page = context.pages[-1]
+
+    if candidate_page is None:
+        raise ValueError("No open pages found in connected browser context.")
+
+    return candidate_page
+
+
+def run_context_workflow_via_cdp(
+    mode,
+    workflow,
+    cdp_url=DEFAULT_CDP_URL,
+    llm_api_key=None,
+    llm_base_url=DEFAULT_LLM_BASE_URL,
+    llm_model=DEFAULT_LLM_MODEL,
+    llm_temperature=0.2,
+    llm_max_tokens=3000,
+    prompt_file=DEFAULT_PROMPT_FILE,
+    llm_version="v1",
+    helper_strategy="xgboost",
+    direct_input_mode="raw",
+):
+    print(f"[CONTEXT] Connecting to live browser via CDP: {cdp_url}")
+    with sync_playwright() as p:
+        browser = p.chromium.connect_over_cdp(cdp_url)
+        page = _pick_active_page_from_browser(browser)
+        print(f"[CONTEXT] Using active page: {page.url}")
+
+        if workflow == "predict":
+            result = run_predict_workflow_from_page(page, mode=mode)
+        elif workflow == "generate-js":
+            result = run_e2e_helper_workflow_from_page(
+                page=page,
+                mode=mode,
+                llm_api_key=llm_api_key,
+                llm_base_url=llm_base_url,
+                llm_model=llm_model,
+                llm_temperature=llm_temperature,
+                llm_max_tokens=llm_max_tokens,
+                prompt_file=prompt_file,
+                llm_version=llm_version,
+                helper_strategy=helper_strategy,
+                direct_input_mode=direct_input_mode,
+            )
+        else:
+            raise ValueError("Invalid workflow for context mode. Use 'predict' or 'generate-js'.")
+
+        browser.close()
+        return result
+
 if __name__ == "__main__":
+    # Context workflow using live browser state:
+    # python scripts/run.py context <mode> <predict|generate-js> [--cdp-url=http://127.0.0.1:9222] [llm options]
+    if len(sys.argv) >= 4 and sys.argv[1].lower() == "context":
+        mode = sys.argv[2]
+        workflow = sys.argv[3].lower()
+
+        cdp_url = DEFAULT_CDP_URL
+        llm_api_key = None
+        llm_base_url = DEFAULT_LLM_BASE_URL
+        llm_model = DEFAULT_LLM_MODEL
+        llm_temperature = 0.2
+        llm_max_tokens = 3000
+        prompt_file = DEFAULT_PROMPT_FILE
+        llm_version = "v1"
+        helper_strategy = "xgboost"
+        direct_input_mode = "raw"
+
+        for arg in sys.argv[4:]:
+            if arg.startswith("--cdp-url="):
+                cdp_url = arg.split("=", 1)[1]
+            elif arg.startswith("--llm-api-key="):
+                llm_api_key = arg.split("=", 1)[1]
+            elif arg.startswith("--llm-base-url="):
+                llm_base_url = arg.split("=", 1)[1]
+            elif arg.startswith("--llm-model="):
+                llm_model = arg.split("=", 1)[1]
+            elif arg.startswith("--llm-temperature="):
+                try:
+                    llm_temperature = float(arg.split("=", 1)[1])
+                except ValueError:
+                    print(f"ERROR: Invalid float value in '{arg}'")
+                    sys.exit(1)
+            elif arg.startswith("--llm-max-tokens="):
+                try:
+                    llm_max_tokens = int(arg.split("=", 1)[1])
+                except ValueError:
+                    print(f"ERROR: Invalid integer value in '{arg}'")
+                    sys.exit(1)
+            elif arg.startswith("--prompt-file="):
+                prompt_file = arg.split("=", 1)[1]
+            elif arg.startswith("--llm-version="):
+                llm_version = arg.split("=", 1)[1]
+                if llm_version not in ["plain", "v1"]:
+                    print("ERROR: --llm-version must be 'plain' or 'v1'")
+                    sys.exit(1)
+            elif arg.startswith("--helper-strategy="):
+                helper_strategy = arg.split("=", 1)[1]
+                if helper_strategy not in ["xgboost", "direct-llm"]:
+                    print("ERROR: --helper-strategy must be 'xgboost' or 'direct-llm'")
+                    sys.exit(1)
+                if helper_strategy == "direct-llm" and prompt_file == DEFAULT_PROMPT_FILE:
+                    prompt_file = DEFAULT_DIRECT_PROMPT_FILE
+            elif arg.startswith("--direct-input="):
+                direct_input_mode = arg.split("=", 1)[1]
+                if direct_input_mode not in ["raw", "cleaned"]:
+                    print("ERROR: --direct-input must be 'raw' or 'cleaned'")
+                    sys.exit(1)
+            else:
+                print(f"ERROR: Unexpected argument '{arg}'")
+                sys.exit(1)
+
+        try:
+            run_context_workflow_via_cdp(
+                mode=mode,
+                workflow=workflow,
+                cdp_url=cdp_url,
+                llm_api_key=llm_api_key,
+                llm_base_url=llm_base_url,
+                llm_model=llm_model,
+                llm_temperature=llm_temperature,
+                llm_max_tokens=llm_max_tokens,
+                prompt_file=prompt_file,
+                llm_version=llm_version,
+                helper_strategy=helper_strategy,
+                direct_input_mode=direct_input_mode,
+            )
+            sys.exit(0)
+        except Exception as e:
+            print(f"ERROR: {e}")
+            sys.exit(1)
+
     # Shortcut workflow: python scripts/run.py <url> <mode> predict [--headless|--no-headless]
     if len(sys.argv) >= 4 and sys.argv[3].lower() == "predict" and sys.argv[1] not in ["single", "batch"]:
         url = sys.argv[1]
@@ -426,6 +1244,8 @@ if __name__ == "__main__":
         llm_max_tokens = 3000
         prompt_file = DEFAULT_PROMPT_FILE
         llm_version = "v1"
+        helper_strategy = "xgboost"
+        direct_input_mode = "raw"
 
         for arg in sys.argv[4:]:
             if arg == "--headless":
@@ -457,6 +1277,18 @@ if __name__ == "__main__":
                 if llm_version not in ["plain", "v1"]:
                     print("ERROR: --llm-version must be 'plain' or 'v1'")
                     sys.exit(1)
+            elif arg.startswith("--helper-strategy="):
+                helper_strategy = arg.split("=", 1)[1]
+                if helper_strategy not in ["xgboost", "direct-llm"]:
+                    print("ERROR: --helper-strategy must be 'xgboost' or 'direct-llm'")
+                    sys.exit(1)
+                if helper_strategy == "direct-llm" and prompt_file == DEFAULT_PROMPT_FILE:
+                    prompt_file = DEFAULT_DIRECT_PROMPT_FILE
+            elif arg.startswith("--direct-input="):
+                direct_input_mode = arg.split("=", 1)[1]
+                if direct_input_mode not in ["raw", "cleaned"]:
+                    print("ERROR: --direct-input must be 'raw' or 'cleaned'")
+                    sys.exit(1)
             else:
                 print(f"ERROR: Unexpected argument '{arg}'")
                 sys.exit(1)
@@ -473,6 +1305,8 @@ if __name__ == "__main__":
                 llm_max_tokens=llm_max_tokens,
                 prompt_file=prompt_file,
                 llm_version=llm_version,
+                helper_strategy=helper_strategy,
+                direct_input_mode=direct_input_mode,
             )
             sys.exit(0)
         except Exception as e:
@@ -481,11 +1315,13 @@ if __name__ == "__main__":
 
     if len(sys.argv) < 2:
         print("Usage: python run.py <command> [args...]")
+        print("       python run.py context <mode> <predict|generate-js> [--cdp-url=http://127.0.0.1:9222] [llm options]")
         print("       python run.py <url> <mode> predict [--headless|--no-headless]")
         print("       python run.py <url> <mode> generate-js [--headless|--no-headless] [--llm-model=<model>] [--prompt-file=<path>]")
         print("\nCommands:")
         print("  single <url> [mode] [selector] [--headless|--no-headless] [--raw]  - Process single URL")
         print("  batch <url1> <url2> ... [--headless|--no-headless] [--workers=N] [--raw]  - Process multiple URLs")
+        print("  context <mode> <predict|generate-js> [options]  - Run workflow on existing live browser context via CDP")
         print("  <url> <mode> predict [--headless|--no-headless]  - One-line end-to-end prediction workflow")
         print("  <url> <mode> generate-js [options]  - Predict selectors and generate Playwright helper JS via ZEISS LLM")
         print("\nOptions:")
@@ -500,6 +1336,9 @@ if __name__ == "__main__":
         print("  --llm-temperature=<float>  - LLM temperature (default: 0.2)")
         print("  --llm-max-tokens=<int>     - Max output tokens (default: 3000)")
         print("  --prompt-file=<path>       - Prompt template path (default: LLM/prompts/generate_helper_js_prompt.txt)")
+        print("  --cdp-url=<url>            - CDP endpoint for context mode (default: http://127.0.0.1:9222)")
+        print("  --helper-strategy=<name>   - xgboost or direct-llm (default: xgboost)")
+        print("  --direct-input=<mode>      - raw or cleaned selector candidates for direct-llm (default: raw)")
         sys.exit(1)
 
     command = sys.argv[1]

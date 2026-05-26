@@ -1,0 +1,15 @@
+{
+  "url": "https://www.wikipedia.org",
+  "mode": "text",
+  "generated_at": "20260526_185612",
+  "strategy": "direct-llm",
+  "llm_base_url": "https://api.genai.zeiss.com/llm",
+  "llm_model": "gpt-4o",
+  "llm_version": "v1",
+  "prompt_file": "LLM/prompts/generate_helper_js_direct_prompt.txt",
+  "helper_source": "llm-direct",
+  "raw_dataset_path": "data/raw/direct_llm_selectors_raw_wikipedia_org_20260526_185606.json",
+  "candidates_path": "data/predictions/direct_llm_candidates_wikipedia_org_20260526_185606.json",
+  "helper_js_path": "data/helpers/generated_helpers_wikipedia_org_20260526_185612.js",
+  "llm_raw_helper_js_path": "data/helpers/generated_helpers_llm_raw_wikipedia_org_20260526_185612.js"
+}

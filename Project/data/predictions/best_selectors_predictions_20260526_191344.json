@@ -1,0 +1,33 @@
+{
+  "url": "https://www.google.com",
+  "mode": "text",
+  "generated_at": "20260526_191344",
+  "model_path": "ml\\models\\selector_stability_model_20260424_172103.joblib",
+  "raw_dataset_path": "data/raw/raw_selectors_dataset_google_com_20260526_191344.json",
+  "total_elements": 2,
+  "total_selectors_scored": 8,
+  "best_selectors": [
+    {
+      "element_id": 0,
+      "tag": "div",
+      "text": "",
+      "best_selector": ".k1zIA",
+      "selector_type": "css",
+      "prediction": 1,
+      "probability": 0.955346,
+      "confidence": 0.910692,
+      "is_stable": true
+    },
+    {
+      "element_id": 1,
+      "tag": "div",
+      "text": "Choose what you’re giving feedback on",
+      "best_selector": ".C85rO",
+      "selector_type": "css",
+      "prediction": 1,
+      "probability": 0.962885,
+      "confidence": 0.925769,
+      "is_stable": true
+    }
+  ]
+}
